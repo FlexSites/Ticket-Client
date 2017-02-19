@@ -1,0 +1,49 @@
+As a customer I want...
+...to search events
+...to select one or more seats
+...to buy one or more tickets
+...to receive a confirmation of my order
+...to receive a digital ticket
+...subscribe to be notified about entertainers
+
+As a booker I want to...
+...create events
+  ...that recur
+  ...with multiple showtimes
+  ...with different prices
+...create entertainers
+  ...that don't already exist and are verified
+...create promotions
+...view analytics for my events
+
+As an entertainer I want to...
+...verify my account
+...modify my images and bio
+...embed my profile in other websites
+...add events from non-managed venues
+...view analytics for my events
+
+As a receptionist I want to...
+...change tickets and account for difference in ticket price
+...purchase tickets on behalf of someone (in-person or phone)
+...view inventory for events
+
+As a manager I want to...
+...cancel an event and auto-refund with email confirmation all pre-purchased tickets
+...change tickets and account for difference in ticket price
+...upload menus
+...view analytics
+...adjust fee distribution
+...allocate comps to entertainers, promoters, and customers
+
+As a promoter I want to...
+...send bulk emails for show notifications and upcoming events
+
+As an owner I want to...
+...verify venue account
+...modify venue images/tours/bio
+...update venue information
+...view analytics for all venue events
+
+As an admin I want to...
+...create users and modify roles

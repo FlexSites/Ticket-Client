@@ -1,0 +1,15 @@
+type Event {
+  id: ID!
+  showtimes: ShowtimeConnection
+  venue: Venue
+  entertainers: EntertainerConnection
+  title: String!
+  summary: String
+  description: String
+  priceRange: String!
+  pricingTiers: [ PricingTier ]
+  type: String!
+  rating: String!
+  images: MediaConnection
+  videos: MediaConnection
+}
