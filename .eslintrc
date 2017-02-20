@@ -1,6 +1,7 @@
 {
   "rules": {
-    "comma-dangle": ["error", "always-multiline"]
+    "comma-dangle": ["error", "always-multiline"],
+    "template-curly-spacing": ["error", "always"]
   },
   "extends": "standard"
 }
