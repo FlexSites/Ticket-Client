@@ -1,6 +1,6 @@
 'use strict'
 
-const Service = require('../service').default
+const Persistent = require('../Persistent').default
 
 /**
  * Entertainer
@@ -8,6 +8,6 @@ const Service = require('../service').default
  * Handles CRUD operations for entertainers and entertainer validation requests
  */
 
-exports.default = class Entertainer extends Service {
+exports.default = class Entertainer extends Persistent {
 
 }

@@ -1,6 +1,6 @@
 'use strict'
 
-const Service = require('../service').default
+const Persistent = require('../Persistent').default
 
 /**
  * Ticket
@@ -8,6 +8,6 @@ const Service = require('../service').default
  * Handles CRUD operations for tickets
  */
 
-exports.default = class Ticket extends Service {
+exports.default = class Ticket extends Persistent {
 
 }
