@@ -1,12 +1,18 @@
 'use strict'
 
-const Entertainer = require('./Entertainer')
-const Event = require('./Event')
-const Ticket = require('./Ticket')
-const Venue = require('./Venue')
-const Payment = require('./Payment')
-const Social = require('./Social')
-const Metric = require('./Metric')
+const mapValues = require('lodash.mapvalues')
+const Bluebird = require('bluebird')
+const AWS = require('aws-sdk')
+
+AWS.config.setPromisesDependency(Bluebird)
+
+const Entertainer = require('./Entertainer').default
+const Event = require('./Event').default
+const Ticket = require('./Ticket').default
+const Venue = require('./Venue').default
+const Payment = require('./Payment').default
+const Social = require('./Social').default
+const Metric = require('./Metric').default
 
 const services = {
   entertainer: Entertainer,
@@ -18,4 +24,19 @@ const services = {
   metric: Metric,
 }
 
-exports.services = services
+function setup () {
+  return Bluebird.props(
+    mapValues(
+      services,
+      (Service, key) => {
+        console.info(`Setting up service ${ key }`)
+        return Bluebird.method(Service.setup).bind(Service)()
+          .return(Service)
+      }
+    )
+  )
+}
+
+exports.setup = setup
+
+exports.default = services

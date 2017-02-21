@@ -9,5 +9,10 @@ const Persistent = require('../Persistent').default
  */
 
 exports.default = class Entertainer extends Persistent {
-
+  constructor (viewer) {
+    super('entertainer', viewer)
+  }
+  static setup () {
+    return super.setup('entertainer')
+  }
 }

@@ -60,8 +60,10 @@ class Service extends EventEmitter {
   /**
    * SETUP database connections
    */
-  setup (app, path) {
+  static setup (app, path) {
     // Setup code
+    console.info('Setting up non-persistent service')
+    return Service
   }
 }
 

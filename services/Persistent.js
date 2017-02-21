@@ -3,27 +3,46 @@
 const EventEmitter = require('events')
 const AWS = require('aws-sdk')
 const uuid = require('uuid')
+const config = require('config')
+const assert = require('assert')
+const get = require('lodash.get')
 
-const dynamodb = new AWS.DynamoDB({ apiVersion: '2012-08-10' })
+const dynamodb = require('../lib/dynamodb').default
+const setupTable = require('../lib/dynamodb').setupTable
 
 class Service extends EventEmitter {
-  constructor (name, viewer, config = {}) {
+  constructor (name, viewer, _config = {}) {
     super()
     this.name = name
     this.viewer = viewer
     this.config = Object.assign({
+      name,
       tenant: '',
-    }, config)
+      throughput: {
+        read: 1,
+        write: 1,
+      },
+    }, _config)
 
-    this.setup(config, `${ this.config.tenant }${ this.name }`)
+    // Setup code
+    assert(name, 'Field "name" is required for database setup.')
+    const TableName = `${ config.get('app') }-${ config.get('stage') }-${ name }`
+    this.db = new AWS.DynamoDB.DocumentClient({
+      params: { TableName },
+      service: dynamodb,
+    })
   }
+
+
 
   /**
    * GET a list of events optionally filtered by a query
    */
   find (params) {
-    return this.db.query()
+    // return this.db.query()
+    return this.db.scan()
       .promise()
+      .then((results) => results.Items)
   }
 
   /**
@@ -32,7 +51,17 @@ class Service extends EventEmitter {
   get (id, params) {
     return this.db.get({
       Key: { id },
-    }).promise()
+    })
+    .promise()
+    .then((results) => {
+      console.log(JSON.stringify(results, null, 2))
+      if (!results.Item) {
+        const err = new Error(`Resource "${ this.name }" with ID "${ id }" not found`)
+        err.status = 404
+        throw err
+      }
+      return results.Item
+    })
   }
 
   /**
@@ -41,10 +70,15 @@ class Service extends EventEmitter {
    */
   create (data, params) {
     // @todo input validation
-    data.id = uuid.v4()
+    const id = uuid.v4()
+    data.id = id
+    data.created = new Date().toISOString()
+
     return this.db.put({
       Item: data,
-    }).promise()
+    })
+    .promise()
+    .then(() => this.get(id))
   }
 
   /**
@@ -55,7 +89,9 @@ class Service extends EventEmitter {
     // @todo input validation
     return this.db.put({
       Item: data,
-    }).promise()
+    })
+    .promise()
+    .then(() => this.get(id))
   }
 
   /**
@@ -75,7 +111,8 @@ class Service extends EventEmitter {
     //     ':y': 45,
     //     ':MAX': 100,
     //   },
-    // }).promise()
+    // })
+    .promise()
   }
 
   /**
@@ -84,18 +121,20 @@ class Service extends EventEmitter {
   remove (id, params) {
     return this.db.delete({
       Key: { id },
-    }).promise()
+    })
+    .promise()
+    .then(() => ({ id }))
   }
 
   /**
    * SETUP database connections
    */
-  setup (config, TableName) {
+  static setup (name, throughput = {}) {
     // Setup code
-    this.db = new AWS.DynamoDB.DocumentClient({
-      params: { TableName },
-      service: dynamodb,
-    })
+    assert(name, 'Field "name" is required for database setup.')
+    const TableName = `${ config.get('app') }-${ config.get('stage') }-${ name }`
+    return setupTable(TableName, throughput.read, throughput.write)
+      .return(Service)
   }
 }
 

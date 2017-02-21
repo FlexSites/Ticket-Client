@@ -9,5 +9,10 @@ const Persistent = require('../Persistent').default
  */
 
 exports.default = class Event extends Persistent {
-
+  constructor (viewer) {
+    super('event', viewer)
+  }
+  static setup () {
+    return super.setup('event')
+  }
 }

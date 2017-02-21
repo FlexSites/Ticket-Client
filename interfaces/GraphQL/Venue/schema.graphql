@@ -1,0 +1,34 @@
+enum VENUE_STATUS {
+  ACTIVE
+  INACTIVE
+}
+
+type Venue implements Node {
+  id: ID!
+  name: String!
+  description: String
+  address: Address!
+  status: VENUE_STATUS
+  seatMaps: SeatMapConnection
+}
+
+type SeatMap implements Node {
+  id: ID!
+  venue: Venue
+  name: ID!
+  sections: [SeatMapSection]!
+}
+
+type SeatMapSection {
+  name: ID!
+  rows: [SeatMapRow]!
+}
+
+type SeatMapRow {
+  name: ID!
+  seats: [ String ]!
+}
+
+type SeatMapSeat {
+  name: ID!
+}
