@@ -1,0 +1,33 @@
+html
+  link(rel="stylesheet", type="text/css", href="/style.css")
+  body
+    form
+      .group
+        h1= showtime.event.title
+        img(src=showtime.event.imageUrl style="width: 100%")
+        p= showtime.event.description.replace(/\<br \/\>/g, ' ')
+        h2= showtime.date
+        h2 #{ showtime.remaining } seats remaining
+        p= showtime.event.summary
+      .group
+        label
+          span Name
+          input.field(name='cardholder-name', value='Jane Doe')
+        label
+          span E-mail
+          input.field(name='email', value='me@example.com', type='email')
+        label
+          span Quantity
+          input.field(name='quantity', value='1', type='number', step='1', min='1', max=`${ Math.min(showtime.remaining, 20) }`)
+      .group
+        label
+          span Card
+          #card-element.field
+      button(type='submit') Pay $25
+      .outcome
+        .error
+        .success
+          | Success! Your Stripe token is
+          span.token
+    script(src='https://js.stripe.com/v3/')
+    script(src='/script.js')

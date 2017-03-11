@@ -1,0 +1,13 @@
+extends index
+
+block content
+  table.table.table-hover
+    tr
+      td Title
+      td Price
+      td Date
+    each event in events
+      tr
+        td= event.Title
+        td= event.price
+        td= event.date

@@ -1,0 +1,25 @@
+extends index
+
+mixin field(name)
+  .form-group
+    label.col-sm-2.control-label(for='inputEmail3')= name
+    .col-sm-10
+      input#inputEmail3.form-control(type='text', placeholder=name, name=name)
+
+block content
+  form.form-horizontal
+    +field('title')
+    +field('price')
+    +field('imageUrl')
+    +field('description')
+    +field('summary')
+    +field('venueID')
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        .checkbox
+          label
+            input(type='checkbox')
+            |  Remember me
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        button.btn.btn-default(type='submit') Sign in
