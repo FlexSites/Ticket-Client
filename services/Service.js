@@ -2,6 +2,15 @@
 
 const EventEmitter = require('events')
 
+const METHODS = [
+  'find',
+  'get',
+  'create',
+  'update',
+  'patch',
+  'remove',
+]
+
 class Service extends EventEmitter {
   constructor (name, viewer, config = {}) {
     super()
@@ -10,19 +19,25 @@ class Service extends EventEmitter {
     this.config = Object.assign({}, config, {
       // Defaults
     })
+
+    METHODS.forEach((method) => {
+      if (this[method] !== 'function') {
+        this[method] = Service[method].bind(Service, viewer)
+      }
+    })
   }
 
   /**
    * GET a list of events optionally filtered by a query
    */
-  find (params) {
+  static find (viewer, params) {
     throw new Error(`Method "${ this.name }.find" is not implemented`)
   }
 
   /**
    * GET a single event by primary key
    */
-  get (id, params) {
+  static get (viewer, id, params) {
     throw new Error(`Method "${ this.name }.get" is not implemented`)
   }
 
@@ -30,7 +45,7 @@ class Service extends EventEmitter {
    * POST to create a new event
    * @access booker|manager|owner|admin
    */
-  create (data, params) {
+  static create (viewer, data, params) {
     throw new Error(`Method "${ this.name }.create" is not implemented`)
   }
 
@@ -38,7 +53,7 @@ class Service extends EventEmitter {
    * PUT to update an event by id
    * @access booker|manager|owner|admin
    */
-  update (id, data, params) {
+  static update (viewer, id, data, params) {
     throw new Error(`Method "${ this.name }.update" is not implemented`)
   }
 
@@ -46,14 +61,14 @@ class Service extends EventEmitter {
    * PATCH to update an event by id
    * @access booker|manager|owner|admin
    */
-  patch (id, data, params) {
+  static patch (viewer, id, data, params) {
     throw new Error(`Method "${ this.name }.patch" is not implemented`)
   }
 
   /**
    * DELETE an event by ID
    */
-  remove (id, params) {
+  static remove (viewer, id, params) {
     throw new Error(`Method "${ this.name }.remove" is not implemented`)
   }
 

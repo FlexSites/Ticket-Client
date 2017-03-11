@@ -1,20 +1,22 @@
 'use strict'
 
-const EventEmitter = require('events')
+const emitter = require('./bus').default
+const pluralize = require('pluralize')
 const AWS = require('aws-sdk')
 const uuid = require('uuid')
 const config = require('config')
 const assert = require('assert')
-const get = require('lodash.get')
+const mapValues = require('lodash.mapvalues')
+const { fromGlobalId, toGlobalId } = require('graphql-relay')
+
+console.log('emitter', emitter)
 
 const dynamodb = require('../lib/dynamodb').default
 const setupTable = require('../lib/dynamodb').setupTable
 
-class Service extends EventEmitter {
-  constructor (name, viewer, _config = {}) {
-    super()
+class Model {
+  constructor (name, _config = {}) {
     this.name = name
-    this.viewer = viewer
     this.config = Object.assign({
       name,
       tenant: '',
@@ -43,25 +45,68 @@ class Service extends EventEmitter {
     return this.db.scan()
       .promise()
       .then((results) => results.Items)
+      .then(this.toPublicObject.bind(this))
+  }
+
+  toPublicObject (obj, nested = false) {
+    if (Array.isArray(obj)) {
+      return obj.map(this.toPublicObject.bind(this))
+    }
+
+    if (obj.id) {
+      if (!nested) {
+        obj.id = toGlobalId(this.name, obj.id)
+      }
+      const { type } = fromGlobalId(obj.id)
+      obj.href = `https://api.tickets.com/api/rest/${ pluralize(type) }/${ obj.id }`
+    }
+
+    mapValues(obj, (val, key) => {
+      if (typeof val === 'object' && !Array.isArray(obj)) {
+        return this.toPublicObject(val, true)
+      }
+      return val
+    })
+
+    return obj
+  }
+
+  toPrivateObject (obj) {
+    if (Array.isArray(obj)) {
+      return obj.map(this.toPrivateObject.bind(this))
+    }
+    obj.id = fromGlobalId(obj.id).id
+
+    return obj
   }
 
   /**
    * GET a single event by primary key
    */
-  get (id, params) {
+  get (guid, params) {
+    const { id } = fromGlobalId(guid)
     return this.db.get({
       Key: { id },
     })
     .promise()
     .then((results) => {
-      console.log(JSON.stringify(results, null, 2))
-      if (!results.Item) {
-        const err = new Error(`Resource "${ this.name }" with ID "${ id }" not found`)
+      const item = results.Item
+      if (!item) {
+        const err = new Error(`Resource "${ this.name }" with ID "${ guid }" not found`)
         err.status = 404
         throw err
       }
-      return results.Item
+
+      return this.toPublicObject(item)
     })
+  }
+
+  emit (method) {
+    const name = this.name
+    return (payload) => {
+      emitter.emit(`${ name }:${ method }`, payload)
+      return payload
+    }
   }
 
   /**
@@ -78,20 +123,24 @@ class Service extends EventEmitter {
       Item: data,
     })
     .promise()
-    .then(() => this.get(id))
+    .then(() => this.get(toGlobalId(this.name, id)))
+    .then(this.emit('create'))
   }
 
   /**
    * PUT to update an event by id
    * @access booker|manager|owner|admin
    */
-  update (id, data, params) {
+  update (guid, data, params) {
+    const { id } = fromGlobalId(guid)
+    this.toPrivateObject(data)
     // @todo input validation
     return this.db.put({
       Item: data,
     })
     .promise()
     .then(() => this.get(id))
+    .then(this.emit('update'))
   }
 
   /**
@@ -113,17 +162,20 @@ class Service extends EventEmitter {
     //   },
     // })
     .promise()
+    .then(this.emit('patch'))
   }
 
   /**
    * DELETE an event by ID
    */
-  remove (id, params) {
+  remove (guid, params) {
+    const { id } = fromGlobalId(guid)
     return this.db.delete({
       Key: { id },
     })
     .promise()
-    .then(() => ({ id }))
+    .then(() => ({ id: guid }))
+    .then(this.emit('remove'))
   }
 
   /**
@@ -134,9 +186,9 @@ class Service extends EventEmitter {
     assert(name, 'Field "name" is required for database setup.')
     const TableName = `${ config.get('app') }-${ config.get('stage') }-${ name }`
     return setupTable(TableName, throughput.read, throughput.write)
-      .return(Service)
+      .return(Model)
   }
 }
 
 
-exports.default = Service
+exports.default = Model

@@ -29,10 +29,10 @@ enum TICKET_PRICE_FILTER = {
 
 type Event {
   id: ID!
-  showtimes: ShowtimeConnection
-  venue: Venue
-  entertainers: EntertainerConnection
   title: String!
+  venue: Venue
+  showtimes: ShowtimeConnection
+  entertainers: EntertainerConnection
   summary: String
   description: String
   priceRange: String!

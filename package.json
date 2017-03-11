@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "NODE_ENV=development nodemon app",
-    "start": "node app"
+    "watch": "NODE_ENV=development nodemon server",
+    "start": "node server"
   },
   "author": "",
   "license": "ISC",
@@ -25,11 +25,13 @@
     "config": "^1.25.1",
     "express": "^4.14.1",
     "express-graphql": "^0.6.3",
+    "express-jwt": "^5.1.0",
     "graphql": "^0.9.1",
     "graphql-relay": "^0.5.1",
     "graphql-tools": "^0.10.0",
     "lodash.get": "^4.4.2",
     "lodash.mapvalues": "^4.6.0",
+    "lodash.pick": "^4.4.0",
     "pluralize": "^3.1.0",
     "uuid": "^3.0.1"
   }

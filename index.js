@@ -1,6 +1,7 @@
 'use strict'
 
 const express = require('express')
+const path = require('path')
 
 const interfaces = require('./interfaces').middleware
 const setupServices = require('./services').setup
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 
-setupServices()
+setupServices
   .then((services) => {
     app.use('/api', json(), interfaces(services))
     app.listen(PORT, () => {

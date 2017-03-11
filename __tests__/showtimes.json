@@ -1,0 +1,520 @@
+[
+  {
+    "url": "/WiseGuysComedy/Ticketing/293831",
+    "date": "Thu, Feb 23, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-02-23T19:30:00.000Z",
+    "eventID": "73a3f0cf-e350-48b1-b37c-9bddfee08c05"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/259030",
+    "date": "Fri, Feb 24, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-02-24T19:00:00.000Z",
+    "eventID": "d3b9bf6e-a5e7-424f-8c52-569670803935"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/286617",
+    "date": "Fri, Feb 24, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-02-24T21:30:00.000Z",
+    "eventID": "d3b9bf6e-a5e7-424f-8c52-569670803935"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/286616",
+    "date": "Sat, Feb 25, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-02-25T19:00:00.000Z",
+    "eventID": "d3b9bf6e-a5e7-424f-8c52-569670803935"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/286618",
+    "date": "Sat, Feb 25, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-02-25T21:30:00.000Z",
+    "eventID": "d3b9bf6e-a5e7-424f-8c52-569670803935"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295130",
+    "date": "Fri, Feb 24, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-02-24T20:00:00.000Z",
+    "eventID": "c5973748-d622-4b99-b89d-e3bc01dfb455"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295131",
+    "date": "Sat, Feb 25, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-02-25T20:00:00.000Z",
+    "eventID": "c5973748-d622-4b99-b89d-e3bc01dfb455"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293241",
+    "date": "Wed, Mar 1, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-03-01T19:30:00.000Z",
+    "eventID": "d376156c-7027-4b8f-a099-5c2542a16ffa"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296056",
+    "date": "Thu, Mar 2, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-02T19:00:00.000Z",
+    "eventID": "3a831e1a-7e46-4407-9e8f-2e1b2d139939"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291998",
+    "date": "Fri, Mar 3, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-03T19:00:00.000Z",
+    "eventID": "19a22341-28f3-4240-a2fb-c2c61552c7c5"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292000",
+    "date": "Fri, Mar 3, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-03T21:30:00.000Z",
+    "eventID": "19a22341-28f3-4240-a2fb-c2c61552c7c5"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291999",
+    "date": "Sat, Mar 4, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-04T19:00:00.000Z",
+    "eventID": "19a22341-28f3-4240-a2fb-c2c61552c7c5"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292001",
+    "date": "Sat, Mar 4, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-04T21:30:00.000Z",
+    "eventID": "19a22341-28f3-4240-a2fb-c2c61552c7c5"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292400",
+    "date": "Fri, Mar 3, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-03T20:00:00.000Z",
+    "eventID": "d1c0f329-03c6-485e-928e-191797c5f254"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292401",
+    "date": "Sat, Mar 4, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-04T20:00:00.000Z",
+    "eventID": "d1c0f329-03c6-485e-928e-191797c5f254"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293434",
+    "date": "Wed, Mar 8, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-08T19:00:00.000Z",
+    "eventID": "1f8b4899-429c-4404-9680-79afdb099601"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293242",
+    "date": "Wed, Mar 8, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-03-08T19:30:00.000Z",
+    "eventID": "ec4b83d3-ec9c-46d6-9340-3f37af3b0d35"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296534",
+    "date": "Wed, Mar 8, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-08T20:00:00.000Z",
+    "eventID": "e3b8cf3d-dc27-46cd-b006-463454c9f6bb"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/297651",
+    "date": "Wed, Mar 8, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-08T21:30:00.000Z",
+    "eventID": "76810d40-c177-4b28-994b-d0c06df51e8f"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/297630",
+    "date": "Wed, Mar 8, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-08T21:30:00.000Z",
+    "eventID": "a4abf88c-7874-40dd-82ed-76822225a6cd"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/297590",
+    "date": "Thu, Mar 9, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-09T19:00:00.000Z",
+    "eventID": "8c1c15e4-f2c6-469d-bccd-b66ed99b2a7b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/290409",
+    "date": "Fri, Mar 10, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-10T19:00:00.000Z",
+    "eventID": "e12663e6-5ed1-4d5a-9b67-1b4cb687fe99"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/294721",
+    "date": "Fri, Mar 10, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-10T21:30:00.000Z",
+    "eventID": "e12663e6-5ed1-4d5a-9b67-1b4cb687fe99"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293899",
+    "date": "Fri, Mar 10, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-03-10T19:30:00.000Z",
+    "eventID": "a23d7e98-590b-4d78-91ed-8a9e4c3900e1"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296389",
+    "date": "Fri, Mar 10, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-10T20:00:00.000Z",
+    "eventID": "28ddbfe2-c222-4965-be4c-7b95b06c012c"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296390",
+    "date": "Sat, Mar 11, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-11T20:00:00.000Z",
+    "eventID": "28ddbfe2-c222-4965-be4c-7b95b06c012c"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296385",
+    "date": "Sat, Mar 11, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-11T19:00:00.000Z",
+    "eventID": "3d1bff3e-bf9f-40d3-a4c0-eb513bb32fdd"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295003",
+    "date": "Sat, Mar 11, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-11T19:00:00.000Z",
+    "eventID": "08a2c562-f75e-4932-909f-ad1cbc9a1251"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295005",
+    "date": "Sat, Mar 11, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-11T21:30:00.000Z",
+    "eventID": "08a2c562-f75e-4932-909f-ad1cbc9a1251"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293243",
+    "date": "Wed, Mar 15, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-03-15T19:30:00.000Z",
+    "eventID": "212e9210-4100-4c52-ad5d-a82c21b04a05"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296793",
+    "date": "Thu, Mar 16, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-03-16T19:30:00.000Z",
+    "eventID": "b2d96c64-e3f1-44f3-8ec2-58b3790ee3d9"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291965",
+    "date": "Fri, Mar 17, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-17T19:00:00.000Z",
+    "eventID": "8725e786-0db6-4772-86cb-7a5bcf9d8cec"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291967",
+    "date": "Fri, Mar 17, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-17T21:30:00.000Z",
+    "eventID": "8725e786-0db6-4772-86cb-7a5bcf9d8cec"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291966",
+    "date": "Sat, Mar 18, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-18T19:00:00.000Z",
+    "eventID": "8725e786-0db6-4772-86cb-7a5bcf9d8cec"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/291968",
+    "date": "Sat, Mar 18, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-18T21:30:00.000Z",
+    "eventID": "8725e786-0db6-4772-86cb-7a5bcf9d8cec"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292152",
+    "date": "Fri, Mar 17, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-17T20:00:00.000Z",
+    "eventID": "2d2bf2b3-abb5-497a-ad72-c0dd65356311"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/292153",
+    "date": "Sat, Mar 18, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-03-18T20:00:00.000Z",
+    "eventID": "2d2bf2b3-abb5-497a-ad72-c0dd65356311"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287707",
+    "date": "Fri, Mar 24, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-24T19:00:00.000Z",
+    "eventID": "675b14d5-28af-422f-8158-4a466b1dbba8"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287710",
+    "date": "Fri, Mar 24, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-24T21:30:00.000Z",
+    "eventID": "675b14d5-28af-422f-8158-4a466b1dbba8"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287708",
+    "date": "Sat, Mar 25, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-03-25T19:00:00.000Z",
+    "eventID": "675b14d5-28af-422f-8158-4a466b1dbba8"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287712",
+    "date": "Sat, Mar 25, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-03-25T21:30:00.000Z",
+    "eventID": "675b14d5-28af-422f-8158-4a466b1dbba8"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296172",
+    "date": "Fri, Apr 7, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-04-07T20:00:00.000Z",
+    "eventID": "e1891156-5e89-4137-b443-984861f72b8c"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296173",
+    "date": "Sat, Apr 8, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-04-08T20:00:00.000Z",
+    "eventID": "e1891156-5e89-4137-b443-984861f72b8c"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/293935",
+    "date": "Sun, Apr 9, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-04-09T19:30:00.000Z",
+    "eventID": "1692d915-13b7-45f2-8b12-fda325845608"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287682",
+    "date": "Thu, Apr 13, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-04-13T19:30:00.000Z",
+    "eventID": "a2483d60-8e22-49b1-a68e-0865c39aa109"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287683",
+    "date": "Fri, Apr 14, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-04-14T19:00:00.000Z",
+    "eventID": "a2483d60-8e22-49b1-a68e-0865c39aa109"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287686",
+    "date": "Fri, Apr 14, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-04-14T21:30:00.000Z",
+    "eventID": "a2483d60-8e22-49b1-a68e-0865c39aa109"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287684",
+    "date": "Sat, Apr 15, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-04-15T19:00:00.000Z",
+    "eventID": "a2483d60-8e22-49b1-a68e-0865c39aa109"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287685",
+    "date": "Sat, Apr 15, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-04-15T21:30:00.000Z",
+    "eventID": "a2483d60-8e22-49b1-a68e-0865c39aa109"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/298051",
+    "date": "Fri, Apr 21, 2017",
+    "time": "8:00 PM",
+    "datetime": "2017-04-21T20:00:00.000Z",
+    "eventID": "08d9c0e3-fa90-4f2b-9358-cdb3a76e6365"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296220",
+    "date": "Thu, May 4, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-05-04T19:30:00.000Z",
+    "eventID": "3e7197bf-25d7-49a5-9649-8a2b3e139e0e"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/290581",
+    "date": "Fri, May 5, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-05T19:00:00.000Z",
+    "eventID": "2d0d23f0-7abb-427d-a3e9-2015a78464ac"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/290582",
+    "date": "Fri, May 5, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-05T21:30:00.000Z",
+    "eventID": "2d0d23f0-7abb-427d-a3e9-2015a78464ac"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/290583",
+    "date": "Sat, May 6, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-06T19:00:00.000Z",
+    "eventID": "2d0d23f0-7abb-427d-a3e9-2015a78464ac"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/290584",
+    "date": "Sat, May 6, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-06T21:30:00.000Z",
+    "eventID": "2d0d23f0-7abb-427d-a3e9-2015a78464ac"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295006",
+    "date": "Fri, May 12, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-12T19:00:00.000Z",
+    "eventID": "37752fe0-8f81-4fd3-917d-26bd9118b7af"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295007",
+    "date": "Fri, May 12, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-12T21:30:00.000Z",
+    "eventID": "37752fe0-8f81-4fd3-917d-26bd9118b7af"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295008",
+    "date": "Sat, May 13, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-13T19:00:00.000Z",
+    "eventID": "37752fe0-8f81-4fd3-917d-26bd9118b7af"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/295009",
+    "date": "Sat, May 13, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-13T21:30:00.000Z",
+    "eventID": "37752fe0-8f81-4fd3-917d-26bd9118b7af"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287674",
+    "date": "Thu, May 18, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-05-18T19:30:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287675",
+    "date": "Fri, May 19, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-19T19:00:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287677",
+    "date": "Fri, May 19, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-19T21:30:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287676",
+    "date": "Sat, May 20, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-20T19:00:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287678",
+    "date": "Sat, May 20, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-20T21:30:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/287679",
+    "date": "Sun, May 21, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-05-21T19:30:00.000Z",
+    "eventID": "a43d9b2d-bd7e-489c-abda-8aef30fe2e04"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/289706",
+    "date": "Thu, May 25, 2017",
+    "time": "7:30 PM",
+    "datetime": "2017-05-25T19:30:00.000Z",
+    "eventID": "6351861a-7f6d-469c-aa41-a806c655f21b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/289707",
+    "date": "Fri, May 26, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-26T19:00:00.000Z",
+    "eventID": "6351861a-7f6d-469c-aa41-a806c655f21b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/289711",
+    "date": "Fri, May 26, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-26T21:30:00.000Z",
+    "eventID": "6351861a-7f6d-469c-aa41-a806c655f21b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/289709",
+    "date": "Sat, May 27, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-05-27T19:00:00.000Z",
+    "eventID": "6351861a-7f6d-469c-aa41-a806c655f21b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/289713",
+    "date": "Sat, May 27, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-05-27T21:30:00.000Z",
+    "eventID": "6351861a-7f6d-469c-aa41-a806c655f21b"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296408",
+    "date": "Fri, Jun 2, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-06-02T19:00:00.000Z",
+    "eventID": "62c6df45-7303-45b8-899c-ced77825e9ba"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296410",
+    "date": "Fri, Jun 2, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-06-02T21:30:00.000Z",
+    "eventID": "62c6df45-7303-45b8-899c-ced77825e9ba"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296409",
+    "date": "Sat, Jun 3, 2017",
+    "time": "7:00 PM",
+    "datetime": "2017-06-03T19:00:00.000Z",
+    "eventID": "62c6df45-7303-45b8-899c-ced77825e9ba"
+  },
+  {
+    "url": "/WiseGuysComedy/Ticketing/296411",
+    "date": "Sat, Jun 3, 2017",
+    "time": "9:30 PM",
+    "datetime": "2017-06-03T21:30:00.000Z",
+    "eventID": "62c6df45-7303-45b8-899c-ced77825e9ba"
+  }
+]

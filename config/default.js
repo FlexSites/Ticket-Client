@@ -6,6 +6,7 @@ module.exports = {
   port: 3000,
   stage: 'dev',
   app: 'evenue',
+  publicUrl: 'http://localhost:3000',
   aws: {
     region: 'us-west-2',
     dynamodb: {

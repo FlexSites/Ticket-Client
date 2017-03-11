@@ -37,7 +37,7 @@ exports.default = class GraphQL extends Interface {
 exports.middleware = (services) =>
   graphqlExpress((req, res) => ({
     schema,
-    context: services,
+    context: res.locals,
     graphiql: true,
   }))
 

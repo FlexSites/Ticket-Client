@@ -1,0 +1,1217 @@
+[
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzODMx",
+    "title": "Todd Barry",
+    "price": "$20",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102220/600/0",
+    "videoUrl": "https://www.youtube.com/embed/8muNixIAOYc?autoplay=0",
+    "description": "New York City-based comedian and actor Todd Barry is widely recognized for his roles as the bongo-playing “Third Conchord” on HBO’s Flight of the Conchords and Mickey Rourke’s deli boss in 2009 Oscar winner The Wrestler, and renowned throughout the entertainment industry for his nuanced, measured, and thoroughly original approach to stand-up. Drawing audience members in with his deadpan self-deprecation and ability to pile punchline upon punchline, his decidedly low-key stage persona belies a deeply intelligent, often biting, occasionally absurdist worldview, one lauded by discerning fans who seek a fresh yet honest update to traditional observation and social commentary. <br /><br /><br />Boasting multiple stand-up appearances on The Late Show with David Letterman, Late Night with Conan O’Brien, Jimmy Kimmel Live!, and two Comedy Central Presents specials,  and his latest one hour Comedy Central special Super Crazy. Todd’s resume also includes such hit TV shows as Louie, Delocated, Bored to Death, Tim and Eric, Chappelle’s Show, Sex and the City, and even Sesame Street. Among his additional feature-film highlights are Todd Phillips’s Road Trip, Louis CK’s Pootie Tang, and Mitch Hedberg’s Los Enchiladas.  You can see him soon at Sigourney Weaver's right hand man in Amy Heckerling's Vamps, and as Paul Rudd's co-worker in David Wain's Wanderlust. Internationally he has performed at the Edinburgh Festival Fringe, the Melbourne International Comedy Festival, Montreal’s Just For Laughs Festival, the Vancouver International Comedy Festival, and Kilkenny, Ireland’s Cat Laughs Festival.  <br /><br /><br />Todd has been heard on both The Howard Stern Show and The Bob &amp; Tom Show, and his albums Medium Energy, Falling Off the Bone, and From Heaven are available from Comedy Central Records, Amazon and iTunes. He has earned the U.S. Comedy Arts Festival’s Jury Award, praise from Ricky Gervais as one of the best comedians of 2009, and accolades from The Onion’s A.V. Club, which declared Medium Energy one of the best comedy albums of the decade. <br /><br /><br />Todd was the subject of a recent New York Times Arts section cover story, which referred to him as a “master of standup” and noted “when it comes to live performance, few comics are more consistently funny.”<br /><br /><br />In April 2013 the Todd Barry Podcast debuted. It reached #1 on the iT<br /><br /><br /> “Comedy savants revere this Conan and Letterman veteran’s hushed, singsong sarcasm.” – Entertainment Weekly<br /><br /><br />“Piercing, blinding, slaying, violating wit.” – NPR<br /><br /><br />“Infuses his observational comedy with a wonderfully individual disdain.” – The Times of London<br /><br /><br />“He doesn't suffer fools, and fortunately for his comedy his definition of ‘fool’ doesn't discriminate.” – Pitchfork.com<br /><br /><br /> “Acerbic wit, deadpan delivery and wickedly smart punchlines.” – Time Out New York<br /><br /><br />“Barry is so beautifully arid he is positively parched.” – London Evening Standard<br /><br /><br />“The success lies with the delivery, and in his ability to seamlessly merge ad-libbed material with his prepared schtick.” – The Age, Melbourne",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293831",
+        "date": "Thu, Feb 23, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-02-23T19:30:00.000Z"
+      }
+    ],
+    "summary": "New York City-based comedian and actor Todd Barry is widely recognized for his roles as the bongo-pl...",
+    "range": "Feb 23",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjU5MDMw",
+    "title": "Pauly Shore",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102224/600/0",
+    "description": "Stand-up comic, actor, writer, director Pauly Shore tasted super-stardom in 1990 when his precedent-setting MTV show &quot;Totally Pauly&quot; hit the airwaves to major fan approval. The show ran for six years, leading him to television and film roles. In 1993, he wrote and starred in a one-hour HBO television special, Pauly Does Dallas, which drew in even more loyal fans.<br /><br />He had roles in films from 1988, providing supporting comedy relief, but it was the wildly popular Encino Man (1992), partnered with Sean Astin and Brendan Fraser, that put Pauly on the map. Films followed, including Son in Law (1993), In the Army Now (1994), Jury Duty (1995), Bio-Dome (1996) and The Curse of Inferno (1997). He provided voices in animated features such as Casper: A Spirited Beginning (1997) and The Goofy Movie Franchise (1995/2000).<br /><br />His first album, &quot;The Future of America,&quot; was named Best Comedy Album by the college music journalists in 1991, while the National Association of Record Merchandisers nominated his second album, &quot;Scraps from the Future,&quot; for a Best Sellers Award.<br />Pauly has made several appearances in recent years as a recurring guest on Howard Stern's late-night show, as well as David Letterman's talk show. He tours the country with his stand-up comedy act.<br /><br />In 2003, Shore produced, wrote, directed and starred in Pauly Shore Is Dead, a semi-autobiographical mockumentary, and in 2005 starred in the reality television series Minding the Store. His production company, Landing Patch Productions, has produced multiple films and specials: Natural Born Komics (2007), Adopted (2009), Vegas Is My Oyster (2011), and Pauly~tics (2012).<br /><br />Currently, Pauly is working on Pauly Shore Stands Alone, a true-life road documentary that follows him as he performs in obscure towns throughout Wisconsin while dealing with his personal life back home. Pauly is also debuting a podcast series later this year: Pauly Shore’s Interested. In it, he interviews Arsenio Hall, Chris Rock, Whitney Cummings, Former RNC Chair Michael Steele, Dodger’s pitcher Brian Wilson, and many many more.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/259030",
+        "date": "Fri, Feb 24, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-02-24T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/286617",
+        "date": "Fri, Feb 24, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-02-24T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/286616",
+        "date": "Sat, Feb 25, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-02-25T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/286618",
+        "date": "Sat, Feb 25, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-02-25T21:30:00.000Z"
+      }
+    ],
+    "summary": "Stand-up comic, actor, writer, director Pauly Shore tasted super-stardom in 1990 when his precedent-...",
+    "range": "Feb 24-25",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk1MTMw",
+    "title": "Marcus and Guy Seidel SPECIAL EVENT",
+    "price": "$15",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/99133/600/0",
+    "description": "Comedian/impressionist Marcus (NBC’s Last Comic Standing) and comedian/musician Guy Seidel (winner of Utah’s Funniest Person) are a comedy duo unlike any other. Both nationally touring headlining comics, the two friends have come together to combine their talents into an unbelievable Musical Impression comedy show that literally has to be heard to be believed. Spanning decades, this incredible show pays tribute to the best voices, songs and artists from all genres from the last 50 years and can performed at any rating level from squeaky clean on up!! The two comics conceived and wrote the show because of their love for all music. Their eclectic taste and vast knowledge also lead to great discussions on their new and extremely popular DirtPod podcast. A funny take on all things music, the DirtPod has already gained a rabid following and dedicated fan base. Whether live on stage together, or behind mics in a studio, these two are a hilarious duo unlike anyone else out there.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/295130",
+        "date": "Fri, Feb 24, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-02-24T20:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/295131",
+        "date": "Sat, Feb 25, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-02-25T20:00:00.000Z"
+      }
+    ],
+    "summary": "Comedian/impressionist Marcus (NBC’s Last Comic Standing) and comedian/musician Guy Seidel (winner o...",
+    "range": "Feb 24-25",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzMjQx",
+    "title": "Open Mic",
+    "price": "$5",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102199/600/0",
+    "description": "Every Wednesday night is our weekly Wiseguys Open Mic night. This is the night to see the 20 to 25 of the best local, amateur and professional comedians in Utah perform. Not only do we feature great local comedians, but we also have our share of touring comedians who happen to stop by to perform. So, you never know who you may see on Wednesday Wiseguys Open Mic night, but you can always count on an awesome and interesting time! Wiseguys Open Mic is also your chance to try your hand at stand-up comedy. Every comedian that is making a living as a professional started out at open mic and it's every Wednesday at Wiseguys at the Gateway in downtown Salt Lake City. If you think you're funny and you want to give it a shot then come on down! Maybe you're the next Seinfeld...you never know until you get up there and give it a try! Bring your friends. We encourage you to invite lots of people. The more friends you bring the funnier you will seem! Showtime 7:30pm. Doors open at 6pm. We'll see you there!",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293241",
+        "date": "Wed, Mar 1, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-03-01T19:30:00.000Z"
+      }
+    ],
+    "summary": "Every Wednesday night is our weekly Wiseguys Open Mic night.",
+    "range": "Mar 1",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2MDU2",
+    "title": "Ronald McDonald House Charity Comedy Show w Ben Gleib SPECIAL EVENT",
+    "price": "$20",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102207/600/0",
+    "description": "This year's headliner is Ben Gleib! Ben Gleib is a standup comedian, actor, and TV host, perhaps best known as a round table regular on the hit show “CHELSEA LATELY” on E! appearing on the show over 85 times. Esquire named him one of “Six comedians who could be comedy’s next big thing.” He is the voice of Marshall the Sloth in 20th Century Fox’s “ICE AGE – CONTINENTAL DRIFT” which is now the #1 animated movie of all-time internationally. He just worked for THE OSCARS, hosting The Academy’s first ever “Oscar Roadtrip,” which was featured on ABC’s “OSCARS PRE-SHOW.” Ben was also a guest star this season on the popular E! scripted series “AFTER LATELY” and is one of the stars of Kevin Smith’s new movie “JAY AND SILENT BOB’S SUPER GROOVY CARTOON MOVIE.” Gleib also makes appearances as a guest correspondent on CNN, sharing his comedic take on politics.<br /><br /> <br /><br />His weekly podcast, LAST WEEK ON EARTH WITH BEN GLEIB, on the Smodcast Network, debuted on iTunes as the #9 Comedy Podcast in the world, and was #1 on Stitcher for over 20 straight weeks. He was recently on tour performing to sold-out Arenas all over North America opening for Dane Cook.  Gleib was one of the stars of the SyFy series “INSANE OR INSPIRED?” hosted “DOG PARK SUPERSTARS” and “GSN LIVE” for GSN, hosted the webseries “BEHIND ENEMY LINES” for Yahoo!, “IS IT MANLY?” for Egotastic, and the official “LIVE RED CARPET” for “The Grammys.” He also starred in the NBC primetime comedy series THE REAL WEDDING CRASHERS, recently hosted DOG PARK SUPERSTARS and GSN LIVE for GSN, and has appeared on “GOOD MORNING AMERICA,” “SPORTSCENTER,” “VH1'S BIG MORNING BUZZ LIVE,” “EXTRA,” “ACCESS HOLLYWOOD LIVE,” and THE GREENROOM with PAUL PROVENZA on SHOWTIME. He will also be voicing two characters in the popular Disney animated series “PHINEAS AND FERB,”<br /><br /> <br /><br />Gleib has performed his standup on THE LATE LATE SHOW on CBS, and on NBC on LAST CALL with CARSON DALY and LAST COMIC STANDING. He also makes frequent appearances talking politics on NPR on PATT MORRISON’S COMEDY CONGRESS, for which they recently won a prestigious GOLDEN MIC Award.<br /><br /> <br /><br />When in Los Angeles, he can often be seen performing at the legendary Hollywood Improv.<br /><br /> <br /><br />No stranger to the internets, Gleib’s online videos have received a total of more than 15 MILLION VIEWS.  In 2010 he did comedic news pieces for Myspace. This was the first time they have ever given anyone a talent deal, and his videos were reviewed as “The best thing Myspace has ever done.”<br /><br /> <br /><br />In 2006 he sold a pilot called THE GLEIB SHOW to FOX produced by Saturday Night Live’s Lorne Michaels and NBC/Universal. Before that “The Gleib Show” ran for 3 seasons as the #1 show on the National Lampoon Network, airing to millions of college students across the country. And even before that, he did it for 4 years in college, at The University of California, San Diego, where his show was the subject of his Honors Thesis, and even became a class that students could take for 4 units. This helped several of his close friends graduate. He was asked to speak at his graduation, and filled it with lots of inappropriate jokes and a Bill Clinton impression.<br /><br /> <br /><br />An LA native, Gleib is a unique voice in comedy, known for a wide range of material, and quick improvisational skills. A versatile performer, he recently shot five other pilots, including a pilot for FOX called Naked But Funny,” WTF?” for GSN, a BET improv comedy show called “Get It In” on which he was the only white cast member, and “CQC” a comedic news show where he got to mess with with Barack Obama, Bill &amp; Hillary Clinton, and ruined a John McCain press conference, getting kicked out by the secret service.  Gleib can also can be seen in a supporting role in the feature film, “Bar Starz” a comedy with Charlie Murphy that can be seen on Netflix.<br /><br /> <br /><br />A workaholic, he has also hosted several pods for CURRENT TV, hosted a webseries called “COUCH CRASHERS” for Playboy’s non-adult division, wrote a monthly column for “Saturday Night Magazine,” and appeared as a guest on FOX REALITY CHANNEL’s REALITY REMIX , TV GUIDE CHANNEL’s REALITY CHAT, and No Good TV’s Up Close with Carrie Keegan(ngtv.com).<br /><br /> <br /><br />He used to write for Collegehumor.com – one of the most popular sites on the internet, and was the voice of Dirk Melvin on the animated series “THE MELVIN BROS.” on gopotato.tv (and youtube.)  Gleib is consistently in the Top 10 on the syndicated radio show “Comedy Countdown” (also on XM,) and is a regular on SIRIUS SATELLITE RADIO. In addition, he has written the RADIO MUSIC AWARDS for ABC and hosted a pilot for E! called CASUAL FRIDAYS.<br /><br /> <br /><br />He has performed in the Vancouver Comedy Festival, the Laughing Matters Festival in the Netherlands, and was selected “Best of the Fest” at the Just For Laughs Chicago Comedy Festival.  He has also performed with The Satiristas, alongside Janeane Garofalo, and Henry Rollins.<br /><br /> <br /><br />In 2006 he released his first comedy album, titled “NOT AVAILABLE IN STORES.”  His second album is due out soon. As soon as he can decide on a title.<br /><br /> <br /><br />Random facts include… when he was still in college he pranked his way onto THE TONIGHT SHOW WITH JAY LENO, and a memorable episode of BLIND DATE, pretending he was an Israeli guy with no social skills, and had one of the most awkward dates ever. For his college talk show, Carmen Electra was his last guest, and Gleib was featured all over her E! True Hollywood Story.<br /><br />He is proudest that he can probably eat more than you.<br />Social Hour – 6:00pm-7:00pm<br />Comedy Show – 7:00pm <br />Ticket price - $20.<br />For over 25 years, the Ronald McDonald House Charities of the Intermountain Area has been dedicated to the health and happiness of children everywhere. And while we can’t always make the medicine taste better, we can certainly ease the pain of a much-needed treatment, and quicken the pace of a long-term recovery.<br />Our Ronald McDonald House and Ronald McDonald Family Rooms provide a temporary home-away-from-home that serves and sustains families of children receiving treatment at area hospitals. Seriously ill or injured children heal much faster and cope much better when surrounded by loved ones, and we offer our house as a place where families can rest and regroup; hope and heal; laugh and love. Together.<br />Through the help of our partner in care, McDonalds – as well as through the donations and gifts from individuals, corporations, organizations and foundations – the Ronald McDonald House in Salt Lake City continues to keep its doors open, and continues to fulfill its mission to support and assist every child who stands in need.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296056",
+        "date": "Thu, Mar 2, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-02T19:00:00.000Z"
+      }
+    ],
+    "summary": "Ready for a good laugh?",
+    "range": "Mar 2",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkxOTk4",
+    "title": "Ben Gleib",
+    "price": "$15",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/100760/600/0",
+    "videoUrl": "https://www.youtube.com/embed/z5rVz21jxiQ?autoplay=0",
+    "description": "Ben Gleib was just named by TBS one of the &quot;funniest comedians working today.&quot;<br /><br />He is host, writer, and executive producer of the Emmy nominated &quot;Idiotest,&quot; the hit comedy brain teaser game show in it's 3rd season on GSN, with 145 episodes. It's the most watched original program on the network.<br /><br />His hilarious hour-long standup special &quot;Ben Gleib - Neurotic Gangster&quot; is currently airing on Showtime.<br /><br />He is also a regular on &quot;The Today Show&quot; with Kathie Lee and Hoda, on their &quot;Guys Tell All&quot; segment, and you may have seen one of his recent appearances on &quot;@Midnight with Chris Hardwick&quot; on Comedy Central.<br /><br />Recently he was guest co-anchor for a week for ABC News digital, from ABC News world headquarters in New York. An unusual gig for a comedian, another example of why he is one of the most multi-talented comics in the country.<br /><br />For 7 years he was a round table regular on &quot;Chelsea Lately&quot; on E! with over 100 appearances! He also played himself on a memorable episode of the E! scripted series &quot;After Lately.&quot;<br /><br />He has toured sold-out arenas all over North America with both Chelsea Handler and Dane Cook, has been headlining comedy clubs around the globe since 2007, and has performed on &quot;The Late Late Show,&quot; &quot;Last Comic Standing,&quot; and twice on &quot;Last Call with Carson Daly.&quot; He is constantly on tour, and is likely performing soon in a town near you.<br /><br />Esquire once called him one of “Six comedians who could be comedy’s next big thing.” The other five were Aziz Ansari, Patton Oswalt, David Cross, Demetri Martin, and Flight of the Conchords. It came true for all of them and it now seems to be Gleib's time.<br /><br />He is the first comedian to ever live stream a full headline set on Facebook Live, and has been doing it for one show in each city on his current tour, 100% improvised, each set getting over 300,000 views. His act is chock full of hilarious material, but he's also one of the best improvisers in standup comedy.<br /><br />A truly unique voice in comedy, he's even been a frequent on-air contributor on CNN, &quot;The Young Turks,&quot; and NPR, winning a Golden Mic for his work on Southern California NPR's &quot;Patt Morrison's Comedy Congress.&quot; Recently he created, executive produced, hosted and was head writer on a spinoff special for GSN called &quot;Political Idiotest,&quot; blending his game show with his love of politics. And he was the anchor of GSN's interstitial series &quot;Man VS Fly.&quot;<br /><br />An accomplished voice over actor, Gleib is one of the stars of Kevin Smith's &quot;Jay and Silent Bob's Super Groovy Cartoon Movie,&quot; is the voice of Marshall the Sloth in &quot;Ice Age: Continental Drift,&quot; (the #2 animated movie of all-time internationally,) and voices Dali in &quot;The Book of Life&quot; starring Channing Tatum. His voices have also appeared in &quot;Phineas and Ferb,&quot; and youtube series &quot;The Melvin Bros.&quot;<br /><br />His podcast “Last Week on Earth with Ben Gleib” on the Smodcast Network debuted at #9 on iTunes Comedy, and was #1 on Stitcher for over 20 weeks. Every Wednesday, he hilariously summarizes news and politics, occasionally being joined by celebrity guests like Bryan Cranston, Meghan McCain, Bob Odenkirk, Sam Donaldson, Moby, Adam Devine, and his parents. (You can subscribe, rate and review on iTunes.)<br /><br />He hosted &quot;Oscar Roadtrip&quot; which was featured on ABC's Oscars Pre-Show for the 85th Academy Awards. He co-wrote and stars in the scripted webseries &quot;CINEDOPES,&quot; available for free on Youtube. Gleib is also one of the leads in the upcoming feature film &quot;Bad People - The Movie&quot; and is making his dramatic acting debut in the sci fi short film &quot;CHANNEL.&quot;<br /><br />In 2007, he starred in the primetime NBC hidden camera comedy series &quot;The Real Wedding Crashers,&quot; a show in which he played multiple characters.<br /><br />In 2006, he sold a pilot to FOX called &quot;The Gleib Show&quot; produced by Saturday Night Live's Lorne Michaels, Broadway Video, and NBC Universal. This was based on a show he did for 3 seasons for the National Lampoon Network, and for 4 years before that in college at UC San Diego. It became a class that students could take for 4 units. (This helped several of his friends graduate. Gleib had the honor of speaking at that graduation.)<br /><br />His online videos have received more than 25 million views, he has worked for all 4 broadcast TV networks, and many of the major cable networks and digital platforms.<br /><br />In 2008, he shot a pilot where he got to meet and mess with Barack Obama and Bill and Hillary Clinton, and ruined a John McCain press conference, getting kicked out by the Secret Service. You can see those clips here.<br /><br />On the radio, he is a regular on the hugely popular shows The Bob and Tom Show, and Kevin and Bean.<br /><br />He also enjoys freestyle rapping, has a rap group called BENS, and is proudest that he is probably better than you at ping pong.<br /><br />He is also aware that he has to work on his posture. He's 6'1&quot; but looks like he's 5'9&quot;.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/291998",
+        "date": "Fri, Mar 3, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-03T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/292000",
+        "date": "Fri, Mar 3, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-03T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/291999",
+        "date": "Sat, Mar 4, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-04T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/292001",
+        "date": "Sat, Mar 4, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-04T21:30:00.000Z"
+      }
+    ],
+    "summary": "Ben Gleib was just named by TBS one of the funniest comedians working today.He is host, writer, and ...",
+    "range": "Mar 3-4",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkyNDAw",
+    "title": "Don Friesen",
+    "price": "$12",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/91366/600/0",
+    "videoUrl": "https://www.youtube.com/embed/2tJ-NSPES9Y?autoplay=0",
+    "description": "His kids think he’s fun. His wife thinks he’s an idiot. Audiences think he’s hilarious! Don is a modern suburban dad just trying to raise his kids and get through the day with a bit of money in the bank and a scrap of dignity intact. With a unique style that can best be described as frenetic and engaging, Don captures the irony of parenting, marriage and everyday absurdities through characters, voices, parodies and some of the best written routines around. He’s a wanna-be geek who constantly upgrades to the latest technology, but can never get it to work, leading to signature bits about tech support, Idiots Guides, texting and passwords. Friesen has recently taken his smart, savvy, and highly-caffeinated comedy to the stage at the Alex Theatre in Glendale, CA, for the taping of his new Showtime one-hour special titled &quot;Ask Your Mom.&quot; In his first nationally released concert special, Don delivers a winning hour of clever, true-to-life “he’s talking about my family up there” comedy that manages to be adult-smart yet family-friendly.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/292400",
+        "date": "Fri, Mar 3, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-03T20:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/292401",
+        "date": "Sat, Mar 4, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-04T20:00:00.000Z"
+      }
+    ],
+    "summary": "If you missed Don's hilarious Showtime one-hour Special, Ask Your Mom you've got to catch him Live!",
+    "range": "Mar 3-4",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzNDM0",
+    "title": "About Last Night",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102206/600/0",
+    "description": "Comedians Brad Williams and Adam Ray share crazy stories from their lives on the road. From sex, to sports, to booze, when a dwarf and a Jew come together the results are unpredictable but always entertaining.<br /><br />Adam Ray<br />Born and raised in the suburbs of Lake Forest Park, WA, Adam got into comedy at an early age, impersonating friends, teachers, and Ace Ventura.<br /><br />In High School, Adam ran his high school’s morning television news program. When it began, it was your basic morning news program. Then Adam and a few friends took it over, and slowly turned it into a weekly sketch show that somehow included the news. Airing every Friday morning for 10 minutes, it was a hit amongst the entire school.<br /><br />In 2001, Adam journeyed to Los Angeles, where he was accepted into the BFA acting conservatory at USC. His junior year he studied abroad in London at the British American Drama Academy.<br /><br />After graduating from the acting school at USC in Los Angeles, Adam has been seen guest starring on “Two Broke Girls,” “WORKAHOLICS,” “Arrested Development,” “According to Jim,” Adult Swim’s “NTSF:SD:SUV,” and this June you can see him opposite Sandra Bullock &amp; Melissa McCarthy in Paul Feig’s new buddy cop comedy “The Heat.”  Aside from his standup and writing for MTV’s “PUNKD,” Adam has over 30 million views on his comedy sketches that he writes and produces weekly on AdamRayTV.com.<br /><br />Brad Williams possesses something that everyone can agree is funny: a disability. Brad is a dwarf. He has appeared on numerous TV shows including Legit, Live at Gotham, the Tonight Show, Jimmy Kimmel Live, Mind Of Mencia, and Pitboss. Brad has also performed for the troops all over the world because soldiers think dwarfs are funny too.<br /><br />Brad’s show is high energy. Robin Williams called him “Prozac with a head.” Brad’s ability to make humorous observations on disability, relationships, sex, and race are winning over audiences and proving that anyone can overcome their shortcomings.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293434",
+        "date": "Wed, Mar 8, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-08T19:00:00.000Z"
+      }
+    ],
+    "summary": "It’s feels like you’re hanging in the room with comedians Adam Ray  Brad Williams when they host the...",
+    "range": "Mar 8",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzMjQy",
+    "title": "Open Mic",
+    "price": "$5",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102199/600/0",
+    "description": "Every Wednesday night is our weekly Wiseguys Open Mic night. This is the night to see the 20 to 25 of the best local, amateur and professional comedians in Utah perform. Not only do we feature great local comedians, but we also have our share of touring comedians who happen to stop by to perform. So, you never know who you may see on Wednesday Wiseguys Open Mic night, but you can always count on an awesome and interesting time! Wiseguys Open Mic is also your chance to try your hand at stand-up comedy. Every comedian that is making a living as a professional started out at open mic and it's every Wednesday at Wiseguys at the Gateway in downtown Salt Lake City. If you think you're funny and you want to give it a shot then come on down! Maybe you're the next Seinfeld...you never know until you get up there and give it a try! Bring your friends. We encourage you to invite lots of people. The more friends you bring the funnier you will seem! Showtime 7:30pm. Doors open at 6pm. We'll see you there!",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293242",
+        "date": "Wed, Mar 8, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-03-08T19:30:00.000Z"
+      }
+    ],
+    "summary": "Every Wednesday night is our weekly Wiseguys Open Mic night.",
+    "range": "Mar 8",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2NTM0",
+    "title": "Jason Mewes SPECIAL EVENT",
+    "price": "$20",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/91373/600/0",
+    "description": "Indie film icon, Jason Mewes, is perhaps best known as the vocal half of the on-screen comedic duo, Jay and Silent Bob. Mewes’ has reprised his role as celebrated character, “Jay,” in a number of hit films. With cult-fans following his controversial antics, Mewes has captured audiences with rebellious banter against his unspoken other half and longtime friend, Kevin Smith (Silent Bob). Since the beginning of the duo’s offbeat work together, Mewes and Smith have continued to build on their beloved character driven roles from the Jay and Silent Bob series.  <br /><br />Mewes is the Creative Producer at SModCo Internet Radio (SIR), which launched in May 2011, as well as the Creative Producer at SModCo Internet TV (SIT), which launched in May 2012 and lives online as a YouTube channel. SModco produces Mewes’ weekly video blog called, Mewes Views, which was also the first SIT video to air.  <br /><br />Mewes recently wrapped Spoilers, alongside Smith in an ambitious online show airing on Hulu. The new show’s unique premise begins with watching a brand new movie with the studio audience, and then opening up the floor for verbal blogging in a free-for-all group chat. The show aims to interact, engage, debate and connect with people who have a similar passion for movies and pop culture. Spoilers will be a Hulu Original Series. In 2011, Mewes co-hosted the TV series, Cinema Enema, which also reviews film in an off-kilter way.  <br /><br />To date, Mewes’ podcast with Smith, Jay and Silent Bob Get Old, completed its 95th episode and is fast approaching #100. Mewes has taken the success of this series and executive produced the DVD version entitled, Jay and Silent Bob Get Old: Teabagging in the UK, which is set to come out July 2012 and is currently available in the UK.  <br /><br />In film as an actor, Mewes is starring in the Wunderkind Pictures feature, Noobz, an indie “gamers” film about four friends and Gears of Wars players who embark on a quest to survive a road trip and win a Gamecon Championship. Jason stars alongside Casper Van Dien, Blake Freeman, Moises Arias, Mindy Sterling, and Jon Gries in the film written and directed by Blake Freeman, with Marvin Wilson as a co-writer. Mewes is also currently in post-production on the film, Rock Jocks, about a group of dysfunctional government employees who find themselves responsible for shooting down an asteroid on track for the Earth.  <br /><br />Mewes’ most noted film credits include: Smith’s award-winning Clerks, Mallrats, Chasing Amy, Dogma, Clerks II, Zack and Miri Make a Porno, and Jay and Silent Bob Strike Back. This string of cult hits all celebrated and continued Mewes’ infamous role as “Jay,” a bawdy, fast talking, and over sexed but very likable guy. For his successful and brow-raising portrayal, MTV honored him with 2007's Dirtiest Mouth Award.  <br /><br />In 2010, Jason appeared in the mobster comedy, The Last Godfather, alongside Harvey Keitel and Blake Clark, in which he played, “Vinnie,” a Mafia boss who trains his mentally impaired son as his successor. In 2012 Mewes stars as the lead in the comedy Money Shot, in which he played “The Pimp” that gets even. Mewes also plays Ben Shapiro in the feature K-11, directed by Jules Stewart currently in post production.",
+    "venue": {
+      "name": "Moab Brewery Theatre at The Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "116 S. Rio Grande",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=116 S. Rio Grande  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296534",
+        "date": "Wed, Mar 8, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-08T20:00:00.000Z"
+      }
+    ],
+    "summary": "Cinema icon Jason Mewes is best known as the potty-mouthed vocal half of Jay and Silent Bob, the on-...",
+    "range": "Mar 8",
+    "location": "Golden Spike",
+    "locationSlug": "golden-spike"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk3NjUx",
+    "title": "Dungeons & Comedy",
+    "price": "$10",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102187/600/0",
+    "description": "Dungeons &amp; Comedy is a monthly show ran by local SLC comics Nicholas Don Smith (creator) and Aaron Orlovitz.  The show features 5 comedians on stage (4 players, 1 Dungeon Master) playing Dungeons and Dragons, armed with character sheets, dice, and their comedic wit. A stand up portion typically precedes the game.<br /><br />Since it's inception in 2014, Dungeons&amp;Comedy has become a staple in the SLC comedy scene, featuring over 50 comedians, and many have returned to do the show 2 or 3 more times.  Dungeons and Comedy ran a show at the 2016 Salt Lake Comic Con.",
+    "venue": {
+      "name": "Corona Showroom at The Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "190 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=190 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/297651",
+        "date": "Wed, Mar 8, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-08T21:30:00.000Z"
+      }
+    ],
+    "summary": "Dungeons  Comedy is a monthly show ran by local SLC comics Nicholas Don Smith (creator) and Aaron Or...",
+    "range": "Mar 8",
+    "location": "Golden Spike",
+    "locationSlug": "golden-spike"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk3NjMw",
+    "title": "Trump Dump",
+    "price": "$10",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102210/600/0",
+    "videoUrl": "https://www.youtube.com/embed/STi8j70OWdI?autoplay=0",
+    "description": "If you loved him or missed him with Bernie (James Adomian) back in June, you'll be glad that Trump (Anthony Atamanuik) is back to make The golden Spike Comedy Festival kick-off night great again.<br /><br />Anthony Atamanuik is a comedian and actor in New York City. He is a member of the legendary improv team DEATH BY ROO ROO and is the co-host of ASSSSCAT3000 at UCB New York. Anthony has appeared on 30 ROCK, BROAD CITY, HULU's DIFFICULT PEOPLE, DINNER WITH BRETT GELMAN specials on Adult Swim, MTV's TEACHERS LOUNGE and as himself, bar tending on Bravo's WATCH WHAT HAPPENS LIFE.<br /><br />You can see him on a variety of platforms, College Humor, Funny Or Die, Comedy Central Digital and even a ViewMaster photo series by Colbert Show writer Erik Drysdale.<br /><br />Anthony will be appearing in upcoming episodes of USED PEOPLE and the feature film THE OUTSKIRTS.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/297630",
+        "date": "Wed, Mar 8, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-08T21:30:00.000Z"
+      }
+    ],
+    "summary": "If you loved him or missed him with Bernie (James Adomian) back in June, you'll be glad that Trump (...",
+    "range": "Mar 8",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk3NTkw",
+    "title": "GUYS WE F@#KED",
+    "price": "$25",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102227/600/0",
+    "description": "Join co-hosts Corinne Fisher and Krystyna Hutchinson as they bring their hit podcast to life through games, audience participation, rants, stories, stand-up comedy, and never before seen video.<br /><br />Corinne Fisher &amp; Krystyna Hutchinson (together known as the comedy duo Sorry About Last Night) launched Guys We F@#ked: The Anti Slut-Shaming Podcast in December 2013. The podcast now boasts over half a million subscribers is one of the top downloaded weekly podcasts on iTunes and in the top five most downloaded comedy podcasts. With its positive feminist message, the show has been featured in The Huffington Post, The Daily Beast, Elle, Bust, Salon Shape, Glamour, and on Sirius Radio. They have had on amazing guests such as Amber Rose, Dan Savage, Jim Norton, Horatio Sanz, Andy Dick and Lizz Winstead (Co-Creator of The Daily Show), among others over the years. <br /><br />Catch Krystyna and Corinne on their national comedy tour LIVE in Salt Lake City",
+    "venue": {
+      "name": "Moab Brewery Theatre at The Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "116 S. Rio Grande",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=116 S. Rio Grande  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/297590",
+        "date": "Thu, Mar 9, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-09T19:00:00.000Z"
+      }
+    ],
+    "summary": "Like Guys We F@#ked: The Anti Slut-Shaming Podcast?",
+    "range": "Mar 9",
+    "location": "Golden Spike",
+    "locationSlug": "golden-spike"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkwNDA5",
+    "title": "wellRED Comedy Tour",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102201/600/0",
+    "videoUrl": "https://www.youtube.com/embed/IUimEmvMEFY?autoplay=0",
+    "description": "There's a New South and we're coming to claim it. <br /><br />Comedy and writing partners Trae Crowder, Drew Morgan and Corey Ryan Forrester are ready to meet the people. You've seen Trae’s Liberal Redneck viral videos, you've read their weekly blog (https://oursundybest.wordpress.com/) and now you'll see them at their best - performing stand up comedy. <br /><br />Trae Crowder: @traecrowder<br />Recently earning national attention (or notoriety, depending on your viewpoint) for his &quot;Liberal Redneck&quot; series of viral videos, Trae Crowder has been performing his particular brand of Southern-fried intellectual comedy in the Southeast and beyond for the past six years. Trae is also a writer and is currently a member of NBC Universal's Talent Infusion Program after being invited to their prestigious Late Night Writer's Workshop in 2015. <br /><br />Drew Morgan: @averagedrew<br />Hailing from rural East Tennessee, Drew draws on his experiences as a small-town son of a preacher man who has lived in Africa, Australia, Miami, Boston, and (currently) New York City. Weaving his stories together with observations on culture, religion, and identity, he's like Mark Twain on acid, or maybe just a confused Southerner pretending to have his shit together. He is a good dancer. <br /><br />Corey Ryan Forrester (CoFo): @coreyfcomedy<br />Corey has been writing and performing stand up comedy since the age of sixteen - before he could legally work in a comedy club. His North Georgia roots have given Corey an affinity for Southern wit and storytelling. He may often wear a PBR hat, but don't assume there is anything blue collar about him. CoFo has thoughts on everything from race to religion, politics and gender. He loves women and cheese. All dairy, actually.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/290409",
+        "date": "Fri, Mar 10, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-10T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/294721",
+        "date": "Fri, Mar 10, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-10T21:30:00.000Z"
+      }
+    ],
+    "summary": "This show gives you three southern comics.",
+    "range": "Mar 10",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzODk5",
+    "title": "Never Not Funny",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102211/600/0",
+    "videoUrl": "https://www.youtube.com/embed/FMJwEPqNdCc?autoplay=0",
+    "description": "NEVER NOT FUNNY – The Jimmy Pardo Podcast<br /> <br />Never Not Funny is an award-winning weekly podcast hosted by comedian and TV personality Jimmy Pardo. Broadcasting since 2006, the show features free-form conversations between Pardo, his producer Matt Belknap and his sometimes famous, always funny friends. NNF has appeared on Entertainment Weekly's Must List, in Esquire, GQ and Billboard Magazine, and was named a top comedy podcast by iTunes, Mashable, and The AV Club.<br /> <br />Notable Past guests include: Conan O’Brien, Jon Hamm, Amy Poehler, Zach Galifianakis, Jon Cryer, Paul Reiser, Sarah Silverman, Richard Lewis, Bob Odenkirk, David Steinberg, Tom Bergeron, Lisa Loeb, Colin Hay and Weird Al Yankovic<br /> <br />Never Not Funny has raised over $750,000 for “Smile Train” with its annual charity event “Pardcast-A-Thon”.<br /> <br />JIMMY PARDO:<br />Jimmy Pardo has been seen on countless television shows including Conan, The Tonight Show, The Late Late Show, @Midnight and his own ½ hour special on Comedy Central.<br /> <br />What they are saying about Never Not Funny:<br /> <br />The funniest host in podcasting – Entertainment Weekly<br /> <br />The #1 relatively obscure thing you need to be paying attention to – GQ Magazine<br /> <br />NNF is serving up the funniest podcast eps… hilarious - Nick Bernstein - VP, CBS Late Night<br /> <br />NNF is the most consistently funny podcast out there. - The Onion A.V. Club<br /> <br />www.nevernotfunny.com<br />Jimmy Pardo:<br />As funny talking to a stranger in an elevator as he is talking to a crowd onstage, Jimmy Pardo is best known for his singular stand-up persona.  After years of honing his act by touring and showcasing, he threw away all of his jokes and now spends his show improvising and interacting with the crowd.<br /> <br />In 2006, Jimmy became a podcasting pioneer when he began hosting the raucous-but-smart weekly podcast Never Not Funny, which Entertainment Weekly called “one of the sharpest and gut-bustingest shows on the Internet.” The show has been named a top comedy podcast by The AV Club, iTunes and USA Today, and its guest list (Conan O’Brien, Richard Lewis, Patton Oswalt and Sarah Silverman, just to name a few) reads like a Who’s Who of comedy.  Previously a paid subscriber podcast, Never Not Funny joined the Earwolf podcasting network in 2014.  Never Not Funny also hosts the annual Pardcast-a-Thon fundraiser, a 12-hour marathon webcast to benefit Smile Train.  To date, the Pardcast-a-Thons have raised almost half a million dollars for charity.<br /> <br />In addition to podcasting and touring, Jimmy utilizes his trademark crowd work skills as Conan O'Brien's opening act at “Conan” tapings. Jimmy has also appeared on “Conan” as a panel guest, a field correspondent and recently filled in for Andy Richter as co-host. He also conducts the unconventional celebrity backstage interviews for TeamCoco.com’s “The Pardo Patrol.”<br /> <br />Jimmy has performed stand-up on &quot;The Tonight Show with Jay Leno,” &quot;The Late Late Show with Craig Ferguson” and his own half-hour “Comedy Central Presents” special.  He hosted &quot;National Lampoon's Funny Money&quot; for Game Show Network, four seasons of AMC's &quot;Movies at Our House,” and episodes of NBC’s “Late Friday” and VH1’s &quot;The Surreal Life” and &quot;Love Lounge.”  He has appeared in acting roles on “Comedy Bang Bang,” “Monk,” and “That 70’s Show” and the independent films &quot;Relative Strangers&quot; and &quot;The Godfather of Green Bay.&quot;<br /> <br />Jimmy has recorded three comedy albums: &quot;Uno,” “Pompous Clown” and 2013’s “Sprezzatura,” which Entertainment Weekly named one of the 5 Best Stand-Up Albums of the year.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293899",
+        "date": "Fri, Mar 10, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-03-10T19:30:00.000Z"
+      }
+    ],
+    "summary": "Never Not Funny is an award-winning weekly podcast hosted by comedian and TV personality Jimmy Pardo...",
+    "range": "Mar 10",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2Mzg5",
+    "title": "Chris Redd",
+    "price": "$12",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/101981/600/0",
+    "videoUrl": "https://www.youtube.com/embed/Ps6dWZuuWNY?autoplay=0",
+    "description": "CHRIS is an exciting actor, writer, standup, sketch and improv performer. In Film, CHRIS can currently be seen in a very flashy role opposite Andy Samberg in the Universal Feature POP STAR: NEVER STOP NEVER STOPPING produced by Judd Apatow. He plays Andy's rapper nemesis &quot;Hunter The Hungry&quot;. Next up, he will be seen in fun roles opposite Amy Poehler and Will Ferrell in the New Line / Gary Sanchez film THE HOUSE, the Netflix film A FUTILE AND STUPID GESTURE opposite Will Forte, and he is the lead of the independent comedy FAT CAMP.  In TV, CHRIS is shooting a recurring role in Season 2 of the Netflix series LOVE and appears in Jake &amp; Amir’s new digital series LONELY AND HORNY on Vimeo . He previously starred in the ABC pilot FAMILY FORTUNE created by Matt Hubbard, Tina Fey and Robert Carlock, and in Lou Wallach’s UNT SKETCH COMEDY PILOT for NBC. Additionally, CHRIS was featured as a Standup New Face last summer at JFL Montreal. Originally from Chicago CHRIS was a frequent performer at Second City, iO, The Annoyance and The Playground.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296389",
+        "date": "Fri, Mar 10, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-10T20:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/296390",
+        "date": "Sat, Mar 11, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-11T20:00:00.000Z"
+      }
+    ],
+    "summary": "CHRIS is an exciting actor, writer, standup, sketch and improv performer.",
+    "range": "Mar 10-11",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2Mzg1",
+    "title": "The Dollop",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/101695/600/0",
+    "description": "History buff and comedian Dave Anthony was considering starting a new podcast in<br />2014. His idea was to write up an unknown story from American history and read it to a different comedian each week. Having not heard of the story before, Dave hoped the comedian’s reaction would be hilarious. He gave it a go and his first guest was comedian Gareth Reynolds. They immediately clicked and fans flooded social media telling Dave to never change the co-host. <br />And he didn’t. Sticking to the formula of Dave reading Gareth a story he has never heard, The Dollop quickly shot up the charts. Fans of both comedy and history were drawn to the wild stories and quick improv skills of Gareth. With millions of downloads, The Dollop has become a regular presence on top of the podcast charts, as well as selling out shows in both the US and Australia.",
+    "venue": {
+      "name": "Moab Brewery Theatre at The Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "116 S. Rio Grande",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=116 S. Rio Grande  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296385",
+        "date": "Sat, Mar 11, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-11T19:00:00.000Z"
+      }
+    ],
+    "summary": "*THIS EVENT WILL BE HELD AS PART OF THE GOLDEN SPIKE COMEDY  PODCAST FESTIVAL AND WILL TAKE PLACE IN...",
+    "range": "Mar 11",
+    "location": "Golden Spike",
+    "locationSlug": "golden-spike"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk1MDAz",
+    "title": "Margaret Cho",
+    "price": "$30",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/90139/600/0",
+    "description": "The Woman! The Comic! The Legend!<br />Margaret Cho was born Dec. 5, 1968 and raised in San Francisco. “It was different than any other place on Earth,” she says. “I grew up and went to grammar school on Haight Street during the ’70s. There were old hippies, ex-druggies, burnouts from the ’60s, drag queens, and Chinese people. To say it was a melting pot – that’s the least of it. It was a really confusing, enlightening, wonderful time.”<br /><br />Her grandfather was a Methodist minister who ran an orphanage in Seoul during the Korean War. Ignoring the traditions of her patriarchal culture, her mother bravely resisted an arranged marriage in Korea and married Margaret’s father who writes joke books – in Korean. “Books like 1001 Jokes for Public Speakers – real corny stuff,” Cho says. “I guess we’re in the same line of work. But we don’t understand each other that way. I don’t know why the things he says are funny and the same for him.”<br /><br />What Margaret did know is that she didn’t love being a kid. Racing toward adulthood to escape bullying, she began writing jokes at 14 and professionally performing at age 16. Getting picked on, and feeling disenfranchised, is a subject that’s very near to Margaret’s heart. She has become a sort of “Patron Saint” for Outsiders, speaking for them when they are not able to speak for themselves Along with advocating for gay rights and bullying, Margaret recently began working with Homeless people on the streets of San Francisco as a tribute to her dear friend, Robin Williams.<br /><br />Soon after starting her Stand Up career, Margaret won a comedy contest where first prize was opening for Jerry Seinfeld. She moved to Los Angeles in the early ’90s and, still in her early twenties, hit the college circuit, where she immediately became the most booked act in the market and garnered a nomination for “Campus Comedian of The Year.” She performed over 300 concerts within two years. Arsenio Hall introduced her to late night audiences, Bob Hope put her on a prime time special and, seemingly overnight, Margaret Cho became a national celebrity.<br /><br />Her groundbreaking, controversial, and short-lived ABC sitcom, All-American Girl (1994) soon followed. Oddly, while chosen because of who she was – a non-conformist Korean American woman with liberal views – the powers-that-be then decided they wanted her to “tone it down” for the show. Challenging Margaret’s feelings for both who she was and how she looked, she soon realized that though she was an Executive Producer, it was a battle she would not win. “For fear of being too “ethnic,” the show got so watered down for television that by the end, it was completely lacking in the essence of what I am and what I do.”<br /><br />The experience was a traumatic one, bringing up unresolved feelings left over from childhood, and Margaret developed an eating disorder as a response to criticism about her body. She was so obsessive in her goal to try to be what she thought others wanted, she landed in the hospital with kidney failure. Through out a period of self-abuse, Margaret continued performing to sold-out audiences across the country in comedy clubs, theaters, and on college campuses, working to channel her anger in to something more positive.<br /><br />In 1999, her groundbreaking, off Broadway one-woman show, I’m The One That I Want, toured the country to national acclaim and was made into a best-selling book and feature film of the same name. After her experience with All-American Girl, Margaret wanted to make sure she would only have to answer to herself, making sure she was responsible for the distribution and sales of her film. The concert film, which garnered incredible reviews, broke records for ‘Most money grossed per print’ in movie history. In 2001, after the success of her first tour, Cho launched Notorious C.H.O., a smash-hit 37-city national tour that culminated in a sold-out concert at Carnegie Hall. Notorious C.H.O., hailed by the New York Times as “Brilliant!”, was recorded and released as a feature film. Both films were acquired by Showtime Cable Networks, and produced by Margaret’s production company, a testament to the success of Margaret’s bold business model.<br /><br />In March of 2003, Margaret embarked on her third sold-out national tour, Revolution. It was heralded by the Chicago Sun Times as “Her strongest show yet” and the CD recording was nominated for a Grammy for Comedy Album of the Year. In 2005, Cho released Assassin, which The Chicago Tribune crowed “Packs passion in to each punch.” The concert film premiered in select theatres and on the gay and lesbian premium channel Here! TV.<br /><br />In 2007, Margaret hit the road with Cyndi Lauper, Debbie Harry and Erasure, along with indie faves The Dresden Dolls and The Cliks, to host the True Colors Tour, benefiting the Human Rights Campaign. A true entertainment pioneer, Margaret also created and starred in The Sensuous Woman, a live variety show featuring vaudevillian burlesque and comedy, which she took for an extended off-Broadway run in the fall.<br /><br />Margaret returned to TV in 2008 on the VH1 series, The Cho Show. Describing it as a ‘reality sitcom,’ Margaret said at the time, “It’s the closest I’ve been able to come on television to what I do as a comic.” The Cho Show followed Margaret, her real parents, and her eccentric entourage through a series of irreverent and outrageous experiences, shaped by Margaret’s ‘anything goes’ brand of stand-up.<br /><br />The aptly titled Beautiful came next, exploring the good, bad and ugly in beauty, and the unattractive marketers who shape our world. The concert premiered in Australia at The Sydney Theater, marking the first time Margaret debuted a tour abroad. While touring through the US, the concert was filmed at the Long Beach theatre, aired as a special on Showtime in 2009, and then released as both a DVD and a book. Venus Zine hailed Margaret, and the show, saying “her fierce activism, which addresses bigger issues such as what it’s like to be demoralized by your country and culture…(left) no subject too taboo for the fearless stand-up queen.”<br /><br />In 2009 Margaret nabbed a starring role in the comedy/drama series Drop Dead Diva, which aired for six seasons on the Lifetime network. Margaret enjoyed being part of a team, and not necessarily having the sole responsibility for keeping things afloat. “(Drop Dead Diva) was very fulfilling. It’s a lot about the things I talk about, like body image, and women feeling good about themselves, and learning to be visible.”<br /><br />Never one to shy away from a challenge, Margaret stepped right up to the proverbial plate when asked to do Season 11 of the highly- rated Dancing with the Stars. Paired with pro Louie Van Amstel, Margaret was on one of the show’s most controversial seasons. “I really wanted to do DWTS so much. I love the show and I love dancing. It seemed like it would be very exciting, which it was. It was also very difficult because I was touring as well.” Margaret got a very strong reaction to her Rainbow Dancing Dress during a time when the issue of bullying, especially among gay teens, was all over the media. “I am very proud to have been able to wear a gay pride dress on a show that is so conservative. It is a wonderful thing to have every one remember me by. I wanted to send an urgent message to gay teenagers to make them feel included and loved. That dress was my statement to them about pride.”<br /><br />2010 culminated with another high honor, a second Grammy Award nomination for Comedy Album of the Year for Cho Dependent, her incredibly funny collection of music featuring collaborations with Fiona Apple, Andrew Bird, Grant Lee Phillips, Tegan &amp; Sara, Ben Lee and more. The album received critical acclaim, with The Oregonian stating, “This was a chance to see and hear an already drop-dead funny diva growing, flexing new musical muscle, and fearlessly mature.” The album is funny, yes, but also quite musical, featuring not only her surprisingly strong singing voice, but her skill on the guitar, banjo and dulcimer. “I was inspired to make beautiful music with a comic edge.  I took this very seriously, taking vocal and guitar lessons while I was touring. I was very devoted to learning and understanding how I could accompany myself.”<br /><br />Margaret self released Cho Dependent on her own Clownery Records, and was encouraged by the acclaim, as there are only a handful of people putting out albums of comedy music – “Weird” Al Yankovic, Flight of the Conchords, The Lonely Island, to name a few – but no women. In 2011, Margaret released the live concert film of Cho Dependent, which also had its cable network debut on Showtime. Audiences who caught these performances live can attest that Cho hasn’t lost any of her edge. Shot at the Tabernacle in Atlanta, GA, Cho remains uncensored, taking aim at the Palin family, her stint on Dancing With the Stars, smoking pot and living in a world with ‘sexting.’  The DVD is characteristically no-holds-barred Margaret and instantly a classic.<br /><br />In 2012, Margaret spent whatever free time she had crafting her all new standup show, the uproariously and aptly named MOTHER, which kicked off with both a US and European tour. According to Margaret, “MOTHER offers up an untraditional look at motherhood and how we look at maternal figures and strong women in queer culture. There’s nothing we don’t discuss, including race, drugs, sexuality – gay-straight-everything in between, celebrity, culture, politics – nothing is sacred – least of all this MOTHER.”<br /><br />Paradox not lost, Margaret had to re-schedule some of the shows she had booked mid-September so she could attend the Emmy Awards with her mother. Nominated for a Primetime Emmy for Outstanding Guest Actress in a Comedy Series for her hilarious stint on 30 Rock as gender-bending North Korean leader Kim Jong Il, Margaret was thrilled with the role and the nomination, and with Tina Fey. “Tina and I did a pilot together, Cabot College, and I was so happy to be working with her again. She is such a force, and I am grateful to know her.  I will take any opportunity to team up with her.“<br /><br />Although the pilot wasn’t picked up, Margaret’s creative side is moving ahead at full speed.  First up – honoring her late friend, Robin Williams. “I found I couldn’t stop grieving Robin.  He was an idol of mine before he became a friend, and he was an amazing advocate for homeless people, raising over 70 million dollars for homeless Men, Women and Children through the Comic Relief comedy Specials. He’d also stipulate in his movie contracts that a certain percent of the crew had to be homeless. Robin was a naturally compassionate man and he understood implicitly that what these people needed was to be treated with dignity.” When the sadness of his passing overwhelmed Margaret, a mutual friend told her not to grieve Robin, but to ‘Be Robin’. The hashtag #BeRobin was born, and Margaret began setting up shop in different places in and around San Francisco, putting the information of where she’d be on her Facebook and Twitter pages. “It’s very simple, all I do and create a distraction – comedy and music – for several hours. The generosity of people has amazed me. Hairdressers and nail technicians have come down to give services to the Homeless community, we’ve had incredible food donations, sanitary supplies for women, clothing, money and more. Our motto is ‘If you have, give; if you need, take.” Margaret has a GoFundMe page for the project: Http://GoFundMe.com/BeRobin.<br /><br />Incredibly, the #BeRobin project has led to more music from Margaret. She recently decided that her next two albums worth of material would be an outgrowth of the work she’s doing for the homeless community. “I am performing some new songs with the #BeRobin events, and wasn’t really sure how I was going to release my next set of music. I was waiting to see what the right thing was, and this presented itself.” Margaret takes her musicianship very seriously, taking lessons, practicing and working with top musicians. Produced by David Garza and Garrison Starr, the next album will be a comedy-music hybrid not unlike Cho Dependent.  “I have so many friends in music, and it’s such a big part of my social life, so I am always recording and finding ideas for songs. Now I have a plan, and all the proceeds will benefit this cause.”<br /><br />Margaret is also excited about the new talk show she has debuting on TLC in January called All About SEX. Margaret is part of the panel of hosts that include comedian Heather McDonald and actress Marissa Jaret Winokur. “All About SEX is a late night talk show where viewers call in and ask questions about sex. I cover sex toys and alternative sexuality. I understand that world from the inside. In fact, I was on the Board of Good Vibrations, a pioneering sex toy store for women that removed the stigma of women not only buying sex toys, but experimenting with what makes them feel good.”<br /><br />2015 also brings Margaret back to the Stand Up stage, as she films her next comedy special, There’s no I in Team, but There is a Cho in Psycho, at the Gramercy Theatre in New York City in March. “This show is about insanity, about the anger I feel about everything happening in the world right now, from police brutality to racism to the rising tide of violence against women. I think everyone has a feeling about that mania and that rage. This show is the advanced version of MOTHER, the Wolf Mother.” One of the things Margaret is most excited for is the artwork for the show, a portrait she commissioned that was painted entirely in her own blood. “The artist Vincent Castiglia did an amazing portrait of me using my blood. I found it to be very symbolic since There’s no I in Team, but There is a Cho in Psycho has a lot to do with anger, rage and blood letting. It’s a very beautiful portrait and I am really proud of it.”<br /><br />With so much going on in her artistic life, Margaret has never turned away from the causes that are important to her. She is incredibly active in anti-racism, anti-bullying and gay rights campaigns, and has been recognized for her unwavering dedication. She was the recipient of the Victory Fund’s 2008 Leadership Award and the first ever Best Comedy Performance Award at the 2007 Asian Excellence Awards. She also received the First Amendment Award from the ACLU of Southern California, and the Intrepid Award from the National Organization for Women (NOW). Throughout her career, she has been honored by GLAAD, American Women in Radio and Television, the Lambda Legal Defense and Education Fund, the National Gay and Lesbian Task Force (NGLTF), the Asian American Legal Defense and Education Fund (AALDEF), and PFLAG for making a significant difference in promoting equal rights for all, regardless of race, sexual orientation or gender identity. In June of 2011, Margaret was honored by LA Pride, receiving a Lifetime Achievement Award, recognizing an individual whose lifetime body of work has left a lasting major imprint on the LGBT community.<br /><br />Through her hard work, Margaret has had the opportunity to be heard, to extend her point of view and become regarded as a true pioneer in her field. She takes none of it for granted. “It’s a wonderful thing to be known as a ‘safe haven’ for people. A lot people who come to my shows don’t necessarily consider themselves traditional comedy fans. I seem to be a safe alternative for people who don’t think they’re being represented in society. They come because my point of view satisfies a lot of what needs to be said out there, and that makes me really proud.”",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/295003",
+        "date": "Sat, Mar 11, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-11T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/295005",
+        "date": "Sat, Mar 11, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-11T21:30:00.000Z"
+      }
+    ],
+    "summary": "Margaret is back to stand up and filmed her comedy special, There’s no I in Team, but There is a Cho...",
+    "range": "Mar 11",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzMjQz",
+    "title": "Open Mic",
+    "price": "$5",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102199/600/0",
+    "description": "Every Wednesday night is our weekly Wiseguys Open Mic night. This is the night to see the 20 to 25 of the best local, amateur and professional comedians in Utah perform. Not only do we feature great local comedians, but we also have our share of touring comedians who happen to stop by to perform. So, you never know who you may see on Wednesday Wiseguys Open Mic night, but you can always count on an awesome and interesting time! Wiseguys Open Mic is also your chance to try your hand at stand-up comedy. Every comedian that is making a living as a professional started out at open mic and it's every Wednesday at Wiseguys at the Gateway in downtown Salt Lake City. If you think you're funny and you want to give it a shot then come on down! Maybe you're the next Seinfeld...you never know until you get up there and give it a try! Bring your friends. We encourage you to invite lots of people. The more friends you bring the funnier you will seem! Showtime 7:30pm. Doors open at 6pm. We'll see you there!",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293243",
+        "date": "Wed, Mar 15, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-03-15T19:30:00.000Z"
+      }
+    ],
+    "summary": "Every Wednesday night is our weekly Wiseguys Open Mic night.",
+    "range": "Mar 15",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2Nzkz",
+    "title": "Shane Mauss",
+    "price": "$15",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102213/600/0",
+    "videoUrl": "https://www.youtube.com/embed/-y2FY1W9oiA?autoplay=0",
+    "description": "A GOOD TRIP TOUR<br /><br />AN HOUR OF COMEDY CENTERED AROUND PSYCHEDELICS.<br />Originally from Wisconsin, Shane Mauss caught his first break when he was awarded ‘Best Stand-Up” at The HBO US Comedy Arts Festival in 2007.  This led to his TV debut and first of five appearances on Conan.<br /><br />Since that time he’s been on Jimmy Kimmel, Showtime, has had a Comedy Central Presents, a Netflix special ‘Mating Season’, and most recently released album inspired by breaking both of his feet in a hiking mishap called ‘My Big Break’ which spent time at #1 on the comedy iTunes charts. <br /><br />Shane has also been getting a lot of attention as a popular guest on podcasts such as You Made It Weird, Bertcast, WTF, Duncan Trussell’s Family Hour, TOFOP, Crabfeast, Never Not Funny, Keith and The Girl and last year he started traveling around the country interviewing scientists about the meanings of life for his own podcast “Here We Are” which has a 5 star rating on iTunes.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296793",
+        "date": "Thu, Mar 16, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-03-16T19:30:00.000Z"
+      }
+    ],
+    "summary": "A GOOD TRIP TOURAN HOUR OF COMEDY CENTERED AROUND PSYCHEDELICS.Originally from Wisconsin, Shane Maus...",
+    "range": "Mar 16",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkxOTY1",
+    "title": "Sarah Tiana",
+    "price": "$15",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/89439/600/0",
+    "description": "arah Tiana has been a “working” comedian/ex-waitress in Los Angeles since 2003.  Originally from Calhoun, GA, Sarah’s act emphasizes the thrills of growing up after “The War Of Northern Aggression” and trying to survive in the current battle of the sexes.  She doesn’t call herself “single,”  (she’s too old for that), she prefers to be called “sexually active.” <br /> <br />Sarah’s big break came after she was recognized for her “breakout performance” as Carmen in four episodes of Reno 911!’s 7th season.  In 2005 she helped create a sketch comedy company called The Strait Jacket Society as a way to help young actors in Hollywood accelerate their stage time and gain exposure while still having fun (she has currently put over 500 actors through the program).   A downright ‘Merican, Sarah has done over 10 tours of comedy for the troops including Germany, Singapore, Afghanistan, Guam, Okinawa, and several Wounded Warrior Facilities.  <br /> <br />A trip to Iraq at the beginning of the war is highlighted in the documentary film, “We Love You Mrs. Bevins.” Sarah recently wrote and starred in “The Burn” with Jeffrey Ross for 2 seasons on Comedy Central. She is currently a correspondent on “The Soup Investigates” and a regular on the “Chelsea Lately” roundtable.  <br /> <br />An avid sports fan Sarah wrote for the ESPY awards and the Rob Riggle NFL segments on Fox.  She can also be seen at The World Famous Comedy Store, Twitter, and numerous unhealthy relationships in and around Los Angeles.  She will never be seen in the three pilots she taped last year or be caught dead in the dress she wore on Craig Ferguson (it no longer fits).",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/291965",
+        "date": "Fri, Mar 17, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-17T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/291967",
+        "date": "Fri, Mar 17, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-17T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/291966",
+        "date": "Sat, Mar 18, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-18T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/291968",
+        "date": "Sat, Mar 18, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-18T21:30:00.000Z"
+      }
+    ],
+    "summary": "Sarah Tiana has been a “working” comedian/ex-waitress in LA since 2003.",
+    "range": "Mar 17-18",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkyMTUy",
+    "title": "Christian Pieper",
+    "price": "$12",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/70580/600/0",
+    "description": "Christian Pieper is an award-winning and crowd-pleasing comedian from Beaver Dam, Kentucky, now living in Los Angeles. In just five years as a performer, Christian has quickly earned acclaim for his honest, smart, and welcoming approach to personal material, layering unexpectedly subversive observations on current events, culture, and relationships. A two-time semifinalist in the prestigious Boston Comedy Festival, he’s also been featured in the Crossroads Comedy Festival, Burbank Comedy Festival, and other festivals and competitions across the country. Christian has also performed abroad, having done shows for troops and civilians in eight different countries, and was a guest on the Bob &amp; Tom show. He currently hosts and produces Adrenaline, a comedy-challenge show presented regularly at Wiseguys Comedy Club in Salt Lake City and the Hollywood Improv.<br /><br />Christian got his start at Wiseguys and quickly became a favorite of the Salt Lake comedy scene. Salt Lake City Weekly twice nominated him as Comedian of the Year, and he’s been featured in the Utah Arts Festival for four consecutive years. Christian’s excited to be coming back home to once again headline his favorite club. Come to Wiseguys Ogden to watch a local favorite who’s repping Utah comedy as he makes his name in Hollywood.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/292152",
+        "date": "Fri, Mar 17, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-17T20:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/292153",
+        "date": "Sat, Mar 18, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-03-18T20:00:00.000Z"
+      }
+    ],
+    "summary": "Christian Pieper is an award-winning and crowd-pleasing comedian from Beaver Dam, Kentucky, now livi...",
+    "range": "Mar 17-18",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjg3NzEw",
+    "title": "Jo Koy",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/90511/600/0",
+    "videoUrl": "https://www.youtube.com/embed/Q0F8u28LS2c?autoplay=0",
+    "description": "From filling sold-out clubs across the nation, to appearing weekly as a regular on Chelsea Lately, Jo Koy has come a long way from his modest beginnings at a Las Vegas coffee house. His infectious, explosive energy onstage, insightful jokes, and family-inspired humor crosses all boundaries. In 2007, Variety magazine named Jo Koy one of the “10 Comics to Watch!”<br />Raised in Tacoma, Washington, Jo credits his mother for his comedic and acting talents. Encouraged by his mom, Jo participated in school talent shows and presented impromptu performances for his family and friends. This loving support led to the Las Vegas coffee house, and inspired a move to Los Angeles.<br />In 2005, Jo hit the “opportunity of a lifetime” with a performance on The Tonight Show with Jay Leno. He became one of a select few ever to receive a standing ovation. Since then, he has appeared several times throughout the years.<br />A single father, Jo Koy was inspired by his son and began working on his first Comedy Central special “Don’t Make Him Angry,” which aired in January 2009. His much- anticipated second Comedy Central special “Lights Out” aired in October 2012, and is now available on DVD.<br />Jo has appeared on various VH1 I Love series, as well as The Joy Behar Show, Jimmy Kimmel Live, Last Call with Carson Daly, and Jamie Foxx: Laffapalooza. He is a regular headlining comedian at the world famous Improv, tours the college circuit nationwide, and performs in comedy clubs both in the U.S., and internationally. A firm believer in service and giving back to the community, Jo is currently working with The Lupus Foundation bringing awareness to this cause. Jo resides in Los Angeles, California.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/287707",
+        "date": "Fri, Mar 24, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-24T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287710",
+        "date": "Fri, Mar 24, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-24T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287708",
+        "date": "Sat, Mar 25, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-03-25T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287712",
+        "date": "Sat, Mar 25, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-03-25T21:30:00.000Z"
+      }
+    ],
+    "summary": "Jo Koy has come a long way from his modest beginnings at a Las Vegas coffee house.",
+    "range": "Mar 24-25",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2MTcy",
+    "title": "Shawn Paulsen",
+    "price": "$12",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102221/600/0",
+    "description": "Originally from a small town in Utah, Shawn is one of the fast rising Comedians / Hypnotists of the 21st century.  His high-energy thoughts on family, Work, and humor, as well as watching his subjects on stage, leave many an audience rolling in the aisles!<br /><br />Shawn was a Police Officer for ten years before he realized that he did not fit the  COP  profile.  With a dislike for doughnuts and coffee and a unique ability to make people laugh while dealing with the public, he was soon outcast by his peers.<br /><br />Shawn soon realized that Being a Cop and Being a Comedian / Hypnotist is the same job.... Either way he gets paid to mess with people. However he always makes sure that his subject feel comfortable and have as good a time (if not a better time) than the people watching in the audience.<br /><br />Shawn s point-blank humor is mostly clean, and he is capable of picking topics that everyone can relate to.  Shawn gets most of his material from awkward or ridiculous things he s experienced. His stage Hypnosis show takes his comedic perspective to a whole new level never before seen, both with his subjects as well as his own interjections.\r\n                                                            \r\n                                <a target=\"_blank\" href=\"http://www.hilarioushypnosis.com/\">more &gt;&gt;&gt;</a>",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296172",
+        "date": "Fri, Apr 7, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-04-07T20:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/296173",
+        "date": "Sat, Apr 8, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-04-08T20:00:00.000Z"
+      }
+    ],
+    "summary": "Shawn's shows involve comedy and hilarious hypnosis.",
+    "range": "Apr 7-8",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkzOTM1",
+    "title": "Brad Williams",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/100966/600/0",
+    "videoUrl": "https://www.youtube.com/embed/htIxFg9LxNs?autoplay=0",
+    "description": "Brad Williams has become on of the funniest, most in demand comedians working today. A California native, Brad started doing stand-up at age 19 and has been touring ever since.<br />He has appeared on numerous TV shows including Legit, Dave Attell’s Comedy Underground, Sam and Cat, Live at Gotham, the Tonight Show, Jimmy Kimmel Live, Mind Of Mencia, and Pitboss.<br />His one hour comedy special “Fun Size” was the highest rated comedy special on Showtime in the year 2015. A year later, he followed it up with a 2nd special called “Daddy Issues,” its airing prompted the New York Times to write “no one is doing it more hilariously than Brad Williams.” <br />In addition to stand-up, Brad has become a dynamic on-air personality as well. His podcast “About Last Night” is a mainstay on the iTunes Charts. He is a regular on KROQ’s Kevin and Bean Show in Los Angeles as well as the Adam Carolla podcast.<br />Brad’s show is high energy. Robin Williams called him “Prozac with a head.” Brad’s ability to make humorous observations on disability, relationships, sex, and race are winning over audiences and proving anyone can overcome their shortcomings.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/293935",
+        "date": "Sun, Apr 9, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-04-09T19:30:00.000Z"
+      }
+    ],
+    "summary": "Brad Williams has become on of the funniest, most in demand comedians working today.",
+    "range": "Apr 9",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjg3Njgy",
+    "title": "Bert Kreischer",
+    "price": "$20",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102204/600/0",
+    "description": "Bert Kreischer: &quot;Bert the Conqueror&quot; &quot;The Shield&quot; &quot;Van Wilder&quot; - Bert Kreischer is known for being a wild and crazy frat boy, being featured in &quot;Rolling Stone&quot; as &quot;the top partier&quot; at Florida State University, which led to the creation of the hit film &quot;National Lampoon's Van Wilder.&quot; You have seen him as the host of the wildly popular Travel Channel show, &quot;Bert the Conqueror,&quot; as well as co-hosting the FX series, &quot;The X Show,&quot; which led to his show, &quot;Hurt Bert.&quot; He has also been a guest on the &quot;Joe Rogan Experience,&quot; Comedy Central's &quot;Reality Bites Back&quot; and &quot;WTF with Marc Maron.&quot;",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/287682",
+        "date": "Thu, Apr 13, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-04-13T19:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287683",
+        "date": "Fri, Apr 14, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-04-14T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287686",
+        "date": "Fri, Apr 14, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-04-14T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287684",
+        "date": "Sat, Apr 15, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-04-15T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287685",
+        "date": "Sat, Apr 15, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-04-15T21:30:00.000Z"
+      }
+    ],
+    "summary": "Bert Kreischer is known for being a wild and crazy frat boy, being featured in Rolling Stone as the ...",
+    "range": "Apr 13-15",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk4MDUx",
+    "title": "Matt Iseman",
+    "price": "$12",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102223/600/0",
+    "description": "Matt Iseman host on American Ninja Warrior, winner of NBC's Celebrity Apprentice and Clean House.<br />Life is short, do what makes you happy. That’s the advice that Matt Iseman got from his Dad-a world renowned physician-when Matt quit medicine to pursue stand-up comedy. And those words still guide Matt today. He talks ninjas, tells jokes around the world and, in general, proves laughter is the best medicine. Matt’s headlined clubs all around the country and done shows for the troops around the globe, including performing in Iraq at one of Saddam Hussein’s palaces. Matt loves hosting American Ninja Warrior, Emmy nominated for Outstanding Reality-Competition Program. He’s been with the show for seven seasons and the Boston Globe said, “The best part about American Ninja Warrior, hands down, is when bro-host Matt Iseman roars the show’s title.” His ongoing battle with Rheumatoid Arthritis transformed him into a strong supporter of the Arthritis Foundation, the charity he’s representing on Celebrity Apprentice this coming season. Yes, Arnold Schwarzenegger considers him a celebrity.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/298051",
+        "date": "Fri, Apr 21, 2017",
+        "time": "8:00 PM",
+        "datetime": "2017-04-21T20:00:00.000Z"
+      }
+    ],
+    "summary": "Life is short, do what makes you happy.",
+    "range": "Apr 21",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2MjIw",
+    "title": "Travis Tate",
+    "price": "$5",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/94812/600/0",
+    "description": "Travis is a comedian who is making a name for himself in the comedy scene because of his slightly different outlook on life. He has been a husband and father for literally his entire adult life. Although he has done the best he can, fatherhood has been one “We’ll laugh about this later” moment after another.<br />His comedy is self-deprecating, insightful, clever, and most of all, funny. He examines marriage, parenting, geek culture, years of playing sports, his own character flaws, as well as his own arrested development. His stand-up is meant to make people laugh at the ridiculousness of life and the people who live it.  <br />Travis has entertained crowds at clubs and theaters all throughout the West. He has worked with comedians Carlos Mencia, Tom Green, Steve Byrne, The Sklar Brothers, Tommy Johnagin, Dave Coulier, Jamie Kennedy, Nate Bargatze, Pablo Fransisco, Gary Gulman, Yannis Pappas, Bert Kreischer, Dwayne Perkins, Jackie Kashian, Lisa Landry, Cash Levy, Ryan Hamilton, and Lachlan Patterson.Travis has been a part of the Rocky Mountain Laugh Off, Salt Lake Comedy Festival, Idaho Laugh Fest, and The Golden Spike Comedy and Podcast Festival. He has also be on rooftopcomedy.com, NickMom.com, X96 Radio From Hell, Utah Arts Festival, Salt Lake Comic Con, FanX, and has been a featured artist on indi.com.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296220",
+        "date": "Thu, May 4, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-05-04T19:30:00.000Z"
+      }
+    ],
+    "summary": "Travis is a comedian who is making a name for himself in the comedy scene because of his slightly di...",
+    "range": "May 4",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6MjkwNTgy",
+    "title": "Joey Diaz",
+    "price": "$25",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102219/600/0",
+    "description": "Joey ‘Coco’ Diaz has quickly become one of the most sought after actors and comedians in the entertainment industry today. His love of storytelling is reflected in each role he takes: whether it is on film or on stage, his passion for entertaining and delighting audiences shines through every performance. <br /><br />You may recognize Diaz from his appearances in The Mentalist, Children’s Hospital, My Name is Earl or General Hospital - to name a few. On the film front, Diaz has held roles in The Longest Yard, Spider Man 2, Smiley Face, Taxi and most recently Grudge Match.<br /><br />Diaz continues to perform stand-up and act, while also staying on top of the new media move in podcasting. Currently, Diaz hosts his bi-weekly podcast “The Church of What’s Happening Now,” which ranks among some of the most highly downloaded podcasts online. He is also a regular guest on Joe Rogan’s popular podcast “The Joe Rogan Experience.”<br /><br />On the comedy front, Diaz continues to tour and perform at the biggest comedy clubs in the country. His comedy specials in The Testicle Testaments have sold thousands of downloads, and have even made it to the Billboard Top 100. Diaz’s raw style of comedy is highlighted on television with recurring sketch roles on Stand Up Revolution and Jimmy Kimmel Live.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/290581",
+        "date": "Fri, May 5, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-05T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/290582",
+        "date": "Fri, May 5, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-05T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/290583",
+        "date": "Sat, May 6, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-06T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/290584",
+        "date": "Sat, May 6, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-06T21:30:00.000Z"
+      }
+    ],
+    "summary": "Joey ‘Coco’ Diaz has quickly become one of the most sought after actors and comedians in the enterta...",
+    "range": "May 5-6",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk1MDA2",
+    "title": "Josh Blue",
+    "price": "$20",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102215/600/0",
+    "description": "Perhaps best known as the comedian who puts the cerebral in Cerebral Palsy, Josh Blue centers much of his self-deprecating act around his disability. He exploded onto the national comedy scene by capturing the attention and endearment of the country as the winner of NBC’s Last Comic Standing.  Having already established himself as one of the most sought after comedians on the college circuit, his weekly appearances on Last Comic in the summer of 2006 expanded his fan base exponentially.  Josh starred in Comedy Central Presents: Josh Blue, which received rave reviews from fans and critics alike and was named the 11th best special on the network in 2011.  Most recently, Josh debuted a one-hour Showtime special, Sticky Change, where he cracks jokes and tells stories about everything from being a white African-American, to dealing with cabbies who think he'll pay in sticky change.  The special is currently available on Netflix.  He has appeared twice on Ron White’s Comedy Salute to the Troops on CMT and recently made his late night television debut on The Late Late Show with Craig Ferguson.<br /> <br />Possessed with an undeniable likeability and comedic timing that belies his youthfulness; Josh continues to break down stereotypes of people with disabilities one laugh at a time.  His stand-up routine is in a constant state of evolution and his off-the-cuff improvisational skills guarantee that no two shows are exactly alike.<br /><br />Josh has appeared as a regular guest star on Comedy Central’s Mind of Mencia and his story has been featured on Fox, CBS, ABC, and MSNBC.  He was the first comedian to perform stand-up on The Ellen DeGeneres Show, was named Best Winning Reality Show Guest for his appearance on Live with Regis and Kelly, and made a standout guest appearance on Comics Unleashed.  He became the first comic to debut a stand-up special on the big screen when 7 More Days in the Tank was shown in theatres across the country.  Blue is set to appear in the sports based comedy 108 Stitches.  Portions of the performance also aired on Bravo Network as a half-hour comedy special.  Josh is a repeat guest on such nationally syndicated radio programs as NPR’s Talk of the Nation and The Mancow Show and has been featured in numerous print publications including People Magazine and The New York Times.  Josh has also performed at the prestigious HBO-Aspen Comedy Festival, Comedy Central’s South Beach Comedy Festival, and The Comedy Festival in Las Vegas.  Josh has even become quite an Internet sensation with his top two YouTube videos over 3.5 million plays.<br /> <br />Josh was also a member of the US Paralympic Soccer Team and competed in Athens at the Paralympic Games, the world’s second largest sporting event.  Josh is a single father living in Denver, CO with his son, Simon and daughter, Seika.",
+    "venue": {
+      "name": "Wiseguys Comedy Club Ogden",
+      "city": "Ogden",
+      "state": "UT",
+      "street": "269 25th St",
+      "postalCode": "84401",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=269 25th St  Ogden UT 84401 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/295006",
+        "date": "Fri, May 12, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-12T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/295007",
+        "date": "Fri, May 12, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-12T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/295008",
+        "date": "Sat, May 13, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-13T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/295009",
+        "date": "Sat, May 13, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-13T21:30:00.000Z"
+      }
+    ],
+    "summary": "Perhaps best known as the comedian who puts the cerebral in Cerebral Palsy, Josh Blue exploded onto ...",
+    "range": "May 12-13",
+    "location": "Ogden",
+    "locationSlug": "ogden"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjg3Njc0",
+    "title": "Steve O",
+    "price": "$22",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/99730/600/0",
+    "videoUrl": "https://www.youtube.com/embed/WFyUVe3VTN4?autoplay=0",
+    "description": "Steve-O (a.k.a. Stephen Glover) has become a household name and it all started when he snatched a video camera from his father’s closet when he was fifteen years old. From there he started producing homemade skateboarding videos featuring dangerous stunts mixed with comical behavior.<br /><br />He was born in London and by the age of twelve, had lived in five countries and communicated fluently in three different languages. He holds citizenship in three countries - the United States, Canada and the United Kingdom.<br /><br />After finishing high school in London, and completing a year at the University of Miami, Steve-O realized that college wasn’t for him. He enrolled in Ringling Brothers and Barnum and Bailey Clown College to help further his goal of becoming a professional stuntman. After graduating Clown College, and determined to make it in Hollywood, he began to pitch his home videos to producers.<br /><br />Eventually, Steve-O’s videos made it into the hands of Jeff Tremaine (Jackass Creator/Director/Producer) who was working with Johnny Knoxville to create a stunt based reality show. The rest is history. MTV aired the first season of JACKASS in 2000. In 2001, Steve-O launched his own “Steve-O Don’t Try This At Home Tour”, establishing himself as an accomplished stage performer, at venues throughout the U.S. and in a dozen countries.<br /><br />When the JACKASS TV series ended in 2002, the team moved on to JACKASS: THE MOVIE, released by Paramount in October of that year. Shortly thereafter, Steve-O and fellow JACKASS alum, Chris Pontius, were given a spin-off show entitled WILDBOYZ, which aired on MTV and MTV2 and lasted four seasons. In 2006, Paramount released JACKASS: NUMBER 2 in theaters and Steve-O continued to thrill audiences with his outrageous stunts.<br /><br />In 2009 he competed on ABC’s hit show, DANCING WITH THE STARS, and lasted six weeks, despite an injury and having virtually no dancing ability whatsoever.<br /><br />In 2010, Paramount released JACKASS: 3D. Since then, Steve-O has become a New York Times Bestselling Author with the release of his memoir, ‘Professional Idiot,’ and has established himself as a force in the world of stand-up comedy. Thus far (and still counting), his career as a performer has brought him to a total of 38 countries, and his first hour-long comedy special, GUILTY AS CHARGED, recently premiered on Showtime and performed in the top one percent of all Showtime comedy specials.<br /><br />Most importantly, however, Steve-O has been clean and sober since March of 2008 and lives a healthy, vegan lifestyle in the Los Angeles area...but he still has no problem stapling his balls to his leg.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/287674",
+        "date": "Thu, May 18, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-05-18T19:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287675",
+        "date": "Fri, May 19, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-19T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287677",
+        "date": "Fri, May 19, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-19T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287676",
+        "date": "Sat, May 20, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-20T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287678",
+        "date": "Sat, May 20, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-20T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/287679",
+        "date": "Sun, May 21, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-05-21T19:30:00.000Z"
+      }
+    ],
+    "summary": "Steve-O (a.k.a.",
+    "range": "May 18-21",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjg5NzEz",
+    "title": "Monroe Martin",
+    "price": "$15",
+    "isSpecialEvent": false,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/100260/600/0",
+    "description": "Monroe Martin was born and raised in Philadelphia. One typically wouldn’t find Monroe’s life story laughable. After all, how inappropriate is it to laugh at a foster child who jumped around from one dysfunctional family to another? Watch Monroe perform and you’ll find yourself laughing at his adversity. Monroe’s honest and open approach to joke and storytelling universalizes his experiences. He’s a colorful and imaginative comedian with a lifetime of hard knock experiences that have been spun into sidesplitting jokes and stories.<br /><br />Monroe Martin made his TV debut in 2014 on the 8th season NBC’s Last Comic Standing where he made it to the top 10. He was also featured on the second season of “Adam Devine’s House Party” on Comedy Central. He made his late night stand-up debut in 2015 performing on “The Tonight Show With Jimmy Fallon”.  Monroe was featured on 5th season of MTV2’s “Guy Code” and MTV2’s “Joking Off”. In 2016 Monroe also guest starred on TRU TV’s “Comedy KO”, and performed on “Big Jay Oakerson’s WYFD” on Seeso.com. Monroe made his acting debut in the Netflix hit series “Master of None” and followed it up with a guest-starring role on “The Jim Gaffigan Show” on TV land.",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/289706",
+        "date": "Thu, May 25, 2017",
+        "time": "7:30 PM",
+        "datetime": "2017-05-25T19:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/289707",
+        "date": "Fri, May 26, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-26T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/289711",
+        "date": "Fri, May 26, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-26T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/289709",
+        "date": "Sat, May 27, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-05-27T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/289713",
+        "date": "Sat, May 27, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-05-27T21:30:00.000Z"
+      }
+    ],
+    "summary": "Monroe Martin was born and raised in Philadelphia.",
+    "range": "May 25-27",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  },
+  {
+    "id": "V2lzZUd1eXNDb21lZHk6Mjk2NDA4",
+    "title": "Gary Gulman",
+    "price": "$15",
+    "isSpecialEvent": true,
+    "imageUrl": "http://wiseguyscomedy.imgix.net/102214/600/0",
+    "videoUrl": "https://www.youtube.com/embed/XMOKMS1MURk?autoplay=0",
+    "description": "Gary Gulman is a stand-up comedian who lives in New York City. Originally from Boston, Gary has been a scholarship college football player, an accountant, a barista, a doorman, a waiter and a high school teacher. Now he is one of the most popular touring comics and one of only a handful of comedians to perform on every single late night comedy program. “Gary will be the next giant ex-Bostonian comic to break huge, CK, Burr, Gulman: You heard it here first” raved the Village Voice. He’s made three TV specials, and three albums. Gary marked his 20-year anniversary in stand-up with the “It’s About Time Tour,” selling out theaters throughout the country. It’s no wonder the New York Times wrote “Gary is finally being recognized as one of the country’s strongest comedians.”",
+    "venue": {
+      "name": "Wiseguys at the Gateway",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "street": "194 South 400 West",
+      "postalCode": "84101",
+      "googleMapsUrl": "http://www.google.com/maps?f=q&hl=en&ie=UTF8&z=15&om=1&iwloc=addr&q=194 South 400 West  Salt Lake City UT 84101 US"
+    },
+    "rating": false,
+    "showtimes": [
+      {
+        "url": "/WiseGuysComedy/Ticketing/296408",
+        "date": "Fri, Jun 2, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-06-02T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/296410",
+        "date": "Fri, Jun 2, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-06-02T21:30:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/296409",
+        "date": "Sat, Jun 3, 2017",
+        "time": "7:00 PM",
+        "datetime": "2017-06-03T19:00:00.000Z"
+      },
+      {
+        "url": "/WiseGuysComedy/Ticketing/296411",
+        "date": "Sat, Jun 3, 2017",
+        "time": "9:30 PM",
+        "datetime": "2017-06-03T21:30:00.000Z"
+      }
+    ],
+    "summary": "Gary Gulman is a stand-up comedian who lives in New York City.",
+    "range": "Jun 2-3",
+    "location": "Salt Lake",
+    "locationSlug": "downtown-slc"
+  }
+]

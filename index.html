@@ -1,0 +1,22 @@
+<h1>Things and stuff</h1>
+<script src="http://cdn.auth0.com/js/lock/10.12.3/lock.min.js"></script>
+<script>
+  var clientId = "3ig9zEWFISwvFPWaVNtIowiK6VaxtfnE";
+  var domain = "flexhub.auth0.com";
+  var lock = new Auth0Lock(clientId, domain);
+
+  lock.on("authenticated", function(authResult) {
+    lock.getUserInfo(authResult.accessToken, function(error, profile) {
+      if (error) {
+        // Handle error
+        return;
+      }
+
+      localStorage.setItem("accessToken", authResult.accessToken);
+      localStorage.setItem("profile", JSON.stringify(profile));
+
+      // Update DOM
+    });
+  });
+  lock.show({allowedConnections: ["github", "facebook"]})
+</script>
