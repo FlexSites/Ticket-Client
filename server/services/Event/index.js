@@ -1,7 +1,7 @@
 'use strict'
 
 const Persistent = require('../Persistent').default
-const { Event, Showtime } = require('../index').system
+const system = require('../index').system
 const emitter = require('../bus').default
 
 /**
@@ -14,16 +14,13 @@ exports.default = class Event extends Persistent {
   constructor (viewer) {
     super('event')
     this.viewer = viewer
-    console.log('VIEWER', viewer)
   }
 
   get (...args) {
-    if (this.viewer.user_id) {
-      console.log('Logged in!!!')
-      return super.get(...args)
-    }
-    console.log('Not Logged in!!!')
-    return Promise.reject(new Error('Unauthorized'))
+  //   if (this.viewer.user_id) {
+    return super.get(...args)
+    // }
+  //   return Promise.reject(new Error('Unauthorized'))
   }
   static setup () {
     return super.setup('event')
@@ -31,6 +28,7 @@ exports.default = class Event extends Persistent {
 }
 
 function updateRanges (showtime) {
+  const { Event, Showtime } = system
   return Promise.all([
     Event.get(showtime.eventID),
     Showtime.find({ eventID: showtime.eventID }),

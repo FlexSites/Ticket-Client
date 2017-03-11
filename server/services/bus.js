@@ -1,8 +1,10 @@
 const EventEmitter = require('events')
-exports.default = new EventEmitter()
-exports.default.on('event:create', (payload) => {
-  console.log('EVENT CREATED', payload);
-})
-exports.default.on('event:remove', (payload) => {
-  console.log('EVENT removeD', payload);
-})
+
+class Event extends EventEmitter {
+  emit (target, payload) {
+    console.info('EMIT', target, payload)
+    super.emit(target, payload)
+  }
+}
+
+exports.default = new Event()

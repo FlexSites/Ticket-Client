@@ -1,0 +1,17 @@
+extends ../index
+
+block content
+  table.table.table-hover
+    tr
+      td Name
+      td City
+      td State
+      td
+    each venue in venues
+      tr
+        td= venue.name
+        td= venue.city
+        td= venue.state
+        td
+          a.btn.btn-xs.btn-primary(href= `/dashboard/venues/${ venue.id }`) Edit
+          a.btn.btn-xs.btn-warning Remove

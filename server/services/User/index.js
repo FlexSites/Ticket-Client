@@ -12,6 +12,9 @@ exports.default = class User {
   }
 
   static fromJwt (jwt) {
+    if (!jwt) {
+      return Promise.resolve({})
+    }
     if (!/^Bearer /.test(jwt)) {
       jwt = `Bearer ${ jwt }`
     }

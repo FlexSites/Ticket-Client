@@ -2,7 +2,7 @@
 
 const Persistent = require('../Persistent').default
 const emitter = require('../bus').default
-const { Showtime } = require('../index').system
+const System = require('../index').system
 
 /**
  * Event
@@ -20,6 +20,7 @@ exports.default = class Event extends Persistent {
 }
 
 function decrementAvailability (reservation) {
+  const { Showtime } = System
   return Showtime.get(reservation.showtimeID)
     .then((showtime) => {
       showtime.available += reservation.quantity
@@ -28,6 +29,7 @@ function decrementAvailability (reservation) {
 }
 
 function incrementAvailability (reservation) {
+  const { Showtime } = System
   return Showtime.get(reservation.showtimeID)
     .then((showtime) => {
       showtime.available -= reservation.quantity

@@ -1,11 +1,12 @@
 'use strict'
 
-const Interface = require('../Interface').default
 const graphql = require('graphql')
 const graphqlExpress = require('express-graphql')
 const makeExecutableSchema = require('graphql-tools').makeExecutableSchema
 const path = require('path')
 const fs = require('fs')
+const Router = require('express').Router
+const json = require('body-parser').json
 
 const resolvers = require('./resolvers').default
 
@@ -28,18 +29,23 @@ const schema = makeExecutableSchema({
   resolvers,
 })
 
-
-
-exports.default = class GraphQL extends Interface {
+exports.default = class GraphQL {
 
 }
 
-exports.middleware = (services) =>
-  graphqlExpress((req, res) => ({
+exports.middleware = (services) => {
+  const router = new Router()
+
+  router.use(json())
+
+  router.use(graphqlExpress((req, res) => ({
     schema,
     context: res.locals,
     graphiql: true,
-  }))
+  })))
+
+  return router
+}
 
 exports.handler = (event, context, cb) => {
   graphql(schema, event.query, {}, {}, event.variables)

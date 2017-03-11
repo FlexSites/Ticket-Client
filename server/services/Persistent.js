@@ -9,8 +9,6 @@ const assert = require('assert')
 const mapValues = require('lodash.mapvalues')
 const { fromGlobalId, toGlobalId } = require('graphql-relay')
 
-console.log('emitter', emitter)
-
 const dynamodb = require('../lib/dynamodb').default
 const setupTable = require('../lib/dynamodb').setupTable
 
@@ -57,8 +55,6 @@ class Model {
       if (!nested) {
         obj.id = toGlobalId(this.name, obj.id)
       }
-      const { type } = fromGlobalId(obj.id)
-      obj.href = `https://api.tickets.com/api/rest/${ pluralize(type) }/${ obj.id }`
     }
 
     mapValues(obj, (val, key) => {
@@ -75,6 +71,7 @@ class Model {
     if (Array.isArray(obj)) {
       return obj.map(this.toPrivateObject.bind(this))
     }
+    console.log(obj)
     obj.id = fromGlobalId(obj.id).id
 
     return obj
@@ -139,7 +136,7 @@ class Model {
       Item: data,
     })
     .promise()
-    .then(() => this.get(id))
+    .then(() => this.get(guid))
     .then(this.emit('update'))
   }
 

@@ -1,0 +1,10 @@
+extends ../index
+
+block content
+  h1= `Successfully saved event "${ event.title }"`
+  p= event.title
+  p= event.price
+  p= event.imageUrl
+  p= event.summary
+  p= event.description
+  p= event.venue.name

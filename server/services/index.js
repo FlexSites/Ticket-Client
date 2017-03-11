@@ -32,7 +32,7 @@ function setup () {
     mapValues(
       services,
       (Service, key) => {
-        console.info(`Setting up service ${ key }`)
+        // console.info(`Setting up service ${ key }`)
         return Bluebird.method(Service.setup).bind(Service)()
           .return(Service)
       }
@@ -40,10 +40,6 @@ function setup () {
   )
 }
 
-console.log('thingy', Object.keys(mapValues(
-  services,
-  (Service, key) => new Service({ roles: [ 'system' ] })
-)))
 exports.system = mapValues(
   services,
   (Service, key) => new Service({ roles: [ 'system' ] })

@@ -17,12 +17,11 @@ if (process.env.NODE_ENV === 'development') {
   setup = Bluebird.fromCallback(
     (cb) => dynaliteServer.listen(params.port, cb)
   )
-  .then(() => console.info(`Dynalite started on port "${ params.port }"`))
+  // .then(() => console.info(`Dynalite started on port "${ params.port }"`))
   .return(dynamodb)
 }
 
 function setupTable (name, rps = 1, wps = 1, force = false) {
-  console.log('called setuptable', name, force)
   return setup
     .then((db) => {
       return db.describeTable({
@@ -47,7 +46,7 @@ function setupTable (name, rps = 1, wps = 1, force = false) {
 }
 
 function createTable (name, rps = 1, wps = 1) {
-  console.info(`Creating table "${ name }"`)
+  // console.info(`Creating table "${ name }"`)
   return setup
     .then((db) => {
       return db.createTable({

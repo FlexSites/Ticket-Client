@@ -1,0 +1,23 @@
+extends ../index
+
+block content
+  .container
+    .row
+      .col-md-8
+        h2 Event List
+      .col-md-4
+        a.btn.btn-primary.btn-lg.pull-right(href='/dashboard/events/new') New Event
+  table.table.table-hover
+    tr
+      td Title
+      td Price
+      td Date
+      td
+    each event in events
+      tr
+        td= event.title
+        td= event.price
+        td= event.range
+        td
+          a.btn.btn-xs.btn-primary(href= `/dashboard/events/${ event.id }`) Edit
+          a.btn.btn-xs.btn-warning Remove

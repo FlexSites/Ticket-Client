@@ -1,8 +1,8 @@
 'use strict'
 
 const Router = require('express').Router
+const json = require('body-parser').json
 const mapValues = require('lodash.mapvalues')
-const Interface = require('../Interface').default
 const pluralize = require('pluralize').plural
 const utils = require('./utils')
 const { fromGlobalId, toGlobalId } = require('graphql-relay')
@@ -27,16 +27,18 @@ const routeMap = {
   venue: venueRoutes,
 }
 
-exports.default = class REST extends Interface {
+exports.default = class REST {
 
 }
 
 exports.middleware = (services) => {
   const router = new Router()
 
+  router.use(json())
+
   // Auto-routes
   mapValues(services, (service, name) => {
-    console.log(`Setting up endpoint: /${ pluralize(name) }`)
+    // console.info(`Setting up endpoint: /${ pluralize(name) }`)
     router.use(`/${ pluralize(name) }`, resource(service, name))
   })
 

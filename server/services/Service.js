@@ -77,7 +77,7 @@ class Service extends EventEmitter {
    */
   static setup (app, path) {
     // Setup code
-    console.info('Setting up non-persistent service')
+    // console.info('Setting up non-persistent service')
     return Service
   }
 }
