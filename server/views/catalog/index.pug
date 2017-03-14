@@ -3,12 +3,12 @@ html
   body
     form
       .group
-        h1= showtime.event.title
-        img(src=showtime.event.imageUrl style="width: 100%")
-        p= showtime.event.description.replace(/\<br \/\>/g, ' ')
+        h1= event.title
+        img(src=event.imageUrl style="width: 100%")
+        p= event.description.replace(/\<br \/\>/g, ' ')
         h2= showtime.date
         h2 #{ showtime.remaining } seats remaining
-        p= showtime.event.summary
+        p= event.summary
       .group
         label
           span Name
