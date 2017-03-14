@@ -10,7 +10,7 @@ const Entertainer = require('./Entertainer').default
 const Event = require('./Event').default
 const Ticket = require('./Ticket').default
 const Venue = require('./Venue').default
-const Payment = require('./Payment').default
+const Order = require('./Order').default
 const Social = require('./Social').default
 const Metric = require('./Metric').default
 const Showtime = require('./Showtime').default
@@ -21,7 +21,7 @@ const services = {
   event: Event,
   ticket: Ticket,
   venue: Venue,
-  payment: Payment,
+  order: Order,
   social: Social,
   metric: Metric,
   showtime: Showtime,
