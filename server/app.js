@@ -19,7 +19,9 @@ const PORT = process.env.PORT || 3000
 const app = express()
 
 app.set('view engine', 'pug')
-app.set('views', path.join(__dirname, 'views'))
+app.set('views', [
+  path.join(__dirname, 'interfaces', 'Dashboard', 'views'), path.join(__dirname, 'interfaces', 'Catalog', 'views')
+])
 
 app.use(express.static(path.resolve(__dirname, '..', 'client', 'public')))
 

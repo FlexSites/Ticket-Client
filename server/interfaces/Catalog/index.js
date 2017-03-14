@@ -13,17 +13,17 @@ exports.middleware = (services) => {
       res.locals.showtime.find(),
     ])
       .then(([ events, showtimes ]) => {
-        res.render('catalog/index', {
+        res.render('checkout', {
           event: events[0],
           showtime: showtimes[0],
         })
       })
   })
 
-  router.use('/thank-you', (req, res, next) => {
+  router.post('/thank-you', (req, res, next) => {
     res.locals.event.get(req.query.id)
       .then((event) => {
-        res.render('catalog/thank-you', { event })
+        res.render('thank-you', { event })
       })
   })
   router.use('/venues', venues)

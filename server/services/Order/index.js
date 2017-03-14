@@ -3,12 +3,14 @@
 const Service = require('../service').default
 
 /**
- * Payment
+ * Order
  *
  * Intefaces with Stripe API to complete all tasks associated with
  * money
  */
 
-exports.default = class Payment extends Service {
-
+exports.default = class Order extends Service {
+  create(viewer, products) {
+    throw new Error('Not implemented')
+  }
 }

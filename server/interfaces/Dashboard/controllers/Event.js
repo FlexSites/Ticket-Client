@@ -6,7 +6,7 @@ const router = new Router()
 router.get('/', (req, res, next) => {
   res.locals.event.find()
     .then((events) => {
-      res.render('dashboard/event/list', { events })
+      res.render('event/list', { events })
     })
     .catch(next)
 })
@@ -18,7 +18,7 @@ router.get('/:id', (req, res, next) => {
     venue.find(),
   ])
     .then(([ event, venues ]) => {
-      res.render('dashboard/event/item', { event, venues })
+      res.render('event/item', { event, venues })
     })
     .catch(next)
 })
@@ -26,7 +26,7 @@ router.get('/:id', (req, res, next) => {
 router.post('/:id', urlencoded({ extended: true }), (req, res, next) => {
   res.locals.event.update(req.params.id, req.body)
     .then((event) => {
-      res.render('dashboard/event/success', { event })
+      res.render('event/success', { event })
     })
     .catch(next)
 })
