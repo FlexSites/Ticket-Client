@@ -1,0 +1,72 @@
+extends ../layout
+
+mixin field(name, type)
+  .form-group
+    label.col-sm-2.control-label(for='inputEmail3')= name
+    .col-sm-10
+      input#inputEmail3.form-control(type= type || 'text', placeholder=name, name=name, value= event[name])
+
+block content
+  -
+    var showtimes = event.showtimes.map((showtime) => {
+      return showtime.timestamp
+    })
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+  script.
+    function createShowtime(n, type) {
+      return $('<div>', {
+        class: 'col-md-5 col-sm-5',
+      }).append($('<input>', {
+        class: 'form-control',
+        placeholder: type === 'time' ? '07:30' : '03/08/2017',
+        name: `showtimes[${ n }][${ type }]`,
+      }))
+    }
+    $(function () {
+      var count = #{showtimes.length}
+      var $showtimeContainer = $('#showtimes')
+      $('#addBtn').on('click', function() {
+        count++
+        $('<div>', {
+          class: 'col-md-2 col-sm-2',
+        }).appendTo($showtimeContainer)
+        createShowtime(count, 'date').appendTo($showtimeContainer)
+        createShowtime(count, 'time').appendTo($showtimeContainer)
+      })
+    })
+  form.form-horizontal(method= 'post', action= `/dashboard/events/${ event.id }`)
+    input(type= 'hidden', name= 'id', value= event.id)
+    +field('title')
+    +field('price')
+    +field('imageUrl')
+    .form-group
+      label.col-sm-2.control-label(for='inputEmail3') Summary
+      .col-sm-10
+        textarea#inputEmail3.form-control(rows= 9, placeholder=name, name='summary')= event.summary
+    .form-group
+      label.col-sm-2.control-label(for='inputEmail3') Description
+      .col-sm-10
+        textarea#inputEmail3.form-control(rows= 9, placeholder=name, name='description')= event.description
+    .form-group#showtimes
+      label.col-sm-2.control-label(for='venueSelect') Venue
+      .col-sm-10
+        select#venueSelect.form-control(placeholder=name, name='venue[id]', value= event[name])
+          each venue in venues
+            option(value= venue.id, selected= (venue.id === event.venueID))= venue.name
+
+      //- .form-group
+      //-   label.col-sm-2.control-label(for='showtime1') Showtimes
+      .col-md-2
+        label.control-label Showtimes
+      .col-md-5.col-sm-5
+        input.form-control(placeholder='03/08/2017', name='showtimes[0][date]')
+      .col-md-5.col-sm-5
+        input.form-control(placeholder='07:30', name='showtimes[0][time]')
+
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        button#addBtn.btn.btn-default(type='button') Add Showtime
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        button.btn.btn-primary(type='submit') Save
+        button.btn.btn-default(type='cancel') Cancel

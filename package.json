@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "NODE_ENV=development nodemon server",
+    "watch": "NODE_ENV=development nodemon server/dev",
     "start": "node server",
     "client": "node client",
     "watch:client": "nodemon client"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "dynalite": "^1.1.1",
     "eslint": "^3.15.0",
     "eslint-config-standard": "^6.2.1",
@@ -26,15 +27,19 @@
     "bluebird": "^3.4.7",
     "body-parser": "^1.16.1",
     "config": "^1.25.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.1",
     "express-graphql": "^0.6.3",
     "express-jwt": "^5.1.0",
+    "express-session": "^1.15.1",
     "graphql": "^0.9.1",
     "graphql-relay": "^0.5.1",
     "graphql-tools": "^0.10.0",
     "lodash.get": "^4.4.2",
     "lodash.mapvalues": "^4.6.0",
     "lodash.pick": "^4.4.0",
+    "passport": "^0.3.2",
+    "passport-auth0": "^0.6.0",
     "pluralize": "^3.1.0",
     "pug": "^2.0.0-beta11",
     "uuid": "^3.0.1"

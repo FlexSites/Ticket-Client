@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      each event in events
+        .col-sm-3
+          .thumbnail
+            img(src= `${ event.imageUrl }?w=150&h=150&fit=crop&crop=faces,center`, alt= event.title, style="width: 100%;")
+            .caption
+              h3(style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;")= event.title
+              a.btn.btn-primary(href='#', role='button', style="width: 100%;") Buy Now

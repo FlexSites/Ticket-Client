@@ -12,13 +12,15 @@ router.get('/', (req, res, next) => {
 })
 
 router.get('/:id', (req, res, next) => {
-  const { venue, event } = res.locals
+  const { venue, event, showtime } = res.locals
   return Promise.all([
     event.get(req.params.id),
     venue.find(),
+    showtime.find(),
   ])
-    .then(([ event, venues ]) => {
-      res.render('event/item', { event, venues })
+    .then(([ event, venues, showtimes ]) => {
+      event.showtimes = event.showtimes || []
+      res.render('event/item', { event, venues, showtimes: showtimes || [] })
     })
     .catch(next)
 })
