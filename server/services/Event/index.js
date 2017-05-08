@@ -12,7 +12,9 @@ const emitter = require('../bus').default
 
 exports.default = class Event extends Persistent {
   constructor (viewer) {
-    super('event')
+    super('event', {
+      // model: { name: String },
+    })
     this.viewer = viewer
   }
 

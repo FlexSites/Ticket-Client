@@ -4,10 +4,14 @@ const emitter = require('./bus').default
 const pluralize = require('pluralize')
 const AWS = require('aws-sdk')
 const uuid = require('uuid')
+const Bluebird = require('bluebird')
 const config = require('config')
 const assert = require('assert')
 const mapValues = require('lodash.mapvalues')
 const { fromGlobalId, toGlobalId } = require('graphql-relay')
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost:27017/ticketing')
+mongoose.Promise = Bluebird
 
 const dynamodb = require('../lib/dynamodb').default
 const setupTable = require('../lib/dynamodb').setupTable
@@ -27,21 +31,15 @@ class Model {
     // Setup code
     assert(name, 'Field "name" is required for database setup.')
     const TableName = `${ config.get('app') }-${ config.get('stage') }-${ name }`
-    this.db = new AWS.DynamoDB.DocumentClient({
-      params: { TableName },
-      service: dynamodb,
-    })
+    this.db = mongoose.model(name, this.config.model)
   }
-
-
 
   /**
    * GET a list of events optionally filtered by a query
    */
   find (params) {
     // return this.db.query()
-    return this.db.scan()
-      .promise()
+    return this.db.find(params)
       .then((results) => results.Items)
       .then(this.toPublicObject.bind(this))
   }
@@ -82,10 +80,7 @@ class Model {
    */
   get (guid, params) {
     const { id } = fromGlobalId(guid)
-    return this.db.get({
-      Key: { id },
-    })
-    .promise()
+    return this.db.findById(id)
     .then((results) => {
       const item = results.Item
       if (!item) {
@@ -135,7 +130,6 @@ class Model {
     return this.db.put({
       Item: data,
     })
-    .promise()
     .then(() => this.get(guid))
     .then(this.emit('update'))
   }
@@ -158,8 +152,8 @@ class Model {
     //     ':MAX': 100,
     //   },
     // })
-    .promise()
-    .then(this.emit('patch'))
+    // .promise()
+    // .then(this.emit('patch'))
   }
 
   /**
@@ -167,10 +161,7 @@ class Model {
    */
   remove (guid, params) {
     const { id } = fromGlobalId(guid)
-    return this.db.delete({
-      Key: { id },
-    })
-    .promise()
+    return this.db.findOneAndRemove({ id })
     .then(() => ({ id: guid }))
     .then(this.emit('remove'))
   }

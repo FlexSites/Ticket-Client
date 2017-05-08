@@ -1,6 +1,7 @@
 'use strict'
 
 const Persistent = require('../Persistent').default
+const { Schema } = require('mongoose')
 
 /**
  * Ticket
@@ -10,7 +11,11 @@ const Persistent = require('../Persistent').default
 
 exports.default = class Ticket extends Persistent {
   constructor (viewer) {
-    super('event', viewer)
+    super('ticket', {
+      // model: new Schema({
+      //   name: String,
+      // }),
+    })
   }
   static setup () {
     return super.setup('ticket')

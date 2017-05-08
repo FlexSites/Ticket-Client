@@ -3,16 +3,21 @@
 const Persistent = require('../Persistent').default
 const emitter = require('../bus').default
 const System = require('../index').system
+const { Schema } = require('mongoose')
 
 /**
- * Event
+ * Showtime
  *
- * Handles CRUD operations for events and ticket delegation
+ * Handles CRUD operations for Showtimes and ticket delegation
  */
 
-exports.default = class Event extends Persistent {
+exports.default = class Showtime extends Persistent {
   constructor (viewer) {
-    super('showtime', viewer)
+    super('showtime', {
+      // model: new Schema({
+      //   name: String,
+      // }),
+    })
   }
   static setup () {
     return super.setup('showtime')
