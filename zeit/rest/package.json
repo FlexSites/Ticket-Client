@@ -1,0 +1,37 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^8.0.0"
+  },
+  "description": "Ticketing system",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "test": "jest",
+    "watch": "nodemon --exec \"micro\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nerdsauce/auth": "file:../lib/auth",
+    "@nerdsauce/events": "file:../services/events",
+    "enjoi": "^2.2.3",
+    "http-errors": "^1.6.1",
+    "micro": "^7.3.3",
+    "micro-boom": "^1.1.0",
+    "microrouter": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0",
+    "sequelize-cli": "^2.7.0"
+  }
+}

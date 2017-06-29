@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "description": {
+      "id": "/properties/description",
+      "type": "string"
+    },
+    "full_description": {
+      "id": "/properties/full_description",
+      "type": "string"
+    },
+    "id": {
+      "id": "/properties/id",
+      "maxLength": 36,
+      "minLength": 36,
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "title": "Primary key for event",
+      "type": "string"
+    },
+    "image": {
+      "default": "https://cdn.nerdsauce.io/blank.gif",
+      "id": "/properties/image",
+      "maxLength": 36,
+      "minLength": 36,
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "title": "Main image for the event",
+      "type": "string"
+    },
+    "rating": {
+      "default": "PG-13",
+      "id": "/properties/rating",
+      "title": "MPAA rating for the show",
+      "type": "string"
+    },
+    "title": {
+      "id": "/properties/name",
+      "maxLength": 70,
+      "minLength": 2,
+      "title": "Title for the event",
+      "type": "string"
+    },
+    "type": {
+      "id": "/properties/type",
+      "type": "string"
+    },
+    "venue_id": {
+      "id": "/properties/venue_id",
+      "maxLength": 36,
+      "minLength": 36,
+      "pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$",
+      "title": "Foreign key for parent venue",
+      "type": "string"
+    },
+    "video": {
+      "id": "/properties/video",
+      "pattern": "^www\\.youtube\\.com\\/embed\\/\\S*$",
+      "title": "A related video for the event",
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue_id",
+    "id",
+    "title"
+  ],
+  "type": "object"
+}
