@@ -21,12 +21,14 @@ module.exports = async req => {
     const token = req.headers.authorization.replace(/^Bearer/i, '').trim()
     const { kid } = jwt.decode(token, { complete: true }).header
     const { publicKey } = await getSigningKey(kid)
+    console.log(token, kid, publicKey)
     return await verify(token, publicKey, {
       audience: AUTH0_AUDIENCE,
       issuer: `https://${ AUTH0_DOMAIN }/`,
       algorithms: ['RS256'],
     })
   } catch (ex) {
+    console.log('WHY', ex)
     throw new Unauthorized()
   }
 }

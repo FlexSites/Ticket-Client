@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "address": {
+      "id": "/properties/address",
+      "properties": {
+        "address1": {
+          "id": "/properties/address/properties/address1",
+          "type": "string"
+        },
+        "address2": {
+          "id": "/properties/address/properties/address2",
+          "type": "string"
+        },
+        "address3": {
+          "id": "/properties/address/properties/address3",
+          "type": "string"
+        },
+        "locality": {
+          "id": "/properties/address/properties/locality",
+          "type": "string"
+        },
+        "postalCode": {
+          "id": "/properties/address/properties/postalCode",
+          "type": "string"
+        },
+        "region": {
+          "id": "/properties/address/properties/region",
+          "type": "string"
+        }
+      },
+      "required": [
+        "locality",
+        "address1",
+        "postalCode",
+        "region"
+      ],
+      "type": "object"
+    },
+    "description": {
+      "id": "/properties/description",
+      "maxLength": 170,
+      "title": "Description for the venue",
+      "type": "string"
+    },
+    "status": {
+      "id": "/properties/status",
+      "type": "string"
+    },
+    "title": {
+      "id": "/properties/title",
+      "maxLength": 70,
+      "title": "Name of the venue",
+      "type": "string"
+    }
+  },
+  "required": [
+    "address",
+    "title"
+  ],
+  "type": "object"
+}

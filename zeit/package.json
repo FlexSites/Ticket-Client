@@ -1,24 +1,38 @@
 {
   "name": "tickets",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "engines": {
     "node": "^8.0.0"
   },
   "description": "Ticketing system",
   "main": "index.js",
   "scripts": {
-    "start": "micro interfaces/graphql",
+    "start": "node app.js",
     "test": "jest",
-    "watch": "nodemon --exec \"micro interfaces/graphql\""
+    "watch": "nodemon index.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "./test-setup.js"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ticketing/events": "./events",
+    "@nerdsauce/auth": "file:./lib/auth",
+    "@nerdsauce/venues": "file:./services/venues",
+    "@nerdsauce/events": "file:./services/events",
+    "@nerdsauce/showtimes": "file:./services/showtimes",
+    "@nerdsauce/orders": "file:./services/orders",
+    "@nerdsauce/tickets": "file:./services/tickets",
+    "config": "^1.26.1",
     "enjoi": "^2.2.3",
-    "faker": "^4.1.0",
+    "http-errors": "^1.6.1",
     "micro": "^7.3.3",
+    "micro-boom": "^1.1.0",
     "microrouter": "^2.1.1",
+    "cors": "^2.8.3",
+    "faker": "^4.1.0",
     "mongoose": "^4.11.0",
     "monk": "^6.0.1",
     "path-to-regexp": "^1.7.0",
@@ -27,6 +41,7 @@
     "serve-micro-cluster": "^2.1.0"
   },
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-async-await": "0.0.0",

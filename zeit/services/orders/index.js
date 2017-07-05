@@ -1,14 +1,14 @@
 const enjoi = require('enjoi')
-const db = require('@nerdsauce/mongo').get('event')
+const db = require('@nerdsauce/mongo').get('order')
 const { any } = require('@nerdsauce/auth')
 const { BadRequest } = require('http-errors')
 
 const createSchema = require('./create-schema.json')
 const updateSchema = require('./update-schema.json')
 
-const authzRemove = any.bind(any, ['remove:events'])
-const authzCreate = any.bind(any, ['create:events'])
-const authzUpdate = any.bind(any, ['update:events'])
+const authzRemove = any.bind(any, ['remove:orders'])
+const authzCreate = any.bind(any, ['create:orders'])
+const authzUpdate = any.bind(any, ['update:orders'])
 
 const validate = (schema) => {
   const joi = enjoi(schema)

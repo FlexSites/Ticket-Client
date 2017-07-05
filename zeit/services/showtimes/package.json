@@ -1,0 +1,32 @@
+{
+  "name": "@nerdsauce/showtimes",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^8.0.0"
+  },
+  "description": "Showtime service for the Nerdsauce Tickets",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro interfaces/graphql",
+    "test": "jest",
+    "watch": "nodemon --exec \"micro interfaces/graphql\""
+  },
+  "author": "seth@nerdsauce.io",
+  "license": "ISC",
+  "dependencies": {
+    "@nerdsauce/auth": "../../lib/auth",
+    "@nerdsauce/mongo": "../../lib/mongo",
+    "enjoi": "^2.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4",
+    "nodemon": "^1.11.0"
+  }
+}

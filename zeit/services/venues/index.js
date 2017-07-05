@@ -1,14 +1,14 @@
 const enjoi = require('enjoi')
-const db = require('@nerdsauce/mongo').get('event')
+const db = require('@nerdsauce/mongo').get('venue')
 const { any } = require('@nerdsauce/auth')
 const { BadRequest } = require('http-errors')
 
 const createSchema = require('./create-schema.json')
 const updateSchema = require('./update-schema.json')
 
-const authzRemove = any.bind(any, ['remove:events'])
-const authzCreate = any.bind(any, ['create:events'])
-const authzUpdate = any.bind(any, ['update:events'])
+const authzRemove = any.bind(any, ['remove:venues'])
+const authzCreate = any.bind(any, ['create:venues'])
+const authzUpdate = any.bind(any, ['update:venues'])
 
 const validate = (schema) => {
   const joi = enjoi(schema)
@@ -28,7 +28,7 @@ const validateCreate = validate(createSchema)
 const validateUpdate = validate(updateSchema)
 
 exports.create = async (viewer, data, ...params) => {
-  await authzCreate(viewer.scope)
+  // await authzCreate(viewer.scope)
   // TODO: AuthZ
   // TODO: Input validation
   await validateCreate(data)
