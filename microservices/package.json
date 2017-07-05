@@ -1,0 +1,40 @@
+{
+  "name": "ticketing",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^7.0.0"
+  },
+  "description": "Event microservice for ticketing system",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro interfaces/graphql",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec \"micro interfaces/graphql\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ticketing/events": "./events",
+    "enjoi": "^2.2.3",
+    "faker": "^4.1.0",
+    "micro": "^7.3.3",
+    "microrouter": "^2.1.1",
+    "mongoose": "^4.11.0",
+    "monk": "^6.0.1",
+    "path-to-regexp": "^1.7.0",
+    "pg": "^6.3.1",
+    "sequelize": "^4.1.0",
+    "serve-micro-cluster": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0",
+    "sequelize-cli": "^2.7.0"
+  }
+}

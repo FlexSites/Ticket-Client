@@ -1,0 +1,33 @@
+{
+  "name": "@ticketing/events",
+  "version": "1.0.0",
+  "path": "/venues/:venue_id/events",
+  "engines": {
+    "node": "^7.0.0"
+  },
+  "description": "Event microservice for ticketing system",
+  "main": "interfaces/rest/index.js",
+  "scripts": {
+    "start": "micro",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec \"micro\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^7.3.3",
+    "microrouter": "^2.1.1",
+    "@ticketing/postgres": "../../lib/postgres",
+    "@ticketing/service": "../../lib/defaultService"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0"
+  }
+}

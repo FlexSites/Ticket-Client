@@ -1,0 +1,160 @@
+# Root
+
+scalar DateTime
+scalar Url
+scalar Currency
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  node(id: ID!): Node
+  seth: String!
+}
+
+type Mutation {
+  deleteNode(id: ID!): Node
+}
+
+interface Node {
+  id: ID!
+}
+
+interface Edge {
+  cursor: String!
+  node: Node!
+}
+
+interface Connection {
+  edges: [Edge!]!
+  pageInfo: PageInfo!
+}
+
+# Entertainer
+
+# type Entertainer implements Node {
+#   id: ID!
+# }
+
+# Ticket
+
+# type Ticket implements Node {
+#   id: ID!
+# }
+
+# # Address
+
+type Address {
+  address1: String!
+  address2: String
+  locality: String!
+  region: String!
+  postalCode: String!
+  country: String!
+}
+
+
+# # PricingTier
+
+# type PricingTier implements Node {
+#   id: ID!
+# }
+
+# # Event
+# extend type Query {
+#   events: [ Event ]
+# }
+
+# enum MEDIA_TYPE {
+#   VIDEO
+#   IMAGE
+#   OTHER
+# }
+
+# enum SHOWTIME_STATUS {
+#   SOLD_OUT
+#   EXPIRED
+#   UPCOMING
+#   ON_SALE
+# }
+
+# enum TICKET_QUALITY_FILTER {
+#   BEST
+#   BETTER
+#   GOOD
+#   ANY
+# }
+
+# enum TICKET_PRICE_FILTER {
+#   ANY
+#   CHEAP
+# }
+
+# type Event {
+#   id: ID!
+#   showtimes: [ Showtime ]
+#   venue: Venue
+#   entertainers: [ Entertainer ]
+#   title: String!
+#   summary: String
+#   description: String
+#   priceRange: String!
+#   pricingTiers: [ PricingTier ]
+#   type: String!
+#   rating: String!
+#   images: [ Media ]
+#   videos: [ Media ]
+# }
+
+# type Media implements Node {
+#   id: ID!
+#   url: Url!
+#   type: MEDIA_TYPE!
+# }
+
+# type Showtime implements Node {
+#   id: ID!
+#   datetime: DateTime!
+#   priceRange: String!
+#   tickets(price: TICKET_PRICE_FILTER, quality: TICKET_QUALITY_FILTER): [ Ticket ]!
+#   status: SHOWTIME_STATUS!
+# }
+
+# # Venue
+
+# enum VENUE_STATUS {
+#   ACTIVE
+#   INACTIVE
+# }
+
+# type Venue implements Node {
+#   id: ID!
+#   name: String!
+#   description: String
+#   address: Address!
+#   status: VENUE_STATUS
+#   seatMaps: [ SeatMap ]
+# }
+
+# type SeatMap implements Node {
+#   id: ID!
+#   venue: Venue
+#   name: ID!
+#   sections: [SeatMapSection]!
+# }
+
+# type SeatMapSection {
+#   name: ID!
+#   rows: [SeatMapRow]!
+# }
+
+# type SeatMapRow {
+#   name: ID!
+#   seats: [ String ]!
+# }
+
+# type SeatMapSeat {
+#   name: ID!
+# }

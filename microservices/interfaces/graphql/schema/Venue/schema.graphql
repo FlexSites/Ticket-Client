@@ -1,0 +1,48 @@
+extend type Query {
+  venues: VenueConnection!
+}
+enum VENUE_STATUS {
+  ACTIVE
+  INACTIVE
+}
+
+type Venue implements Node {
+  id: ID!
+  name: String!
+  description: String
+  address: Address!
+  status: VENUE_STATUS
+#   seatMaps: SeatMapConnection
+  events: EventConnection!
+}
+
+type VenueEdge implements Edge {
+  cursor: String!
+  node: Venue!
+}
+
+type VenueConnection implements Connection {
+  pageInfo: PageInfo!
+  edges: [ VenueEdge! ]!
+}
+
+# type SeatMap implements Node {
+#   id: ID!
+#   venue: Venue
+#   name: ID!
+#   sections: [SeatMapSection]!
+# }
+
+# type SeatMapSection {
+#   name: ID!
+#   rows: [SeatMapRow]!
+# }
+
+# type SeatMapRow {
+#   name: ID!
+#   seats: [ String ]!
+# }
+
+# type SeatMapSeat {
+#   name: ID!
+# }

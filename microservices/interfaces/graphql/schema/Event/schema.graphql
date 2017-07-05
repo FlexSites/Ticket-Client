@@ -1,0 +1,76 @@
+extend type Query {
+  events(archived: Boolean): EventConnection
+}
+
+# enum MEDIA_TYPE {
+#   VIDEO
+#   IMAGE
+#   OTHER
+# }
+
+# enum SHOWTIME_STATUS {
+#   SOLD_OUT
+#   EXPIRED
+#   UPCOMING
+#   ON_SALE
+# }
+
+# enum TICKET_QUALITY_FILTER = {
+#   BEST
+#   BETTER
+#   GOOD
+#   ANY
+# }
+
+# enum TICKET_PRICE_FILTER = {
+#   ANY
+#   CHEAP
+# }
+
+type Event implements Node {
+  id: ID!
+  title: String!
+#   venue: Venue
+#   showtimes: ShowtimeConnection
+#   entertainers: EntertainerConnection
+  summary: String
+  description: String
+  priceRange: [ Currency! ]!
+#   pricingTiers: [ PricingTier ]
+  type: String!
+  rating: String!
+#   images: MediaConnection
+#   videos: MediaConnection
+}
+
+type EventConnection {
+  edges: [EventEdge]
+  pageInfo: PageInfo
+}
+
+type EventEdge {
+  cursor: String
+  node: Event
+}
+
+type PageInfo {
+  hasNextPage: Boolean
+  hasPreviousPage: Boolean
+  startCursor: String
+  endCursor: String
+}
+
+# type Media implements Node {
+#   id: ID!
+#   url: Url!
+#   type: MEDIA_TYPE!
+# }
+
+# type Showtime implements Node {
+#   id: ID!
+#   datetime: DateTime!
+#   priceRange: String!
+#   tickets(price: TICKET_PRICE_FILTER, quality: TICKET_QUALITY_FILTER): TicketConnection!
+#   status: SHOWTIME_STATUS!
+# }
+

@@ -1,0 +1,72 @@
+Arguments: 
+  /Users/sethtippetts/.nvm/versions/node/v8.1.0/bin/node /Users/sethtippetts/.nvm/versions/node/v8.1.0/bin/yarn add enjoi mongoose
+
+PATH: 
+  /Users/sethtippetts/.nvm/versions/node/v8.1.0/bin:/www/kuali/financial/apache-maven-3.3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sethtippetts/Library/Android/sdk/tools:/Users/sethtippetts/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  0.24.5
+
+Node version: 
+  8.1.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "ticketing",
+    "version": "1.0.0",
+    "engines": {
+      "node": "^7.0.0"
+    },
+    "description": "Event microservice for ticketing system",
+    "main": "index.js",
+    "scripts": {
+      "start": "micro interfaces/graphql",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch": "nodemon --exec \"micro interfaces/graphql\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@ticketing/events": "./events",
+      "faker": "^4.1.0",
+      "micro": "^7.3.3",
+      "microrouter": "^2.1.1",
+      "path-to-regexp": "^1.7.0",
+      "pg": "^6.3.1",
+      "sequelize": "^4.1.0",
+      "serve-micro-cluster": "^2.1.0"
+    },
+    "devDependencies": {
+      "eslint": "^3.19.0",
+      "eslint-config-standard": "^10.2.1",
+      "eslint-plugin-async-await": "0.0.0",
+      "eslint-plugin-import": "^2.3.0",
+      "eslint-plugin-node": "^4.2.2",
+      "eslint-plugin-promise": "^3.5.0",
+      "eslint-plugin-standard": "^3.0.1",
+      "nodemon": "^1.11.0",
+      "sequelize-cli": "^2.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@ticketing%2fevents: Not found
+      at Request.params.callback [as _callback] (/Users/sethtippetts/.nvm/versions/node/v8.1.0/lib/node_modules/yarn/lib/util/request-manager.js:326:18)
+      at Request.self.callback (/Users/sethtippetts/.nvm/versions/node/v8.1.0/lib/node_modules/yarn/node_modules/request/request.js:188:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (/Users/sethtippetts/.nvm/versions/node/v8.1.0/lib/node_modules/yarn/node_modules/request/request.js:1171:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (/Users/sethtippetts/.nvm/versions/node/v8.1.0/lib/node_modules/yarn/node_modules/request/request.js:1091:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)

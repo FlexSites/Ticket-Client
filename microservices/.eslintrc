@@ -1,0 +1,9 @@
+{
+  "plugins": ["async-await"],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "template-curly-spacing": ["error", "always"],
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2
+  }
+}
