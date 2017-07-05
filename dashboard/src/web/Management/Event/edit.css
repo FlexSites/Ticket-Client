@@ -1,0 +1,20 @@
+
+.dropzone {
+  width: 100%;
+  height: 250px;
+  background-position: center center;
+  background-size: contain;
+  background-color: #efefef;
+  color: #777;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+.dropzone:hover {
+  background-color: #fbfbfb;
+  cursor: pointer;
+}
