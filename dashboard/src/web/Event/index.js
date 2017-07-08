@@ -1,27 +1,35 @@
 import React from 'react'
+import Dropzone from 'react-dropzone'
+import moment from 'moment'
+import { withRouter } from 'react-router-dom'
+
 import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
-import Dropzone from 'react-dropzone'
 import SelectField from 'material-ui/SelectField'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
 import MenuItem from 'material-ui/MenuItem'
 import DatePicker from 'material-ui/DatePicker'
-import moment from 'moment'
 import IconMenu from 'material-ui/IconMenu'
 import IconButton from 'material-ui/IconButton'
 import FontIcon from 'material-ui/FontIcon'
 import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more'
 import DropDownMenu from 'material-ui/DropDownMenu'
+import { ListItem } from 'material-ui/List'
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
-import 'react-infinite-calendar/styles.css' // Make sure to import the default stylesheet
-import * as Venue from '../../../services/Venue'
 import ImageIcon from 'material-ui/svg-icons/image/image'
+import PlaceIcon from 'material-ui/svg-icons/maps/place'
+import RightArrow from 'material-ui/svg-icons/hardware/keyboard-arrow-right'
+
+import Menu from './Menu'
+
+import 'react-infinite-calendar/styles.css' // Make sure to import the default stylesheet
+import * as Venue from '../../services/Venue'
 import Maxlength from '../Maxlength'
 
 import './edit.css'
 
-export default class VenueCreate extends React.Component {
+class EventCreate extends React.Component {
   constructor (props) {
     super(props)
 
@@ -33,7 +41,22 @@ export default class VenueCreate extends React.Component {
       venues: [],
     }
     this.onDrop = this.onDrop.bind(this)
+    this.onChange = this.onChange.bind(this)
+    this.extendDescription = this.extendDescription.bind(this)
     this.onCalendarSelect = this.onCalendarSelect.bind(this)
+  }
+
+  go (to, state) {
+    return () => this.props.history.push(to, state)
+  }
+
+  extendDescription () {
+    if (!this.state.data.description) {
+      this.onChange('description', () => {
+        this.description.input.refs.input.focus()
+      })(null, this.state.data.summary)
+      this.onChange('summary')(null, this.state.data.summary.substr(0, 160))
+    }
   }
 
   componentWillMount () {
@@ -41,6 +64,13 @@ export default class VenueCreate extends React.Component {
       .then((venues) => {
         this.setState({ venues, data: { venue_id: venues[0]._id } })
       })
+  }
+
+  onChange (field, cb) {
+    return (e, value) => {
+      const data = Object.assign({}, this.state.data, { [field]: value })
+      this.setState({ data }, cb)
+    }
   }
 
   onDrop (acceptedFiles, rejectedFiles) {
@@ -61,91 +91,76 @@ export default class VenueCreate extends React.Component {
   render () {
     return (
       <div style={{ flex: 1, overflowY: 'scroll' }}>
-        <Toolbar style={{ flex: 1 }}>
-          <ToolbarGroup>
-            <ToolbarTitle text={ `${ this.state.data._id ? 'Edit' : 'New' } Event` } />
-          </ToolbarGroup>
-          <ToolbarGroup>
-            <SelectField
-              name='venue'
-              fullWidth
-              floatingLabelText='Venue'
-              value={ this.state.data.venue_id }
-              onChange={ (e, k, venue_id) => {
-                console.log('setting venue_id', e, venue_id)
-                this.setState({ data: { venue_id } })
-              } }
-            >
-              { this.state.venues.map((venue) => <MenuItem key={ venue._id } value={ venue._id } primaryText={ venue.title } />)}
-              <MenuItem value={ 0 } primaryText='+ New Venue' />
-            </SelectField>
-          </ToolbarGroup>
-          <ToolbarGroup lastChild>
-            <RaisedButton label={ `${ this.state.data._id ? 'Save' : 'Create' } Event` } primary />
-          </ToolbarGroup>
-        </Toolbar>
-        <div style={ { display: 'flex', flex: 1, padding: '16px' } }>
-          <div style={{ width: '50%', padding: '0 16px' }}>
-            <Maxlength
-              name='title'
-              maxlength={ 70 }
-              floatingLabelText='Title'
-              style={ styles.field }
-            />
-            <Maxlength
-              name='summary'
-              maxlength={ 160 }
-              floatingLabelText='Summary'
-              multiLine
-              rows={ 5 }
-              style={ styles.field }
-            />
-          </div>
-          <div style={ { width: '50%' } }>
-            <Paper>
-              <Dropzone
-                accept='image/jpeg, image/png'
-                multiple={ false }
-                name='profile'
-                maxSize={ 2097152 }
-                minSize={ 64 }
-                onDrop={ this.onDrop }
-                className='dropzone'
-                style={ { backgroundImage: `url(${ this.state.data.image })` } }
-              >
-                { !this.state.data.image &&
-                  <div className='dropzone'>
-                    <h4>Add event photo</h4>
-                    <ImageIcon color='#999' style={ { width: 64, height: 64 } } />
-                  </div>
-                }
-              </Dropzone>
-            </Paper>
-          </div>
-        </div>
-        <div style={ { flex: 1, padding: '16px', overflowY: 'scroll' } }>
-          <TextField
-            name='description'
-            floatingLabelText='Description'
-            multiLine
-            rows={ 10 }
+        <Paper zDepth={ 5 } style={ styles.venueSelector }>
+          <ListItem
+            primaryText='Wiseguys Ogden'
+            secondaryText="169 Historic Ogden"
+            leftIcon={ <PlaceIcon /> }
+            rightIcon={ <RightArrow /> }
+            onTouchTap={ this.go('/venues', { title: 'Select venue' })}
+          />
+        </Paper>
+        <Paper zDepth={ 2 }className='dropzone'>
+          <Dropzone
+            accept='image/jpeg, image/png'
+            multiple={ false }
+            name='profile'
+            maxSize={ 2097152 }
+            minSize={ 64 }
+            onDrop={ this.onDrop }
+            className='dropzone'
+            style={ { backgroundImage: `url(${ this.state.data.image })` } }
+          >
+            { !this.state.data.image &&
+              <div className='dropzone'>
+                <h4>Add event photo</h4>
+                <ImageIcon color='#999' style={ { width: 64, height: 64 } } />
+              </div>
+            }
+          </Dropzone>
+        </Paper>
+        <div style={ { flex: 1, padding: '5vw 5vw 100px', overflowY: 'scroll' } }>
+          <Maxlength
+            name='title'
+            onChange={ this.onChange('title') }
+            value={ this.state.data.title }
+            fullWidth
+            maxLength={ 70 }
+            floatingLabelText='Title'
             style={ styles.field }
           />
-          <DatePicker
-            name='showtime[0]'
-            onChange={ this.onCalendarSelect }
-            floatingLabelText='Date'
-            formatDate={ (date) => moment(date).format('MM/DD/YYYY') }
+          <Maxlength
+            name='summary'
+            onChange={ this.onChange('summary') }
+            value={ this.state.data.summary }
+            fullWidth
+            maxLength={ 160 }
+            floatingLabelText='Description'
+            multiLine
+            rows={ 5 }
+            style={ styles.field }
+            onMaxReached={ this.extendDescription }
           />
-          <div style={ styles.actions }>
-            <FlatButton primary>Cancel</FlatButton>
-            <RaisedButton primary>Save Event</RaisedButton>
-          </div>
+          { this.state.data.description &&
+            <TextField
+              ref={ (ref) => { this.description = ref } }
+              name='description'
+              onChange={ this.onChange('description') }
+              value={ this.state.data.description }
+              floatingLabelText='Extended description'
+              multiLine
+              rows={ 10 }
+              style={ styles.field }
+            />
+          }
         </div>
+        <Menu />
       </div>
     )
   }
 }
+
+export default withRouter(EventCreate)
 
 const styles = {
   field: {
@@ -157,6 +172,9 @@ const styles = {
     padding: '16px 0',
     justifyContent: 'flex-end',
   },
+  venueSelector: {
+    borderBottom: 'solid 2px #ddd',
+  }
 }
 
 // {

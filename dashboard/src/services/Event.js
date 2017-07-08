@@ -8,7 +8,7 @@ const client = axios.create({
     Accept: 'application/json',
     Authorization: `Bearer ${ localStorage.getItem('access_token') }`,
   },
-});
+})
 
 export function get (id) {
   return client.get(`/events/${ id }`)

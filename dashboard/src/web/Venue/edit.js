@@ -1,54 +1,57 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { List, ListItem } from 'material-ui/List'
+import Subheader from 'material-ui/Subheader'
 import Geosuggest from 'react-geosuggest'
 import TextField from 'material-ui/TextField'
+import set from 'lodash.set'
 import Maxlength from '../Maxlength'
+import Address from '../../../services/address'
 import './geosuggest.css'
 
 export default class VenueCreate extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      venue: null,
+    this.state = Object.assign({
+      venue: {},
+    }, this.props.location.state)
+  }
+
+  onChange (field) {
+    return (e, value) => {
+      console.log(e, value)
+      const change = {}
+      set(change, field, value)
+      const venue = Object.assign(change, this.state.venue)
+      console.log('change', venue)
+      this.setState({ venue })
     }
   }
+
   render () {
-    if (!this.state.venue) {
+    const { venue } = this.state
+    // if (!this.state.venue) {
       return (
         <div style={ { flex: 1, padding: '16px' } }>
-          <h1>Find your venue</h1>
-          <Geosuggest
-            placeholder='Name of venue...'
-            country='us'
-            types={ [ 'establishment', 'geocode' ] }
-            queryDelay={ 1000 }
-            onSuggestSelect={ (suggestion) => {
-              this.setState({ venue: suggestion })
-            } }
-            onSuggestNoResults={ (input) => {
-              console.log('no results', input)
-            } }
-          />
-          <Maxlength fullWidth name='title' floatingLabelText='Name' maxlength={ 70 } />
-          <Maxlength fullWidth name='description' floatingLabelText='Description' maxlength={ 160 } multiline />
-          <TextField name='address1' floatingLabelText='Street' />
-          <TextField name='address2' floatingLabelText='Suite' />
-          <TextField name='address3' floatingLabelText='Other address' />
-          <TextField name='locality' floatingLabelText='City' />
-          <TextField name='region' floatingLabelText='State' />
-          <TextField name='postalCode' floatingLabelText='Postal Code' />
+          <Maxlength onChange={ this.onChange('title') } value={ venue.title } fullWidth name='title' floatingLabelText='Name' maxLength={ 70 } />
+          <Maxlength onChange={ this.onChange('description') } value={ venue.description } fullWidth name='description' floatingLabelText='Description' maxLength={ 160 } multiLine />
+          <TextField onChange={ this.onChange('address.address1') } value={ venue.address.address1 } name='address1' floatingLabelText='Street' />
+          <TextField onChange={ this.onChange('address.address2') } value={ venue.address.address2 } name='address2' floatingLabelText='Suite' />
+          <TextField onChange={ this.onChange('address.address3') } value={ venue.address.address3 } name='address3' floatingLabelText='Other address' />
+          <TextField onChange={ this.onChange('address.locality') } value={ venue.address.locality } name='locality' floatingLabelText='City' />
+          <TextField onChange={ this.onChange('address.region') } value={ venue.address.region } name='region' floatingLabelText='State' />
+          <TextField onChange={ this.onChange('address.postalCode') } value={ venue.address.postalCode } name='postalCode' floatingLabelText='Postal Code' />
         </div>
       )
-    }
-    return (
-      <div style={ { flex: 1, padding: '16px' } }>
-        <pre>{ JSON.stringify(this.state.venue, null, 2) }</pre>
-      </div>
-    )
+    // }
+    // return (
+    //   <div style={ { flex: 1, padding: '16px' } }>
+    //     <pre>{ JSON.stringify(this.state.venue, null, 2) }</pre>
+    //   </div>
+    // )
   }
 }
-
 
 // {
 //   "description": "Wiseguys Comedy Club Salt Lake City, 400 West, Salt Lake City, UT, United States",

@@ -6,6 +6,7 @@
     "auth0-js": "^8.8.0",
     "axios": "^0.16.2",
     "create-react-class": "^15.6.0",
+    "debounce-promise": "^3.0.1",
     "history": "^4.6.3",
     "lodash.debounce": "^4.0.8",
     "material-ui": "^0.18.3",
@@ -17,6 +18,7 @@
     "react-geosuggest": "^2.3.0",
     "react-infinite-calendar": "^2.3.1",
     "react-measure": "^2.0.2",
+    "react-mui-speeddial": "0.0.6",
     "react-relay": "^1.0.0",
     "react-router-dom": "^4.1.1",
     "react-tap-event-plugin": "^2.0.1"
