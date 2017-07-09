@@ -1,11 +1,13 @@
 import { extendObservable } from 'mobx'
 import * as EventService from '../services/Event'
 import venueStore from './VenueStore'
+import uuid from 'uuid'
 
 class EventStore {
   constructor (venueStore) {
     this.venueStore = venueStore
     extendObservable(this, {
+      selected: null,
       events: [],
       loading: true,
     })
@@ -18,18 +20,27 @@ class EventStore {
     events.forEach(this.incoming.bind(this))
   }
 
+  async get (id) {
+    const event = await EventService.get(id)
+    if (event) {
+      return this.incoming(event)
+    }
+
+    return this.events.find(event => event.id === id) || new Event(this, { id })
+  }
+
   incoming (json) {
     let event = this.events.find(event => event.id === json.id)
     if (!event) {
       event = new Event(this, json)
       this.events.push(event)
     }
-    console.log('existing', this.events)
+    return event
   }
 }
 
 export class Event {
-  constructor (store, { id, title, summary, description, address, showtimes = [], venue } = {}) {
+  constructor (store, { id = uuid.v4(), title, summary, description, address, showtimes = [], venue } = {}) {
     this.store = store
     if (!this.venue) {
       this.store.venueStore
@@ -57,6 +68,7 @@ export class Event {
   }
 
   addShowtime (showtime) {
+    console.log('add showtime', showtime)
     this.showtimes.push(showtime)
   }
 }

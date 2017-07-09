@@ -6,7 +6,7 @@ import { List, ListItem } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
-import { observer } from 'mobx-react'
+import { inject, observer } from 'mobx-react'
 import get from 'lodash.get'
 
 import ResourceList from '../List'
@@ -18,14 +18,12 @@ class ListEvents extends React.Component {
   constructor (props) {
     super(props)
 
-    this.store = props.events
+    this.store = props.eventStore
 
     this.state = {
       suggestions: [],
       searching: false,
     }
-
-    this.autocomplete = this.autocomplete.bind(this)
   }
 
   go (id, state) {
@@ -36,7 +34,6 @@ class ListEvents extends React.Component {
   render () {
     const events = this.state.searching ? this.state.suggestions : this.store.events
 
-    console.log(events[0])
     return (
       <div style={ styles.container }>
         <RaisedButton secondary style={ styles.newEventButton }>New Event</RaisedButton>
@@ -84,4 +81,10 @@ const styles = {
   },
 }
 
-export default withRouter(observer(ListEvents))
+export default inject('eventStore')(
+  withRouter(
+    observer(
+      ListEvents
+    )
+  )
+)

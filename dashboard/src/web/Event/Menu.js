@@ -1,12 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ContentAdd from 'material-ui/svg-icons/content/add'
 import { SpeedDial, SpeedDialItem } from 'react-mui-speeddial'
 import NavigationClose from 'material-ui/svg-icons/navigation/close'
-import NewShowtimeIcon from 'material-ui/svg-icons/action/event'
-import NewVenueIcon from 'material-ui/svg-icons/maps/place'
-import NewEventIcon from 'material-ui/svg-icons/action/event-seat'
-import NewRefundIcon from 'material-ui/svg-icons/editor/money-off'
 import TimeIcon from 'material-ui/svg-icons/device/access-time'
 import MenuIcon from 'material-ui/svg-icons/navigation/menu'
 import SaveIcon from 'material-ui/svg-icons/content/save'
@@ -18,6 +13,7 @@ class FloatingMenu extends React.Component {
 
     this.state = {
       open: false,
+      showtimeDialog: false,
     }
 
     this.toggle = this.toggle.bind(this)
@@ -31,35 +27,45 @@ class FloatingMenu extends React.Component {
     })
   }
 
+  showtimeDialogToggle () {
+    this.setState({
+      showtimeDialog: !this.state.showtimeDialog,
+    })
+  }
+
   go (to, state) {
     return () => this.props.history.push(to, state)
   }
+
   render () {
     return (
-      <SpeedDial
-        style={ styles.container }
-        fabContentOpen={
-          <MenuIcon />
-        }
-        fabContentClose={
-          <NavigationClose />
-        }
-      >
-        <SpeedDialItem
-          label='Save'
-          fabContent={ <SaveIcon /> }
-          onTouchTap={ this.go('/venues/create', { title: 'New venue' }) }
-        />
+      <div>
+        <SpeedDial
+          style={ styles.container }
+          fabContentOpen={
+            <MenuIcon />
+          }
+          fabContentClose={
+            <NavigationClose />
+          }
+        >
+          <SpeedDialItem
+            label='Save'
+            fabContent={ <SaveIcon /> }
+            onTouchTap={ this.go('/venues/create', { title: 'New venue' }) }
+          />
 
-        <SpeedDialItem
-          label='New showtime'
-          fabContent={ <TimeIcon /> }
-          onTouchTap={ this.go('/showtimes/create', { title: 'New showtime' }) }
-        />
+          <SpeedDialItem
+            label='New showtime'
+            fabContent={ <TimeIcon /> }
+            onTouchTap={ this.go(`/events/${ this.props.event.id }/showtimes`, { title: 'Add showtimes' }) }
+          />
 
-      </SpeedDial>
+        </SpeedDial>
+      </div>
     )
   }
+}
 
   // render () {
   //   const buttons = this.state.open ? this.props.buttons : []
@@ -84,7 +90,6 @@ class FloatingMenu extends React.Component {
   //     </div>
   //   )
   // }
-}
 
 export default withRouter(FloatingMenu)
 

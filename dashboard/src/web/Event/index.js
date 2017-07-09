@@ -1,7 +1,7 @@
 import React from 'react'
 import Dropzone from 'react-dropzone'
 import { withRouter } from 'react-router-dom'
-import { observer } from 'mobx-react'
+import { inject, observer } from 'mobx-react'
 
 import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
@@ -22,9 +22,10 @@ class EventCreate extends React.Component {
   constructor (props) {
     super(props)
 
-    this.event = props.event
+    this.event = props.eventStore.selected
 
     this.state = {
+      loading: true,
       data: {
         showtimes: [],
       },
@@ -32,11 +33,16 @@ class EventCreate extends React.Component {
     this.onDrop = this.onDrop.bind(this)
     this.onChange = this.onChange.bind(this)
     this.extendDescription = this.extendDescription.bind(this)
-    this.onCalendarSelect = this.onCalendarSelect.bind(this)
   }
 
   go (to, state) {
     return () => this.props.history.push(to, state)
+  }
+
+  async componentWillMount () {
+    this.event = await this.props.eventStore.get(this.props.match.params.id)
+    console.log('before', this.event.id)
+    this.setState({ loading: false })
   }
 
   extendDescription () {
@@ -50,8 +56,7 @@ class EventCreate extends React.Component {
 
   onChange (field, cb) {
     return (e, value) => {
-      const data = Object.assign({}, this.state.data, { [field]: value })
-      this.setState({ data }, cb)
+      this.event[field] = value
     }
   }
 
@@ -71,6 +76,10 @@ class EventCreate extends React.Component {
   }
 
   render () {
+    if (this.state.loading) {
+      return <div>Loading...</div>
+    }
+    console.log(this.event.id)
     const selectedVenue = this.event.venue || {}
     return (
       <div style={{ flex: 1, overflowY: 'scroll' }}>
@@ -106,7 +115,7 @@ class EventCreate extends React.Component {
           <Maxlength
             name='title'
             onChange={ this.onChange('title') }
-            value={ this.state.data.title }
+            value={ this.event.title }
             fullWidth
             maxLength={ 70 }
             floatingLabelText='Title'
@@ -115,7 +124,7 @@ class EventCreate extends React.Component {
           <Maxlength
             name='summary'
             onChange={ this.onChange('summary') }
-            value={ this.state.data.summary }
+            value={ this.event.summary }
             fullWidth
             maxLength={ 160 }
             floatingLabelText='Description'
@@ -124,7 +133,7 @@ class EventCreate extends React.Component {
             style={ styles.field }
             onMaxReached={ this.extendDescription }
           />
-          { this.state.data.description &&
+          { this.event.description &&
             <TextField
               ref={ (ref) => { this.description = ref } }
               name='description'
@@ -137,13 +146,19 @@ class EventCreate extends React.Component {
             />
           }
         </div>
-        <Menu />
+        <Menu event={ this.event } />
       </div>
     )
   }
 }
 
-export default withRouter(observer(EventCreate))
+export default inject('eventStore', 'venueStore')(
+  withRouter(
+    observer(
+      EventCreate
+    )
+  )
+)
 
 const styles = {
   field: {
@@ -157,7 +172,7 @@ const styles = {
   },
   venueSelector: {
     borderBottom: 'solid 2px #ddd',
-  }
+  },
 }
 
 // {

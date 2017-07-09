@@ -12,7 +12,14 @@ const client = axios.create({
 
 export function get (id) {
   return client.get(`/events/${ id }`)
-  .then(({ data }) => data)
+  .then(({ data }) => {
+    console.log(data)
+    return data || { id, persisted: false }
+  })
+  .catch((ex) => {
+    console.error(ex)
+    return { id, persisted: false }
+  })
 }
 
 export function list (venueID = '5951e1cde87cb2556e9fb8c4') {

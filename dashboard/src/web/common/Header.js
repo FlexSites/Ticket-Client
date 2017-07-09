@@ -5,6 +5,7 @@ import AppBar from 'material-ui/AppBar'
 import FlatButton from 'material-ui/FlatButton'
 import IconButton from 'material-ui/IconButton'
 import NavigationBackIcon from 'material-ui/svg-icons/navigation/arrow-back'
+import MoreIcon from 'material-ui/svg-icons/navigation/more-vert'
 import get from 'lodash.get'
 
 import Auth from '../../services/Auth'
@@ -23,8 +24,6 @@ class Header extends React.Component {
   render () {
     const isAuthenticated = auth.isAuthenticated()
 
-    console.log(this.props.location.state)
-
     return (
       <AppBar
         title={ get(this, 'props.location.state.title', 'Dashboard') }
@@ -37,10 +36,9 @@ class Header extends React.Component {
         onTitleTouchTap={ this.back }
         onLeftIconButtonTouchTap={ this.back }
         iconElementRight={
-          <FlatButton
-            onTouchTap={ () => auth.isAuthenticated() ? auth.logout() : auth.login() }
-            label={ isAuthenticated ? 'Sign out' : 'Sign in' }
-          />
+          <IconButton>
+            <MoreIcon />
+          </IconButton>
         }
       />
     )
