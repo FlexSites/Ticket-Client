@@ -1,5 +1,5 @@
 const enjoi = require('enjoi')
-const db = require('@nerdsauce/mongo').get('order')
+const db = require('@nerdsauce/mongo').get('order', { castIds: false })
 const { any } = require('@nerdsauce/auth')
 const { BadRequest } = require('http-errors')
 

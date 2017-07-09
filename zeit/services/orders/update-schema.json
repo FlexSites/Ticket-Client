@@ -15,7 +15,7 @@
       "id": "/properties/id",
       "maxLength": 24,
       "minLength": 24,
-      "pattern": "^[a-f\\d]{24}$",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "title": "Primary key for event",
       "type": "string"
     },
@@ -24,7 +24,7 @@
       "id": "/properties/image",
       "maxLength": 24,
       "minLength": 24,
-      "pattern": "^[a-f\\d]{24}$",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "title": "Main image for the event",
       "type": "string"
     },
@@ -49,7 +49,7 @@
       "id": "/properties/venue_id",
       "maxLength": 24,
       "minLength": 24,
-      "pattern": "^[a-f\\d]{24}$",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "title": "Foreign key for parent venue",
       "type": "string"
     },
