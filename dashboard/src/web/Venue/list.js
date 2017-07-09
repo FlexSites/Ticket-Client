@@ -6,7 +6,7 @@ import { List, ListItem } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
-
+import { observer } from 'mobx-react'
 
 import ResourceList from '../List'
 import * as Venue from '../../services/Venue'
@@ -17,8 +17,9 @@ class ListVenues extends React.Component {
   constructor (props) {
     super(props)
 
+    this.store = props.venues
+
     this.state = {
-      venues: [],
       suggestions: [],
       searching: false,
     }
@@ -28,12 +29,7 @@ class ListVenues extends React.Component {
 
   go (id, state) {
     const clone = Object.assign({}, state)
-    return () => this.props.history.push(`/management/venues/${ id }`, clone)
-  }
-
-  componentWillMount () {
-    Venue.list()
-      .then(venues => this.setState({ venues }))
+    return () => this.props.history.push(`/venues/${ id }`, clone)
   }
 
   autocomplete (input) {
@@ -57,7 +53,9 @@ class ListVenues extends React.Component {
   }
 
   render () {
-    const venues = this.state.searching ? this.state.suggestions : this.state.venues
+    const venues = this.state.searching ? this.state.suggestions : this.store.venues
+
+    console.log(venues[0])
     return (
       <div style={ styles.container }>
         <Paper zDepth={ 1 } style={ styles.searchBox }>
@@ -78,7 +76,7 @@ class ListVenues extends React.Component {
                 key={ venue.title }
                 primaryText={ venue.title }
                 onTouchTap={ this.go(venue._id, { venue, title: 'Edit Venue' }) }
-                secondaryText={ `${ venue.address.address1 } ${ venue.address.locality }, ${ venue.address.region } ${ venue.address.postalCode }`.trim() }
+                secondaryText={ venue.formattedAddress }
               />
             ))
           }
@@ -113,4 +111,4 @@ const styles = {
   },
 }
 
-export default withRouter(ListVenues)
+export default withRouter(observer(ListVenues))

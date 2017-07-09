@@ -1,5 +1,8 @@
 {
+  "plugins": ["async-await"],
   "rules": {
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2,
     "comma-dangle": ["error", "always-multiline"],
     "template-curly-spacing": ["error", "always"],
     "react/jsx-curly-spacing": ["error", "always"]

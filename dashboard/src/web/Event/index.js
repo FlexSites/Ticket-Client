@@ -1,22 +1,11 @@
 import React from 'react'
 import Dropzone from 'react-dropzone'
-import moment from 'moment'
 import { withRouter } from 'react-router-dom'
+import { observer } from 'mobx-react'
 
 import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
-import SelectField from 'material-ui/SelectField'
-import RaisedButton from 'material-ui/RaisedButton'
-import FlatButton from 'material-ui/FlatButton'
-import MenuItem from 'material-ui/MenuItem'
-import DatePicker from 'material-ui/DatePicker'
-import IconMenu from 'material-ui/IconMenu'
-import IconButton from 'material-ui/IconButton'
-import FontIcon from 'material-ui/FontIcon'
-import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more'
-import DropDownMenu from 'material-ui/DropDownMenu'
 import { ListItem } from 'material-ui/List'
-import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
 import ImageIcon from 'material-ui/svg-icons/image/image'
 import PlaceIcon from 'material-ui/svg-icons/maps/place'
 import RightArrow from 'material-ui/svg-icons/hardware/keyboard-arrow-right'
@@ -33,12 +22,12 @@ class EventCreate extends React.Component {
   constructor (props) {
     super(props)
 
+    this.event = props.event
+
     this.state = {
       data: {
-        venue_id: 0,
         showtimes: [],
       },
-      venues: [],
     }
     this.onDrop = this.onDrop.bind(this)
     this.onChange = this.onChange.bind(this)
@@ -57,13 +46,6 @@ class EventCreate extends React.Component {
       })(null, this.state.data.summary)
       this.onChange('summary')(null, this.state.data.summary.substr(0, 160))
     }
-  }
-
-  componentWillMount () {
-    Venue.list()
-      .then((venues) => {
-        this.setState({ venues, data: { venue_id: venues[0]._id } })
-      })
   }
 
   onChange (field, cb) {
@@ -89,18 +71,19 @@ class EventCreate extends React.Component {
   }
 
   render () {
+    const selectedVenue = this.event.venue || {}
     return (
       <div style={{ flex: 1, overflowY: 'scroll' }}>
         <Paper zDepth={ 5 } style={ styles.venueSelector }>
           <ListItem
-            primaryText='Wiseguys Ogden'
-            secondaryText="169 Historic Ogden"
+            primaryText={ selectedVenue.title }
+            secondaryText={ selectedVenue.formattedAddress }
             leftIcon={ <PlaceIcon /> }
             rightIcon={ <RightArrow /> }
             onTouchTap={ this.go('/venues', { title: 'Select venue' })}
           />
         </Paper>
-        <Paper zDepth={ 2 }className='dropzone'>
+        <Paper zDepth={ 2 } className='dropzone'>
           <Dropzone
             accept='image/jpeg, image/png'
             multiple={ false }
@@ -160,7 +143,7 @@ class EventCreate extends React.Component {
   }
 }
 
-export default withRouter(EventCreate)
+export default withRouter(observer(EventCreate))
 
 const styles = {
   field: {
