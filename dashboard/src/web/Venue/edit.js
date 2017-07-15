@@ -6,8 +6,7 @@ import Geosuggest from 'react-geosuggest'
 import TextField from 'material-ui/TextField'
 import set from 'lodash.set'
 import Maxlength from '../Maxlength'
-import Address from '../../../services/address'
-import './geosuggest.css'
+import Address from '../../services/address'
 
 export default class VenueCreate extends React.Component {
   constructor (props) {

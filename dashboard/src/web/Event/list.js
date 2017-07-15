@@ -11,8 +11,8 @@ import get from 'lodash.get'
 
 import ResourceList from '../List'
 import * as Event from '../../services/Event'
-import './geosuggest.css'
 import * as Address from '../../services/address'
+import MainMenu from '../../MainMenu'
 
 class ListEvents extends React.Component {
   constructor (props) {
@@ -26,31 +26,31 @@ class ListEvents extends React.Component {
     }
   }
 
-  go (id, state) {
+  go (to, state) {
     const clone = Object.assign({}, state)
-    return () => this.props.history.push(`/events/${ id }`, clone)
+    return () => this.props.history.push(to, clone)
   }
 
   render () {
     const events = this.state.searching ? this.state.suggestions : this.store.events
-
+    console.log(events)
     return (
       <div style={ styles.container }>
-        <RaisedButton secondary style={ styles.newEventButton }>New Event</RaisedButton>
+        <RaisedButton secondary style={ styles.newEventButton } onTouchTap={ this.go('/events/create', { title: 'New event' }) }>New Event</RaisedButton>
 
         <List>
-          <Subheader>Events</Subheader>
           {
             events.map((event) => (
               <ListItem
-                key={ event.title }
+                key={ event.id }
                 primaryText={ event.title }
-                onTouchTap={ this.go(event._id, { event, title: 'Edit Event' }) }
+                onTouchTap={ this.go(`/events/${ event.id }`, { event, title: 'Edit Event' }) }
                 secondaryText={ 'Dec 12' }
               />
             ))
           }
         </List>
+        <MainMenu />
       </div>
     )
   }

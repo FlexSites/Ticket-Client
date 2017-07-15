@@ -2,6 +2,7 @@ import React from 'react'
 import Dropzone from 'react-dropzone'
 import { withRouter } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
+import get from 'lodash.get'
 
 import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
@@ -62,6 +63,7 @@ class EventCreate extends React.Component {
 
   onDrop (acceptedFiles, rejectedFiles) {
     console.log(acceptedFiles[0])
+    this.event.image = acceptedFiles[0]
     this.setState({
       data: {
         image: acceptedFiles[0].preview,
@@ -89,7 +91,7 @@ class EventCreate extends React.Component {
             secondaryText={ selectedVenue.formattedAddress }
             leftIcon={ <PlaceIcon /> }
             rightIcon={ <RightArrow /> }
-            onTouchTap={ this.go('/venues', { title: 'Select venue' })}
+            onTouchTap={ this.go(`/events/${ this.event.id }/venue`, { title: 'Select venue' }) }
           />
         </Paper>
         <Paper zDepth={ 2 } className='dropzone'>
@@ -101,9 +103,9 @@ class EventCreate extends React.Component {
             minSize={ 64 }
             onDrop={ this.onDrop }
             className='dropzone'
-            style={ { backgroundImage: `url(${ this.state.data.image })` } }
+            style={ { backgroundImage: `url(${ get(this, 'event.image.preview') })` } }
           >
-            { !this.state.data.image &&
+            { !this.event.image &&
               <div className='dropzone'>
                 <h4>Add event photo</h4>
                 <ImageIcon color='#999' style={ { width: 64, height: 64 } } />
@@ -115,7 +117,7 @@ class EventCreate extends React.Component {
           <Maxlength
             name='title'
             onChange={ this.onChange('title') }
-            value={ this.event.title }
+            value={ this.event.title || '' }
             fullWidth
             maxLength={ 70 }
             floatingLabelText='Title'

@@ -30,7 +30,7 @@ export function create (body) {
 }
 
 export function update (body) {
-  return client.post(`/venues/${ body.id }`, body, {
+  return client.put(`/venues/${ body.id }`, body, {
     headers: {
       'Content-Type': 'application/json',
     },

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import { List, ListItem } from 'material-ui/List'
 import Subheader from 'material-ui/Subheader'
 import Geosuggest from 'react-geosuggest'
+import get from 'lodash.get'
 import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
 import set from 'lodash.set'
 import Maxlength from '../Maxlength'
 import Address from '../../services/address'
 import EditIcon from 'material-ui/svg-icons/editor/mode-edit'
-import './geosuggest.css'
 
 export default class VenueCreate extends React.Component {
   constructor (props) {
@@ -36,20 +36,20 @@ export default class VenueCreate extends React.Component {
     // if (!this.state.venue) {
     return (
       <div style={ { flex: 1, padding: '16px' } }>
-        <Paper zDepth={ 2 } style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 16 }}>
+        <Paper zDepth={ 2 } style={ { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 16 } }>
           <div>
             <div>
-              <span style={{ fontWeight: 'bold' }}>{ venue.title }</span>
+              <span style={ { fontWeight: 'bold' } }>{ venue.title }</span>
             </div>
             <div>
-              <span>{ venue.address.address1 }</span>
-              <span>{ venue.address.address2 }</span>
-              <span>{ venue.address.address3 }</span>
+              <span>{ get(venue, 'address.address1', '') }</span>
+              <span>{ get(venue, 'address.address2', '') }</span>
+              <span>{ get(venue, 'address.address3', '') }</span>
             </div>
             <div>
-              <span>{ venue.address.locality }, </span>
-              <span>{ venue.address.region }</span>
-              <span> { venue.address.postalCode }</span>
+              <span>{ get(venue, 'address.locality', '') }, </span>
+              <span>{ get(venue, 'address.region', '') }</span>
+              <span> { get(venue, 'address.postalCode', '') }</span>
             </div>
           </div>
           <EditIcon />

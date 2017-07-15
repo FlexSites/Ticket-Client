@@ -15,8 +15,14 @@ class EventStore {
   }
 
   async list () {
-    const events = await EventService.list()
-    console.log('list', events)
+    const venues = await this.venueStore.list()
+
+    const eventsPromises = await Promise.all(
+      venues.map(({ id }) => EventService.list(id))
+    )
+    const events = [].concat(...eventsPromises)
+    console.log(events)
+
     events.forEach(this.incoming.bind(this))
   }
 
@@ -29,8 +35,24 @@ class EventStore {
     return this.events.find(event => event.id === id) || new Event(this, { id })
   }
 
+  async save (event) {
+    await event.venue.save()
+    const result = await EventService.update(event.json)
+    return this.incoming(result)
+  }
+
   incoming (json) {
     let event = this.events.find(event => event.id === json.id)
+    if (!json.venue_id) json.venue_id = this.venueStore.venues[0].id
+
+    const venue = this.venueStore.venues.find(({ id }) => {
+      console.log(id, json.venue_id, id === json.venue_id)
+      return id === json.venue_id
+    })
+    json.venue = venue
+
+    delete json.venue_id
+    console.log('incoming', json, venue)
     if (!event) {
       event = new Event(this, json)
       this.events.push(event)
@@ -40,13 +62,17 @@ class EventStore {
 }
 
 export class Event {
-  constructor (store, { id = uuid.v4(), title, summary, description, address, showtimes = [], venue } = {}) {
+  constructor (store, {
+    id = uuid.v4(),
+    title = '',
+    image = '',
+    summary = '',
+    description = '',
+    address = {},
+    showtimes = [],
+    venue = {},
+  } = {}) {
     this.store = store
-    if (!this.venue) {
-      this.store.venueStore
-        .selected()
-        .then((venue) => { this.venue = venue })
-    }
     extendObservable(this, {
       id,
       title,
@@ -54,17 +80,23 @@ export class Event {
       description,
       showtimes,
       venue,
-      get toJSON () {
+      image,
+      get json () {
         return {
           id: this.id,
           title: this.title,
           summary: this.summary,
           description: this.description,
           showtimes: this.showtimes,
-          venue_id: this.venue._id,
+          venue_id: this.venue.id,
         }
       },
     })
+  }
+
+  save () {
+    console.log('SAVING EVENT', this.json)
+    return this.store.save(this)
   }
 
   addShowtime (showtime) {

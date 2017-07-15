@@ -52,7 +52,7 @@ class FloatingMenu extends React.Component {
           <SpeedDialItem
             label='Save'
             fabContent={ <SaveIcon /> }
-            onTouchTap={ this.go('/venues/create', { title: 'New venue' }) }
+            onTouchTap={ () => this.props.event.save() }
           />
 
           <SpeedDialItem
@@ -65,6 +65,10 @@ class FloatingMenu extends React.Component {
       </div>
     )
   }
+}
+
+FloatingMenu.propTypes = {
+  event: PropTypes.object,
 }
 
   // render () {

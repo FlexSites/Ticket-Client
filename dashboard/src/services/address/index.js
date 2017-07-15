@@ -1,6 +1,7 @@
 /* global google */
 
 import debounce from 'debounce-promise'
+import { Venue } from '../../stores/VenueStore'
 
 // const API_KEY = 'AIzaSyCMCRdQCnmxf3odiUDrapSD14EY4zBluSg'
 const service = new google.maps.places.AutocompleteService()
@@ -80,10 +81,10 @@ function format ({ gmaps, structured_formatting }) {
     postalCode: object.postal_code || '',
   }
 
-  return {
+  return new Venue(null, {
     title: structured_formatting.main_text,
     address,
-  }
+  })
 }
 
 export const autocomplete = debounce(_autocomplete, 1000)

@@ -12,6 +12,7 @@ import InfiniteCalendar, {
   withMultipleDates,
 } from 'react-infinite-calendar'
 import 'react-infinite-calendar/styles.css' // Make sure to import the default stylesheet
+import TimeSelect from './TimeSelect'
 
 const MultipleDatesCalendar = withMultipleDates(Calendar)
 
@@ -48,7 +49,6 @@ class AddShowtimes extends React.Component {
   }
 
   updateWindowDimensions () {
-    console.log({ width: window.innerWidth, height: window.innerHeight })
     this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
@@ -62,12 +62,10 @@ class AddShowtimes extends React.Component {
     } else {
       dates.push(selected)
     }
-    console.log(dates.length)
     this.setState({ dates })
   }
 
   toggleTimeSelect () {
-    console.log('timeselect', !this.state.timeSelect)
     this.setState({
       timeSelect: !this.state.timeSelect,
     })
@@ -77,10 +75,8 @@ class AddShowtimes extends React.Component {
     if (this.loading) {
       return <div>Loading...</div>
     }
-    console.log('selected', this.event)
     const today = new Date()
     const oneYear = new Date(today.getFullYear() + 1, today.getMonth(), today.getDate())
-    console.log('height', this.state.height, Math.min(this.state.height, 568) - 128)
     return (
       <div style={ { flex: 1, overflow: 'hidden', position: 'relative' } }>
         <div style={ { flex: 1, overflow: 'hidden' } }>
@@ -98,35 +94,7 @@ class AddShowtimes extends React.Component {
           />
         </div>
         <RaisedButton style={ { order: -1 } } secondary fullWidth label='Select times' icon={ <TimeIcon /> } onTouchTap={ this.toggleTimeSelect } />
-        { this.state.timeSelect &&
-          <div style={ { zIndex: 1, backgroundColor: '#fff', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, flex: 1 } }>
-            <RaisedButton style={ { order: -1 } } secondary fullWidth label='Select dates' icon={ <DateIcon /> } onTouchTap={ this.toggleTimeSelect } />
-            <h1>Time Select</h1>
-            <div style={{ display: 'flex', flexDirection: 'row' }}>
-              <div style={ { width: '50%' } }>
-                {
-                  this.state.dates.map((date) => {
-                    return <div key={ date.toISOString() }>
-                      <Chip>
-                        Deletable Text Chip
-                      </Chip>
-                      { date.toISOString() }
-                    </div>
-                  })
-                }
-              </div>
-              <div style={ { width: '50%' } }>
-                <Menu>
-                  {
-                    ['6:00pm', '6:30pm', '7:00pm', '7:30pm', '8:00pm', '8:30pm', '9:00pm', '9:30pm', '10:00pm', '10:30pm'].map((time) => {
-                      return <MenuItem primaryText={ time } />
-                    })
-                  }
-                </Menu>
-              </div>
-            </div>
-          </div>
-        }
+        { this.state.timeSelect && <TimeSelect close={ this.toggleTimeSelect } showtimes={ [ ...this.state.dates, ...this.event.showtimes ] } /> }
       </div>
     )
   }

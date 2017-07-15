@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import CircularProgress from 'material-ui/CircularProgress'
 import { Provider } from 'mobx-react'
+import CircularProgress from 'material-ui/CircularProgress';
 import uuid from 'uuid'
 
 import venueStore from './stores/VenueStore'
@@ -8,13 +8,17 @@ import eventStore from './stores/EventStore'
 import Home from './web/Home'
 import Header from './web/common/Header'
 
-import ListVenues from './web/Venue/list'
-import ListEvents from './web/Event/list'
+import ListVenues from './web/Venue/List'
+import ViewVenue from './web/Venue'
+import EditVenue from './web/Venue/edit'
 
-import EditVenue from './web/Venue'
+import ListEvents from './web/Event/list'
 import EditEvent from './web/Event'
+import SelectVenue from './web/Event/SelectVenue'
+
 import AddShowtimes from './web/Showtime'
 import auth from './web/common/withAuthentication'
+import Loading from './web/common/Loading'
 
 import {
   BrowserRouter as Router,
@@ -28,8 +32,9 @@ import './App.css'
 export const authService = new Auth()
 const handleAuthentication = (nextState, replace) => {
   if (/access_token|id_token|error/.test(nextState.location.hash)) {
-    authService.handleAuthentication()
+    return authService.handleAuthentication()
   }
+  return Promise.reject(new Error('Missing proper query response: "access_token|id_token|error"'))
 }
 
 class App extends Component {
@@ -39,20 +44,29 @@ class App extends Component {
         <Provider eventStore={ eventStore } venueStore={ venueStore }>
           <div style={ { display: 'flex', flexDirection: 'column', flex: 1 } }>
             <Header />
-            <Route exact path='/' component={ auth(Home) } />
+            <Route exact path='/' component={ auth(ListEvents) } />
 
             <Route exact path='/venues' component={ auth(ListVenues) } />
-            <Route path='/venues/create' component={ auth(EditVenue) } />
-            <Route path='/venues/:venue' component={ auth(EditVenue) } />
+            <Route exact path='/venues/:id' component={ auth(ViewVenue) } />
+            <Route exact path='/venues/:id/edit' component={ auth(EditVenue) } />
 
             <Route exact path='/events' component={ auth(ListEvents) } />
             <Route exact path='/events/create' render={ () => <Redirect to={ `/events/${ uuid.v4() }` } /> } />
             <Route exact path='/events/:id' component={ auth(EditEvent) } />
+            <Route exact path='/events/:id/venue' component={ auth(SelectVenue) } />
             <Route path='/events/:id/showtimes' component={ auth(AddShowtimes) } />
 
             <Route path='/callback' render={ (props) => {
               handleAuthentication(props)
-              return <Redirect to='/' />
+                .then(() => props.history.replace('/'))
+                .catch((ex) => {
+                  console.log('ERROR', ex)
+                  props.history.replace('/')
+                })
+
+              return (
+                <Loading message='Redirecting' />
+              )
             } } />
           </div>
         </Provider>

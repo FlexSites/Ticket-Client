@@ -1,5 +1,6 @@
 import { extendObservable } from 'mobx'
 import get from 'lodash.get'
+import uuid from 'uuid'
 import * as VenueService from '../services/Venue'
 
 class VenueStore {
@@ -18,12 +19,29 @@ class VenueStore {
     return this._selected
   }
 
+  async get (id) {
+    const venue = await VenueService.get(id)
+    if (venue) {
+      return this.incoming(venue)
+    }
+
+    return this.venues.find(venue => venue.id === id) || new Venue(this, { id })
+  }
+
+  async save (venue) {
+    const result = await VenueService.update(venue.json)
+    return this.incoming(result)
+  }
+
   async list () {
     const venues = await VenueService.list()
+    console.log('venues', venues)
     venues.forEach((venue) => {
       venue = this.incoming(venue)
       if (!this._selected) this._selected = venue
     })
+
+    return this.venues
   }
 
   incoming (json) {
@@ -36,9 +54,12 @@ class VenueStore {
   }
 }
 
-class Venue {
-  constructor (store, { id, title, description, address } = {}) {
+const singleton = new VenueStore()
+
+export class Venue {
+  constructor (store = singleton, { id = uuid.v4(), title, description, address = {} } = {}) {
     this.store = store
+    console.log('constructor', store, id, title, address)
     extendObservable(this, {
       id,
       title,
@@ -47,7 +68,7 @@ class Venue {
       get formattedAddress () {
         return `${ get(this, 'address.address1', '') } ${ get(this, 'address.locality', '') }, ${ get(this, 'address.region', '') } ${ get(this, 'address.postalCode', '') }`.trim()
       },
-      get toJSON () {
+      get json () {
         return {
           id: this.id,
           title: this.title,
@@ -57,6 +78,11 @@ class Venue {
       },
     })
   }
+
+  save () {
+    console.log('SAVING VENUE', this.json)
+    return this.store.save(this)
+  }
 }
 
-export default new VenueStore()
+export default singleton

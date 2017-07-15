@@ -23,18 +23,22 @@ export default class Auth {
   }
 
   handleAuthentication () {
-    this.auth0.parseHash((err, authResult) => {
-      if (authResult && authResult.accessToken && authResult.idToken) {
-        this.setSession(authResult)
+    return new Promise((resolve, reject) => {
+      this.auth0.parseHash((err, authResult) => {
+        if (authResult && authResult.accessToken && authResult.idToken) {
+          this.setSession(authResult)
+          resolve(authResult)
 
-        // TODO: Send them to the dashboard
-        // history.replace("/home");
-      } else if (err) {
-        // TODO: Send them to the dashboard
-        // history.replace("/home");
-        console.log(err)
-        alert(`Error: ${ err.error }. Check the console for further details.`)
-      }
+          // TODO: Send them to the dashboard
+          // history.replace("/home");
+        } else if (err) {
+          reject(err)
+          // TODO: Send them to the dashboard
+          // history.replace("/home");
+          console.log(err)
+          alert(`Error: ${ err.error }. Check the console for further details.`)
+        }
+      })
     })
   }
 

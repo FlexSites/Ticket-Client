@@ -22,7 +22,7 @@ export function get (id) {
   })
 }
 
-export function list (venueID = '5951e1cde87cb2556e9fb8c4') {
+export function list (venueID = '003d252e-d1e6-40f5-9d22-e330d3f2fb10') {
   return client.get(`/venues/${ venueID }/events`)
   .then(({ data }) => data)
 }
@@ -37,7 +37,7 @@ export function create (body) {
 }
 
 export function update (body) {
-  return client.post(`/events/${ body.id }`, body, {
+  return client.put(`/events/${ body.id }`, body, {
     headers: {
       'Content-Type': 'application/json',
     },
