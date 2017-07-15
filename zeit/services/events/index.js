@@ -61,7 +61,10 @@ exports.remove = async (viewer, _id, data = {}, ...params) => {
 exports.update = async (viewer, _id, data = {}, ...params) => {
   await authzUpdate(viewer.scope)
   await validateUpdate(data)
-  await db.update({ _id }, data, ...params)
+  await db.update({ _id }, data, {
+    'upsert': true,
+    'new': true,
+  }, ...params)
   return exports.get(viewer, _id)
   // TODO: Logging
   // TODO: Eventing

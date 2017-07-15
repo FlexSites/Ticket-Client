@@ -14,8 +14,8 @@
     "image": {
       "default": "https://cdn.nerdsauce.io/blank.gif",
       "id": "/properties/image",
-      "maxLength": 24,
-      "minLength": 24,
+      "maxLength": 36,
+      "minLength": 36,
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "title": "Main image for the event",
       "type": "string"
@@ -39,8 +39,8 @@
     },
     "venue_id": {
       "id": "/properties/venue_id",
-      "maxLength": 24,
-      "minLength": 24,
+      "maxLength": 36,
+      "minLength": 36,
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "title": "Foreign key for parent venue",
       "type": "string"
