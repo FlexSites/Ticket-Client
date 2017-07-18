@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://example.com/example.json",
+  "properties": {
+    "description": {
+      "id": "/properties/description",
+      "type": "string"
+    },
+    "full_description": {
+      "id": "/properties/full_description",
+      "type": "string"
+    },
+    "image": {
+      "default": "https://cdn.nerdsauce.io/blank.gif",
+      "id": "/properties/image",
+      "maxLength": 24,
+      "minLength": 24,
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "title": "Main image for the event",
+      "type": "string"
+    },
+    "rating": {
+      "default": "PG-13",
+      "id": "/properties/rating",
+      "title": "MPAA rating for the show",
+      "type": "string"
+    },
+    "title": {
+      "id": "/properties/name",
+      "maxLength": 70,
+      "minLength": 2,
+      "title": "Title for the event",
+      "type": "string"
+    },
+    "type": {
+      "id": "/properties/type",
+      "type": "string"
+    },
+    "venue_id": {
+      "id": "/properties/venue_id",
+      "maxLength": 24,
+      "minLength": 24,
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "title": "Foreign key for parent venue",
+      "type": "string"
+    },
+    "video": {
+      "id": "/properties/video",
+      "pattern": "^www\\.youtube\\.com\\/embed\\/\\S*$",
+      "title": "A related video for the event",
+      "type": "string"
+    }
+  },
+  "required": [
+    "venue_id",
+    "id",
+    "title"
+  ],
+  "type": "object"
+}
