@@ -71,12 +71,6 @@ class EventCreate extends React.Component {
     })
   }
 
-  onCalendarSelect (e, value) {
-    this.setState({
-      showtimes: [ value ],
-    })
-  }
-
   render () {
     if (this.state.loading) {
       return <div>Loading...</div>

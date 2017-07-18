@@ -3,7 +3,7 @@ import get from 'lodash.get'
 import uuid from 'uuid'
 import * as VenueService from '../services/Venue'
 
-class VenueStore {
+export class VenueStore {
   constructor () {
     this._selected = null
     extendObservable(this, {

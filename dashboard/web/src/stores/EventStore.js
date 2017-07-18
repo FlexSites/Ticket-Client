@@ -3,7 +3,7 @@ import * as EventService from '../services/Event'
 import venueStore from './VenueStore'
 import uuid from 'uuid'
 
-class EventStore {
+export class EventStore {
   constructor (venueStore) {
     this.venueStore = venueStore
     extendObservable(this, {

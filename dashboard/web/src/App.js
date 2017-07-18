@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 import { Provider } from 'mobx-react'
 import uuid from 'uuid'
 
-import venueStore from './stores/VenueStore'
-import eventStore from './stores/EventStore'
+import { eventStore, venueStore, VenueStore, EventStore } from '@nerdsauce/dashboard-stores'
 import Header from './web/common/Header'
 
 import ListVenues from './web/Venue/List'
 import ViewVenue from './web/Venue'
 import EditVenue from './web/Venue/edit'
 
-import ListEvents from './web/Event/list'
+import EventList from './web/EventList'
 import EditEvent from './web/Event'
 import SelectVenue from './web/Event/SelectVenue'
 
@@ -42,13 +41,13 @@ class App extends Component {
         <Provider eventStore={ eventStore } venueStore={ venueStore }>
           <div style={ { display: 'flex', flexDirection: 'column', flex: 1 } }>
             <Header />
-            <Route exact path='/' component={ auth(ListEvents) } />
+            <Route exact path='/' component={ auth(EventList) } />
 
             <Route exact path='/venues' component={ auth(ListVenues) } />
             <Route exact path='/venues/:id' component={ auth(ViewVenue) } />
             <Route exact path='/venues/:id/edit' component={ auth(EditVenue) } />
 
-            <Route exact path='/events' component={ auth(ListEvents) } />
+            <Route exact path='/events' component={ auth(EventList) } />
             <Route exact path='/events/create' render={ () => <Redirect to={ `/events/${ uuid.v4() }` } /> } />
             <Route exact path='/events/:id' component={ auth(EditEvent) } />
             <Route exact path='/events/:id/venue' component={ auth(SelectVenue) } />
