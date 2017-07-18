@@ -44,25 +44,25 @@ class FloatingMenu extends React.Component {
       >
 
         <SpeedDialItem
-          label='New refund'
+          label='Refund'
           fabContent={ <NewRefundIcon /> }
           onTouchTap={ this.go('/refunds/create', { title: 'New refund' }) }
         />
 
         <SpeedDialItem
-          label='New showtime'
+          label='Showtime'
           fabContent={ <NewShowtimeIcon /> }
           onTouchTap={ this.go('/showtimes/create', { title: 'New showtime' }) }
         />
 
         <SpeedDialItem
-          label='New venue'
+          label='Venue'
           fabContent={ <NewVenueIcon /> }
           onTouchTap={ this.go('/venues/create', { title: 'New venue' }) }
         />
 
         <SpeedDialItem
-          label='New event'
+          label='Event'
           fabContent={ <NewEventIcon /> }
           onTouchTap={ this.go('/events/create', { title: 'New event' }) }
         />

@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import { Provider } from 'mobx-react'
-import CircularProgress from 'material-ui/CircularProgress';
 import uuid from 'uuid'
 
 import venueStore from './stores/VenueStore'
 import eventStore from './stores/EventStore'
-import Home from './web/Home'
 import Header from './web/common/Header'
 
 import ListVenues from './web/Venue/List'
