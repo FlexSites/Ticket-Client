@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "template-curly-spacing": ["error", "always"],
+    "react/jsx-curly-spacing": ["error", "always"]
+  },
+  "extends": ["standard", "standard-react"]
+}
