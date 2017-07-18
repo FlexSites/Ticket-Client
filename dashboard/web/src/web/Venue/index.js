@@ -1,14 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { List, ListItem } from 'material-ui/List'
-import Subheader from 'material-ui/Subheader'
-import Geosuggest from 'react-geosuggest'
 import get from 'lodash.get'
-import TextField from 'material-ui/TextField'
 import Paper from 'material-ui/Paper'
 import set from 'lodash.set'
-import Maxlength from '../Maxlength'
-import Address from '../../services/address'
 import EditIcon from 'material-ui/svg-icons/editor/mode-edit'
 
 export default class VenueCreate extends React.Component {

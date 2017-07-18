@@ -25,8 +25,6 @@ const venue = {
   // Meta
 }
 
-console.log(JSON.stringify(event, null, 2))
-
 module.exports = {
   event,
 }

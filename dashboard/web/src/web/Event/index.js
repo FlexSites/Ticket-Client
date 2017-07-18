@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Dropzone from 'react-dropzone'
 import { withRouter } from 'react-router-dom'
 import { inject, observer } from 'mobx-react'
@@ -14,7 +15,6 @@ import RightArrow from 'material-ui/svg-icons/hardware/keyboard-arrow-right'
 import Menu from './Menu'
 
 import 'react-infinite-calendar/styles.css' // Make sure to import the default stylesheet
-import * as Venue from '../../services/Venue'
 import Maxlength from '../Maxlength'
 
 import './edit.css'
@@ -155,6 +155,11 @@ export default inject('eventStore', 'venueStore')(
     )
   )
 )
+
+EventCreate.propTypes = {
+  history: PropTypes.object,
+  eventStore: PropTypes.object,
+}
 
 const styles = {
   field: {

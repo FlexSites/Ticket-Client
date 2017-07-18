@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 import AppBar from 'material-ui/AppBar'
-import FlatButton from 'material-ui/FlatButton'
 import IconButton from 'material-ui/IconButton'
 import NavigationBackIcon from 'material-ui/svg-icons/navigation/arrow-back'
 import MoreIcon from 'material-ui/svg-icons/navigation/more-vert'
@@ -22,8 +21,6 @@ class Header extends React.Component {
     return this.props.history.go(-1)
   }
   render () {
-    const isAuthenticated = auth.isAuthenticated()
-
     return (
       <AppBar
         title={ get(this, 'props.location.state.title', 'Dashboard') }

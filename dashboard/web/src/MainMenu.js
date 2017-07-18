@@ -110,7 +110,7 @@ const styles = {
 }
 
 FloatingMenu.propTypes = {
-  buttons: PropTypes.array,
+  history: PropTypes.object,
 }
 
 FloatingMenu.defaultMenu = {

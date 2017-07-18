@@ -1,8 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { List, ListItem } from 'material-ui/List'
-import Subheader from 'material-ui/Subheader'
-import Geosuggest from 'react-geosuggest'
 import TextField from 'material-ui/TextField'
 import set from 'lodash.set'
 import Maxlength from '../Maxlength'
@@ -31,18 +28,18 @@ export default class VenueCreate extends React.Component {
   render () {
     const { venue } = this.state
     // if (!this.state.venue) {
-      return (
-        <div style={ { flex: 1, padding: '16px' } }>
-          <Maxlength onChange={ this.onChange('title') } value={ venue.title } fullWidth name='title' floatingLabelText='Name' maxLength={ 70 } />
-          <Maxlength onChange={ this.onChange('description') } value={ venue.description } fullWidth name='description' floatingLabelText='Description' maxLength={ 160 } multiLine />
-          <TextField onChange={ this.onChange('address.address1') } value={ venue.address.address1 } name='address1' floatingLabelText='Street' />
-          <TextField onChange={ this.onChange('address.address2') } value={ venue.address.address2 } name='address2' floatingLabelText='Suite' />
-          <TextField onChange={ this.onChange('address.address3') } value={ venue.address.address3 } name='address3' floatingLabelText='Other address' />
-          <TextField onChange={ this.onChange('address.locality') } value={ venue.address.locality } name='locality' floatingLabelText='City' />
-          <TextField onChange={ this.onChange('address.region') } value={ venue.address.region } name='region' floatingLabelText='State' />
-          <TextField onChange={ this.onChange('address.postalCode') } value={ venue.address.postalCode } name='postalCode' floatingLabelText='Postal Code' />
-        </div>
-      )
+    return (
+      <div style={ { flex: 1, padding: '16px' } }>
+        <Maxlength onChange={ this.onChange('title') } value={ venue.title } fullWidth name='title' floatingLabelText='Name' maxLength={ 70 } />
+        <Maxlength onChange={ this.onChange('description') } value={ venue.description } fullWidth name='description' floatingLabelText='Description' maxLength={ 160 } multiLine />
+        <TextField onChange={ this.onChange('address.address1') } value={ venue.address.address1 } name='address1' floatingLabelText='Street' />
+        <TextField onChange={ this.onChange('address.address2') } value={ venue.address.address2 } name='address2' floatingLabelText='Suite' />
+        <TextField onChange={ this.onChange('address.address3') } value={ venue.address.address3 } name='address3' floatingLabelText='Other address' />
+        <TextField onChange={ this.onChange('address.locality') } value={ venue.address.locality } name='locality' floatingLabelText='City' />
+        <TextField onChange={ this.onChange('address.region') } value={ venue.address.region } name='region' floatingLabelText='State' />
+        <TextField onChange={ this.onChange('address.postalCode') } value={ venue.address.postalCode } name='postalCode' floatingLabelText='Postal Code' />
+      </div>
+    )
     // }
     // return (
     //   <div style={ { flex: 1, padding: '16px' } }>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Provider } from 'mobx-react'
 import uuid from 'uuid'
 
-import { eventStore, venueStore, VenueStore, EventStore } from '@nerdsauce/dashboard-stores'
+import { eventStore, venueStore } from '@nerdsauce/dashboard-stores'
 import Header from './web/common/Header'
 
 import ListVenues from './web/Venue/List'
