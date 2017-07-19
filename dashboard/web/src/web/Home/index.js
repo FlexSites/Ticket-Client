@@ -3,7 +3,7 @@ import MainMenu from '../../MainMenu'
 
 export default (props) => {
   return (
-    <div className="body">
+    <div className='body'>
       Home
       <MainMenu />
     </div>

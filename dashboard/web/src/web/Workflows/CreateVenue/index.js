@@ -5,7 +5,7 @@ import Workflow from '../index'
 
 export default (props) => {
   return (
-    <Workflow id="create-venue" { ...props }>
+    <Workflow id='create-venue' { ...props }>
       <div>
         <h1>Page 2</h1>
         <TextField name='title' />

@@ -1,5 +1,4 @@
-import axios from 'axios'
-import { auth } from '../App'
+const axios = require('axios')
 
 const client = axios.create({
   baseURL: 'http://localhost:3001/api/rest',
@@ -8,19 +7,19 @@ const client = axios.create({
     Accept: 'application/json',
     Authorization: `Bearer ${ localStorage.getItem('access_token') }`,
   },
-});
+})
 
-export function get (id) {
+function get (id) {
   return client.get(`/venues/${ id }`)
   .then(({ data }) => data)
 }
 
-export function list () {
+function list () {
   return client.get(`/venues`)
   .then(({ data }) => data)
 }
 
-export function create (body) {
+function create (body) {
   return client.post('/venues', body, {
     headers: {
       'Content-Type': 'application/json',
@@ -29,7 +28,7 @@ export function create (body) {
   .then(({ data }) => data)
 }
 
-export function update (body) {
+function update (body) {
   return client.put(`/venues/${ body.id }`, body, {
     headers: {
       'Content-Type': 'application/json',
@@ -38,7 +37,15 @@ export function update (body) {
   .then(({ data }) => data)
 }
 
-export function remove (id) {
+function remove (id) {
   return client.delete(`/venues/${ id }`)
   .then(({ data }) => data)
+}
+
+module.exports = {
+  get,
+  list,
+  create,
+  update,
+  remove,
 }

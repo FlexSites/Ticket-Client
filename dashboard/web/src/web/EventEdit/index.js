@@ -42,7 +42,6 @@ class EventCreate extends React.Component {
 
   async componentWillMount () {
     this.event = await this.props.eventStore.get(this.props.match.params.id)
-    console.log('before', this.event.id)
     this.setState({ loading: false })
   }
 
@@ -62,7 +61,6 @@ class EventCreate extends React.Component {
   }
 
   onDrop (acceptedFiles, rejectedFiles) {
-    console.log(acceptedFiles[0])
     this.event.image = acceptedFiles[0]
     this.setState({
       data: {
@@ -75,10 +73,9 @@ class EventCreate extends React.Component {
     if (this.state.loading) {
       return <div>Loading...</div>
     }
-    console.log(this.event.id)
     const selectedVenue = this.event.venue || {}
     return (
-      <div style={{ flex: 1, overflowY: 'scroll' }}>
+      <div style={ { flex: 1, overflowY: 'scroll' } }>
         <Paper zDepth={ 5 } style={ styles.venueSelector }>
           <ListItem
             primaryText={ selectedVenue.title }
@@ -159,6 +156,7 @@ export default inject('eventStore', 'venueStore')(
 EventCreate.propTypes = {
   history: PropTypes.object,
   eventStore: PropTypes.object,
+  match: PropTypes.object,
 }
 
 const styles = {

@@ -7,10 +7,6 @@ import NavigationBackIcon from 'material-ui/svg-icons/navigation/arrow-back'
 import MoreIcon from 'material-ui/svg-icons/navigation/more-vert'
 import get from 'lodash.get'
 
-import Auth from '../../services/Auth'
-
-export const auth = new Auth()
-
 class Header extends React.Component {
   constructor (props) {
     super(props)

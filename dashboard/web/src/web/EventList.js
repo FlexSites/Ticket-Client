@@ -2,17 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { List, ListItem } from 'material-ui/List'
 import RaisedButton from 'material-ui/RaisedButton'
+import enhance from '@nerdsauce/dashboard-stores/components/EventList'
 
-import enhance from './eventList'
-import MainMenu from '../../MainMenu'
+import MainMenu from '../MainMenu'
 
 export default enhance(EventList)
 
 export function EventList ({ events, onSelect, onCreate }) {
-  console.log('EVENT RENDER', events)
   return (
     <div style={ styles.container }>
-      <RaisedButton secondary style={ styles.newEventButton } onTouchTap={ onCreate }>New Event</RaisedButton>
+      <RaisedButton secondary style={ styles.newEventButton } onTouchTap={ () => onCreate() }>New Event</RaisedButton>
 
       <List>
         {
@@ -47,23 +46,7 @@ const styles = {
   container: {
     width: '100%',
   },
-  searchBox: {
-    margin: 10,
-    padding: 10,
-  },
   newEventButton: {
     width: '100%',
-  },
-  geosuggest: {
-    input: {
-      width: '100%',
-      height: 50,
-      borderBottomWidth: 2,
-      borderTopWidth: 0,
-      borderLeftWidth: 0,
-      borderRightWidth: 0,
-      fontFamily: 'Roboto',
-      fontSize: 16,
-    },
   },
 }

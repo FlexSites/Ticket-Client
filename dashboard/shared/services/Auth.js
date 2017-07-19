@@ -1,8 +1,7 @@
-import history from './history'
-import auth0 from 'auth0-js'
-import { AUTH_CONFIG } from './constants'
+const auth0 = require('auth0-js')
+const { AUTH_CONFIG } = require('./constants')
 
-export default class Auth {
+module.exports = class Auth {
   constructor () {
     this.auth0 = new auth0.WebAuth({
       domain: AUTH_CONFIG.domain,

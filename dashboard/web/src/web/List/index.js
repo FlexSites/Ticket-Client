@@ -21,7 +21,7 @@ export default class ResourceList extends React.Component {
   }
   render () {
     return (
-      <div style={{ display: 'flex', height: '100%', width: '100%', flex: 1 }}>
+      <div style={ { display: 'flex', height: '100%', width: '100%', flex: 1 } }>
         <Table onRowSelection={ this.onRowSelection }>
           <TableHeader>
             <TableRow>
@@ -48,9 +48,11 @@ export default class ResourceList extends React.Component {
 ResourceList.propTypes = {
   data: PropTypes.array,
   columns: PropTypes.array,
+  onTouchTap: PropTypes.func,
 }
 
 ResourceList.defaultProps = {
   data: [],
   columns: ['title', 'description'],
+  onTouchTap: () => {},
 }

@@ -90,7 +90,7 @@ export default class Workflow extends React.Component {
       )
     }
     return (
-      <div style={{ backgroundColor: '#0f0', display: 'flex', flex: 1, flexDirection: 'column', maxWidth: '500px', minHeight: '500px', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={ { backgroundColor: '#0f0', display: 'flex', flex: 1, flexDirection: 'column', maxWidth: '500px', minHeight: '500px', alignItems: 'center', justifyContent: 'space-between' } }>
         <div>{ this.props.id } | { current.props.title || `Step ${ this.state.current + 1 } of ${ this.total }` }</div>
         { !isWorkflow &&
           <LinearProgress
@@ -117,4 +117,11 @@ Workflow.childContextTypes = {
 }
 Workflow.contextTypes = {
   workflow: PropTypes.object,
+}
+
+Workflow.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.array,
+  onSubmit: PropTypes.func,
+  alias: PropTypes.string,
 }

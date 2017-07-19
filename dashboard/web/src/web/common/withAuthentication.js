@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Auth from '../../services/Auth'
+import Auth from '@nerdsauce/dashboard-stores/services/Auth'
 
 export const auth = new Auth()
 

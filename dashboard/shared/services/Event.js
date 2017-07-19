@@ -1,5 +1,4 @@
-import axios from 'axios'
-import { auth } from '../App'
+const axios = require('axios')
 
 const client = axios.create({
   baseURL: 'http://localhost:3001/api/rest',
@@ -10,10 +9,9 @@ const client = axios.create({
   },
 })
 
-export function get (id) {
+function get (id) {
   return client.get(`/events/${ id }`)
   .then(({ data }) => {
-    console.log(data)
     return data || { id, persisted: false }
   })
   .catch((ex) => {
@@ -22,12 +20,12 @@ export function get (id) {
   })
 }
 
-export function list (venueID = '003d252e-d1e6-40f5-9d22-e330d3f2fb10') {
+function list (venueID = '003d252e-d1e6-40f5-9d22-e330d3f2fb10') {
   return client.get(`/venues/${ venueID }/events`)
   .then(({ data }) => data)
 }
 
-export function create (body) {
+function create (body) {
   return client.post('/events', body, {
     headers: {
       'Content-Type': 'application/json',
@@ -36,7 +34,7 @@ export function create (body) {
   .then(({ data }) => data)
 }
 
-export function update (body) {
+function update (body) {
   return client.put(`/events/${ body.id }`, body, {
     headers: {
       'Content-Type': 'application/json',
@@ -45,7 +43,15 @@ export function update (body) {
   .then(({ data }) => data)
 }
 
-export function remove (id) {
+function remove (id) {
   return client.delete(`/events/${ id }`)
   .then(({ data }) => data)
+}
+
+module.exports = {
+  get,
+  list,
+  create,
+  update,
+  remove,
 }

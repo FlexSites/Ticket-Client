@@ -59,6 +59,10 @@ export default class VenueCreate extends React.Component {
   }
 }
 
+VenueCreate.propTypes = {
+  location: PropTypes.object,
+}
+
 // {
 //   "description": "Wiseguys Comedy Club Salt Lake City, 400 West, Salt Lake City, UT, United States",
 //   "label": "Wiseguys Comedy Club Salt Lake City, 400 West, Salt Lake City, UT, United States",

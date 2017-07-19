@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import BuildIcon from 'material-ui/svg-icons/action/build'
 import AssessmentIcon from 'material-ui/svg-icons/action/assessment'
 import DashboardIcon from 'material-ui/svg-icons/action/dashboard'
@@ -59,6 +60,11 @@ class TabNavigation extends React.Component {
       </BottomNavigation>
     )
   }
+}
+
+TabNavigation.propTypes = {
+  history: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default withRouter(TabNavigation)

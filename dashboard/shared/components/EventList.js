@@ -7,7 +7,6 @@ const mapProps = withProps(({ eventStore, history }) => {
     const clone = Object.assign({}, state)
     return history.push(to, clone)
   }
-  console.log('EVENTLIST HOC', eventStore.events, history)
   return {
     events: eventStore.events,
     onCreate: () => go('/events/create', { title: 'New event' }),

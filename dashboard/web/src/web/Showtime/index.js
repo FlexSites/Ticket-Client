@@ -1,11 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { inject, observer } from 'mobx-react'
 import RaisedButton from 'material-ui/RaisedButton'
 import TimeIcon from 'material-ui/svg-icons/device/access-time'
-import DateIcon from 'material-ui/svg-icons/action/event'
-import Chip from 'material-ui/Chip'
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/MenuItem';
 import InfiniteCalendar, {
   Calendar,
   defaultMultipleDateInterpolation,
@@ -98,6 +95,10 @@ class AddShowtimes extends React.Component {
       </div>
     )
   }
+}
+
+AddShowtimes.propTypes = {
+  match: PropTypes.object,
 }
 
 export default inject('eventStore')(observer(AddShowtimes))

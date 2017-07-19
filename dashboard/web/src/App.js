@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { Provider } from 'mobx-react'
 import uuid from 'uuid'
 
-import { eventStore, venueStore } from '@nerdsauce/dashboard-stores'
+import { EventStore, VenueStore } from '@nerdsauce/dashboard-stores'
+// import eventStore from './stores/EventStore'
+// import venueStore from './stores/VenueStore'
 import Header from './web/common/Header'
 
 import ListVenues from './web/Venue/List'
@@ -10,8 +12,8 @@ import ViewVenue from './web/Venue'
 import EditVenue from './web/Venue/edit'
 
 import EventList from './web/EventList'
-import EditEvent from './web/Event'
-import SelectVenue from './web/Event/SelectVenue'
+import EventEdit from './web/EventEdit'
+import SelectVenue from './web/EventEdit/SelectVenue'
 
 import AddShowtimes from './web/Showtime'
 import auth from './web/common/withAuthentication'
@@ -23,8 +25,11 @@ import {
   Redirect,
 } from 'react-router-dom'
 
-import Auth from './services/Auth'
+import Auth from '@nerdsauce/dashboard-stores/services/Auth'
 import './App.css'
+// comment
+const venueStore = new VenueStore()
+const eventStore = new EventStore(venueStore)
 
 export const authService = new Auth()
 const handleAuthentication = (nextState, replace) => {
@@ -49,7 +54,7 @@ class App extends Component {
 
             <Route exact path='/events' component={ auth(EventList) } />
             <Route exact path='/events/create' render={ () => <Redirect to={ `/events/${ uuid.v4() }` } /> } />
-            <Route exact path='/events/:id' component={ auth(EditEvent) } />
+            <Route exact path='/events/:id' component={ auth(EventEdit) } />
             <Route exact path='/events/:id/venue' component={ auth(SelectVenue) } />
             <Route path='/events/:id/showtimes' component={ auth(AddShowtimes) } />
 

@@ -67,10 +67,6 @@ class FloatingMenu extends React.Component {
   }
 }
 
-FloatingMenu.propTypes = {
-  event: PropTypes.object,
-}
-
   // render () {
   //   const buttons = this.state.open ? this.props.buttons : []
 
@@ -109,7 +105,8 @@ const styles = {
 }
 
 FloatingMenu.propTypes = {
-  buttons: PropTypes.array,
+  event: PropTypes.object,
+  history: PropTypes.object,
 }
 
 FloatingMenu.defaultMenu = {

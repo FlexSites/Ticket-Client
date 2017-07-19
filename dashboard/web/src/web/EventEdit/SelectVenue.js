@@ -4,7 +4,7 @@ import { inject, observer } from 'mobx-react'
 import { withRouter } from 'react-router-dom'
 import VenueList from '../Venue/List'
 
-class componentName extends Component {
+class SelectVenue extends Component {
   constructor (props) {
     super(props)
 
@@ -25,8 +25,9 @@ class componentName extends Component {
   }
 }
 
-componentName.propTypes = {
-
+SelectVenue.propTypes = {
+  history: PropTypes.object,
+  venueStore: PropTypes.object,
 }
 
-export default withRouter(inject('eventStore', 'venueStore')(observer(componentName)))
+export default withRouter(inject('eventStore', 'venueStore')(observer(SelectVenue)))

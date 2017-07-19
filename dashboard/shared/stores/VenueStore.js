@@ -1,9 +1,9 @@
-import { extendObservable } from 'mobx'
-import get from 'lodash.get'
-import uuid from 'uuid'
-import * as VenueService from '../services/Venue'
+const { extendObservable } = require('mobx')
+const get = require('lodash.get')
+const uuid = require('uuid')
+const VenueService = require('../services/Venue')
 
-export class VenueStore {
+exports.VenueStore = class VenueStore {
   constructor () {
     this._selected = null
     extendObservable(this, {
@@ -25,7 +25,7 @@ export class VenueStore {
       return this.incoming(venue)
     }
 
-    return this.venues.find(venue => venue.id === id) || new Venue(this, { id })
+    return this.venues.find(venue => venue.id === id) || new exports.Venue(this, { id })
   }
 
   async save (venue) {
@@ -35,7 +35,6 @@ export class VenueStore {
 
   async list () {
     const venues = await VenueService.list()
-    console.log('venues', venues)
     venues.forEach((venue) => {
       venue = this.incoming(venue)
       if (!this._selected) this._selected = venue
@@ -47,19 +46,18 @@ export class VenueStore {
   incoming (json) {
     let venue = this.venues.find(venue => venue.id === json.id)
     if (!venue) {
-      venue = new Venue(this, json)
+      venue = new exports.Venue(this, json)
       this.venues.push(venue)
     }
     return venue
   }
 }
 
-const singleton = new VenueStore()
+const singleton = new exports.VenueStore()
 
-export class Venue {
+exports.Venue = class Venue {
   constructor (store = singleton, { id = uuid.v4(), title, description, address = {} } = {}) {
     this.store = store
-    console.log('constructor', store, id, title, address)
     extendObservable(this, {
       id,
       title,
@@ -80,9 +78,8 @@ export class Venue {
   }
 
   save () {
-    console.log('SAVING VENUE', this.json)
     return this.store.save(this)
   }
 }
 
-export default singleton
+exports.default = singleton

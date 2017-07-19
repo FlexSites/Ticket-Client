@@ -1,10 +1,7 @@
 import React from 'react'
 import RaisedButton from 'material-ui/RaisedButton'
-
-import TimeIcon from 'material-ui/svg-icons/device/access-time'
+import PropTypes from 'prop-types'
 import DateIcon from 'material-ui/svg-icons/action/event'
-import Chip from 'material-ui/Chip'
-import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import Menu from 'material-ui/Menu'
 import MenuItem from 'material-ui/MenuItem'
 import moment from 'moment'
@@ -122,7 +119,8 @@ class TimeSelect extends React.Component {
 }
 
 TimeSelect.propTypes = {
-
+  showtimes: PropTypes.array,
+  close: PropTypes.func,
 }
 
 export default TimeSelect

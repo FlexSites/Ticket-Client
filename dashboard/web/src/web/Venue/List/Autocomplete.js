@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import TextField from 'material-ui/TextField'
-import * as Address from '../../../services/address'
+import * as Address from '@nerdsauce/dashboard-stores/services/address'
 import { inject } from 'mobx-react'
-import { Venue } from '../../../stores/VenueStore'
+import { Venue } from '@nerdsauce/dashboard-stores/stores/VenueStore'
 
 class Autocomplete extends React.Component {
   constructor (props) {

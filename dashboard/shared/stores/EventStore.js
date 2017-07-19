@@ -1,9 +1,9 @@
-import { extendObservable } from 'mobx'
-import * as EventService from '../services/Event'
-import venueStore from './VenueStore'
-import uuid from 'uuid'
+const { extendObservable } = require('mobx')
+const EventService = require('../services/Event')
+const { default: venueStore } = require('./VenueStore')
+const uuid = require('uuid')
 
-export class EventStore {
+class EventStore {
   constructor (venueStore) {
     this.venueStore = venueStore
     extendObservable(this, {
@@ -21,8 +21,6 @@ export class EventStore {
       venues.map(({ id }) => EventService.list(id))
     )
     const events = [].concat(...eventsPromises)
-    console.log(events)
-
     events.forEach(this.incoming.bind(this))
   }
 
@@ -46,13 +44,11 @@ export class EventStore {
     if (!json.venue_id) json.venue_id = this.venueStore.venues[0].id
 
     const venue = this.venueStore.venues.find(({ id }) => {
-      console.log(id, json.venue_id, id === json.venue_id)
       return id === json.venue_id
     })
     json.venue = venue
 
     delete json.venue_id
-    console.log('incoming', json, venue)
     if (!event) {
       event = new Event(this, json)
       this.events.push(event)
@@ -61,7 +57,7 @@ export class EventStore {
   }
 }
 
-export class Event {
+class Event {
   constructor (store, {
     id = uuid.v4(),
     title = '',
@@ -95,14 +91,14 @@ export class Event {
   }
 
   save () {
-    console.log('SAVING EVENT', this.json)
     return this.store.save(this)
   }
 
   addShowtime (showtime) {
-    console.log('add showtime', showtime)
     this.showtimes.push(showtime)
   }
 }
 
-export default new EventStore(venueStore)
+exports.default = new EventStore(venueStore)
+exports.Event = Event
+exports.EventStore = EventStore

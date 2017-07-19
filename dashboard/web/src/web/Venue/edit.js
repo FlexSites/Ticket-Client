@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import TextField from 'material-ui/TextField'
 import set from 'lodash.set'
 import Maxlength from '../Maxlength'
-import Address from '../../services/address'
 
 export default class VenueCreate extends React.Component {
   constructor (props) {
@@ -47,6 +46,10 @@ export default class VenueCreate extends React.Component {
     //   </div>
     // )
   }
+}
+
+VenueCreate.propTypes = {
+  location: PropTypes.object,
 }
 
 // {
