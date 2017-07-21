@@ -3,11 +3,19 @@
 import debounce from 'debounce-promise'
 import { Venue } from '../../stores/VenueStore'
 
-// const API_KEY = 'AIzaSyCMCRdQCnmxf3odiUDrapSD14EY4zBluSg'
-const service = new google.maps.places.AutocompleteService()
-const geocoder = new google.maps.Geocoder()
+let online = true
+let service
+let geocoder
+try {
+  // const API_KEY = 'AIzaSyCMCRdQCnmxf3odiUDrapSD14EY4zBluSg'
+  service = new google.maps.places.AutocompleteService()
+  geocoder = new google.maps.Geocoder()
+} catch (ex) {
+  online = false
+}
 
 function _autocomplete (input) {
+  if (!online) return Promise.resolve([])
   return new Promise((resolve, reject) => {
     service.getPlacePredictions(
       {
@@ -67,7 +75,6 @@ function geocode (suggest) {
 // ]
 
 function format ({ gmaps, structured_formatting }) {
-  console.log(gmaps.address_components)
   const object = gmaps.address_components.reduce((prev, curr) => {
     prev[curr.types[0]] = curr.long_name
     return prev
