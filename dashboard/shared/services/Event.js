@@ -48,10 +48,16 @@ function remove (id) {
   .then(({ data }) => data)
 }
 
+function upload (id, type) {
+  return client.post(`/events/${ id }/uploads`, { 'Content-Type': type })
+    .then(({ data }) => data)
+}
+
 module.exports = {
   get,
   list,
   create,
   update,
   remove,
+  upload,
 }

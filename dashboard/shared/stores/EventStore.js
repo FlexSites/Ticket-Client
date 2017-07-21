@@ -49,6 +49,7 @@ class EventStore {
     json.venue = venue
 
     delete json.venue_id
+    json.image = json.image_url
     if (!event) {
       event = new Event(this, json)
       this.events.push(event)
@@ -85,9 +86,15 @@ class Event {
           description: this.description,
           showtimes: this.showtimes,
           venue_id: this.venue.id,
+          image_url: this.image,
         }
       },
     })
+  }
+
+  async getUploadUrl (type) {
+    const { url } = await EventService.upload(this.id, type)
+    return url
   }
 
   save () {

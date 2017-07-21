@@ -21,6 +21,7 @@
   "dependencies": {
     "@nerdsauce/auth": "file:./lib/auth",
     "@nerdsauce/venues": "file:./services/venues",
+    "@nerdsauce/media": "file:./services/media",
     "@nerdsauce/events": "file:./services/events",
     "@nerdsauce/showtimes": "file:./services/showtimes",
     "@nerdsauce/orders": "file:./services/orders",

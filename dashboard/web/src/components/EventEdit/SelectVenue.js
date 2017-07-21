@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { inject, observer } from 'mobx-react'
 import { withRouter } from 'react-router-dom'
-import VenueList from '../Venue/List'
+import VenueList from '../VenueList'
 
 class SelectVenue extends Component {
   constructor (props) {

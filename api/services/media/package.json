@@ -1,10 +1,10 @@
 {
-  "name": "@nerdsauce/events",
+  "name": "@nerdsauce/media",
   "version": "1.0.0",
   "engines": {
     "node": "^8.0.0"
   },
-  "description": "Event service for the Nerdsauce Tickets",
+  "description": "Upload service for the Nerdsauce Tickets",
   "main": "index.js",
   "scripts": {
     "start": "micro interfaces/graphql",
@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "@nerdsauce/auth": "../../lib/auth",
-    "@nerdsauce/mongo": "../../lib/mongo",
     "enjoi": "^2.2.3"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@ const cors = require('cors')
 const { NotFound } = require('http-errors')
 
 const Venue = require('@nerdsauce/venues')
+const Medium = require('@nerdsauce/media')
 const Event = require('@nerdsauce/events')
 const Showtime = require('@nerdsauce/showtimes')
 const { middleware: auth } = require('@nerdsauce/auth')
@@ -23,6 +24,7 @@ app.get('/venues/:venue', middleware((viewer, params) => Venue.get(viewer, param
 app.put('/venues/:venue', json(), updateVenue)
 app.patch('/venues/:venue', json(), updateVenue)
 
+app.post('/events/:event/uploads', json(), middleware((viewer, params, body) => Medium.getSignedUrl(viewer, params.event, body)))
 app.get('/venues/:venue/events', middleware((viewer, params) => Event.query(viewer, { venue_id: params.venue })))
 app.post('/venues/:venue/events', json(), middleware((viewer, { venue }, body) => Event.create(viewer, Object.assign(body, { venue_id: venue }))))
 app.get('/events/:event', middleware((viewer, params) => Event.get(viewer, params.event)))
